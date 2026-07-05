@@ -99,7 +99,7 @@ a:hover { text-decoration:underline; }
 .chip { font-size:11px; color:var(--tx-2); padding:3px 9px; border:1px dashed var(--line-2); border-radius:20px; }
 
 /* ---------- machine list (category view) ---------- */
-.mcard { padding:14px 16px; border:1px solid var(--line); border-radius:12px; background:var(--ink-1); margin-bottom:10px; cursor:pointer; transition:border-color .12s; }
+.mcard { display:block; padding:14px 16px; border:1px solid var(--line); border-radius:12px; background:var(--ink-1); margin-bottom:10px; cursor:pointer; transition:border-color .12s; }
 .mcard:hover { border-color:var(--line-2); }
 .mcard-top { display:flex; align-items:flex-start; justify-content:space-between; gap:12px; margin-bottom:12px; }
 .mcard-name { font-family:var(--display); font-size:15px; font-weight:500; }
