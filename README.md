@@ -2,6 +2,8 @@
 
 An engineering-grade reference database for the digital print production industry, modeled as a knowledge graph with full provenance tracking on every fact and every relationship.
 
+**Live demo:** https://mahin-aeroai.github.io/GDPPE/frontend/ — a static, provenance-first browser for the pilot data (dashboard, per-category machine lists, full sourced spec sheets, and a side-by-side compare). Reads the same CSVs the validator checks, so it can't drift from the source of truth.
+
 ## Repository Structure
 
 ```
@@ -13,9 +15,12 @@ GDPPE
 │   ├── knowledge_graph.md     Relationship types & edge provenance
 │   └── data_dictionary.md     Units, controlled vocabularies, data types, missing-data sentinels
 ├── database/       Real data, structured per the schema
-│   └── uv_printing_pilot/     Phase 2 pilot: 4 real UV flatbed/hybrid printers, fully sourced
+│   ├── uv_printing_pilot/               Phase 2 pilot: 8 UV flatbed/hybrid printers
+│   ├── toner_electrophotographic_pilot/ Phase 2 pilot: 6 production toner presses
+│   ├── latex_printing_pilot/            Phase 2 pilot: 3 latex printers
+│   └── digital_cutting_pilot/           Phase 2 pilot: 3 digital cutting tables
 ├── templates/      Category-specific research templates — not yet populated
-├── html/           Frontend — not yet populated
+├── frontend/       Static provenance-first browser (dashboard / category / machine / compare)
 ├── api/            API layer — not yet populated
 ├── ai/             AI/semantic search layer — not yet populated
 ├── assets/         Images, documents — not yet populated
@@ -29,7 +34,8 @@ GDPPE
 - **Specification**: Chapters 1–17 processed (of an apparent ~40-chapter full spec, per the project roadmap memo)
 - **Schema**: v0.19 — 36 core entity types, 5-value governance tier, 9-tier source hierarchy, full edge provenance model
 - **Category count**: resolved at **17** (see `schema/schema.md` header for the full decision record) — `Ink` is a full entity but not a standalone category, since ink chemistry is intrinsically tied to its printing category rather than being a cross-category shared component like Printheads/RIP/Media.
-- **Phase 2 — Master Database**: pilot expanded. `database/uv_printing_pilot/` has **8 real UV flatbed/hybrid printers** across 3 market tiers (Canon Arizona 2380 GTF, EFI Pro 30f+, Durst P5 350 HS, Agfa Jeti Tauro H3300 LED, Mimaki JFX200-2513 EX, swissQprint Nyala 5, Roland VersaUV LEJ-640FT, HandTop HT2512UV) — fully sourced, with `scripts/validate_pilot.py` for automated referential-integrity checking. See `database/uv_printing_pilot/README.md` for what this proved, including a data-integrity issue caught and fixed during the expansion.
+- **Phase 2 — Master Database**: **4 category pilots** built and validated — UV Printing (8 machines), Toner/Electrophotographic (6), Latex Printing (3), and Digital Cutting (3): **20 machines, 77 sources**, all fully sourced. `scripts/validate_database.py` runs referential-integrity + primary-key uniqueness checks across every category. Each pilot's `README.md` documents what it proved, including data-integrity issues caught and fixed along the way.
+- **Frontend**: `frontend/` is a dependency-free static site that reads the pilot CSVs directly — dashboard, per-category machine lists, full sourced spec sheets, and a side-by-side compare view. Live at https://mahin-aeroai.github.io/GDPPE/frontend/
 
 ## Getting Started
 
