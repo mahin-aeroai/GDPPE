@@ -29,7 +29,11 @@
     { id: "cut",   code: "Cut",   name: "Digital Cutting",
       dir: "digital_cutting_pilot",          specs: "Digital_Cutting_Specifications.csv",
       blurb: "Flatbed digital cutters & finishing tables",
-      accent: ["#12283f", "#5aa9e8"] }
+      accent: ["#12283f", "#5aa9e8"] },
+    { id: "solvent", code: "Solvent", name: "Solvent / Eco-Solvent",
+      dir: "solvent_ecosolvent_printing_pilot", specs: "Solvent_Ecosolvent_Printing_Specifications.csv",
+      blurb: "Wide-format sign printers · true, eco & mild solvent",
+      accent: ["#2e2410", "#e0b83c"] }
   ];
 
   // path from frontend/index.html up to the database folder

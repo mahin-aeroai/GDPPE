@@ -2,6 +2,16 @@
 
 All notable changes to the GDPPE entity schema, tracked chapter by chapter.
 
+## Phase 2 — Solvent / Eco-Solvent Printing pilot (5 machines)
+- Added `database/solvent_ecosolvent_printing_pilot/`: 5 real, sourced wide-format solvent sign printers — Epson SureColor S80600 & S60600, Roland VersaEXPRESS RF-640, Mimaki CJV300-160 Plus, Mutoh ValueJet VJ-1638X. All four major sign-printer OEMs represented. Every spec value traces to a source fetched in the same session (16 sources).
+- **Ink-chemistry scoped across the solvent gradient** (True → Eco → Mild), not a single ink type.
+- **New controlled vocabulary: two-field solvent model** — `SolventType` (True_Solvent | Eco_Solvent | Mild_Solvent) + `SolventInkLine` (UltraChrome_GS3 | Eco_Sol_MAX_2 | SS21 | Eco_Ultra_UMS). Registered in `schema/data_dictionary.md`. Same split rationale as the toner TonerType/TonerChemistry pair.
+- **New field `ventilation_requirement`** — first category where workplace ventilation / VOC handling is a real sourced spec (Epson markets 'no special ventilation required' vs legacy true-solvent that needed extraction).
+- **`InkType` enum gap flagged:** mild-solvent machines record `ink_type=Eco_Solvent` (nearest existing value) with `SolventType=Mild_Solvent` carrying the finer distinction; a future pass may add `Mild_Solvent` to `InkType`.
+- **Documented sourcing gap:** the Chinese industrial-value true-solvent tier (Konica 512i/1024i white-label machines, ~65% of global production by one trade estimate) is deliberately absent — it has no authoritative manufacturer spec source, only reseller listings. Logged as a known gap rather than fabricated from Tier-8/9 pages.
+- Frontend updated to show the 5th category.
+- Full referential integrity + uniqueness verified via `scripts/validate_database.py`.
+
 ## Phase 2 — Toner / Electrophotographic Printing pilot (6 machines)
 - Added `database/toner_electrophotographic_pilot/`: 6 real, sourced production electrophotographic presses — HP Indigo 100K, Xerox iGen 5, Canon imagePRESS V1350, Konica Minolta AccurioPress C14000, Ricoh Pro C9500, Xerox Versant 4100. Every spec value traces to a source fetched in the same working session (18 sources).
 - **Category scoped by imaging technology, not market segment.** The Canon varioPRINT iX3200 was researched but deliberately excluded — it competes head-to-head in the production cut-sheet market but is sheetfed *inkjet*, not electrophotographic. It belongs in a future Production Inkjet category. Keeps the scoping axis consistent with UV and Latex (both technology-scoped).

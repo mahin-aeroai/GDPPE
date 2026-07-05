@@ -43,7 +43,8 @@
     uv:    [["print_width", "width"], ["max_speed", "speed"], ["native_resolution", "resolution"], [["uv_curing_type", "curing_type", "curing_technology"], "curing"]],
     toner: [[["max_speed_ppm", "max_speed_sph", "max_speed"], "speed"], [["toner_type"], "toner"], [["native_resolution"], "resolution"], [["monthly_duty_cycle"], "duty/mo"]],
     latex: [[["print_width"], "width"], [["max_speed"], "speed"], [["native_resolution"], "resolution"], [["ink_type", "drying_technology"], "ink"]],
-    cut:   [[["cutting_area_width", "max_material_area"], "cut width"], [["max_speed", "max_speed_xy"], "speed"], [["accuracy"], "accuracy"], [["tool_positions"], "tools"]]
+    cut:   [[["cutting_area_width", "max_material_area"], "cut width"], [["max_speed", "max_speed_xy"], "speed"], [["accuracy"], "accuracy"], [["tool_positions"], "tools"]],
+    solvent: [[["print_width"], "width"], [["max_speed"], "speed"], [["solvent_type"], "solvent"], [["native_resolution"], "resolution"]]
   };
 
   function fmtVal(sp) {
