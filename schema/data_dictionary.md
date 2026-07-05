@@ -27,11 +27,13 @@
 | Noise | dB(A) | | A-weighted, not plain dB |
 | Air flow | L/min | CFM (where appropriate) | new in Ch.9 |
 
+**Approved acronym glossary (Ch.9 §9.15):**
+
+`UV` Ultraviolet · `LED` Light Emitting Diode · `RIP` Raster Image Processor · `ICC` International Color Consortium · `PLC` Programmable Logic Controller · `HMI` Human-Machine Interface · `VFD` Variable Frequency Drive · `AGV` Automated Guided Vehicle · `ATC` Automatic Tool Changer · `ERP` Enterprise Resource Planning · `API` Application Programming Interface · `JDF` Job Definition Format · `OPC UA` Open Platform Communications Unified Architecture · `ΔE` Delta E Color Difference
+
 ---
 
 ## FieldValue Structure — Data Types & Unit Conversion
-
-**Provenance (per-field, not per-record) — full sub-object per Ch.2 §2.7-2.9, extended by Ch.9's data typing and unit conversion policy**
 
 ```
 FieldValue {
@@ -54,7 +56,7 @@ FieldValue {
 
 ## Missing-Data Sentinel Values
 
-**Missing-data sentinel values — reconciling Ch.7 §7.10 and Ch.9 §9.14 into one 6-value vocabulary** (superset, since the two chapters' lists only partially overlap):
+**Reconciling Ch.7 §7.10 and Ch.9 §9.14 into one 6-value vocabulary** (superset, since the two chapters' lists only partially overlap):
 `Not_Publicly_Available | Under_Verification | Manufacturer_Not_Disclosed | Information_Pending | Not_Applicable | Unknown`
 
 

@@ -1,12 +1,18 @@
-# GDPPE Entity Schema v0.18
+# GDPPE Entity Schema v0.19
 ### Global Digital Print Production Equipment Encyclopedia — Data Model
-*v0.2: Ch.2 research methodology. v0.3: Ch.3 classification taxonomy. v0.4: Ch.4 Manufacturer Directory. v0.5: Ch.5 Master Equipment Index. v0.6: Ch.6 physical architecture. v0.7: Ch.7 source standards. v0.8: Ch.8 Technology-Specific Templates. v0.9: Ch.9 Data Dictionary. v0.10: Ch.10 Engineering Data Collection Standards. v0.11: Ch.11 HTML IA/UX. v0.12: Ch.12 Page Design Standards. v0.13: Ch.13 Comparison/Benchmarking. v0.14: Ch.14 Knowledge Graph. v0.15: Ch.15 AI Architecture. v0.16: Ch.16 Implementation Roadmap. v0.17: Ch.17 Governance/Ethics. v0.18: Project Roadmap memo (not a numbered chapter) — new maintenance/service-intelligence entities from its Phase 5.*
+*v0.2: Ch.2 research methodology. v0.3: Ch.3 classification taxonomy. v0.4: Ch.4 Manufacturer Directory. v0.5: Ch.5 Master Equipment Index. v0.6: Ch.6 physical architecture. v0.7: Ch.7 source standards. v0.8: Ch.8 Technology-Specific Templates. v0.9: Ch.9 Data Dictionary. v0.10: Ch.10 Engineering Data Collection Standards. v0.11: Ch.11 HTML IA/UX. v0.12: Ch.12 Page Design Standards. v0.13: Ch.13 Comparison/Benchmarking. v0.14: Ch.14 Knowledge Graph. v0.15: Ch.15 AI Architecture. v0.16: Ch.16 Implementation Roadmap. v0.17: Ch.17 Governance/Ethics. v0.18: Project Roadmap memo. v0.19: **Category count decision — CLOSED.**
 
-> **Source note:** this input is a project-roadmap/vision memo, not a numbered spec chapter like 1–17 — it references "Chapters 1–40" in its proposed repo structure, meaning the full spec is roughly double what's been processed so far. Treating it accordingly: confirming what's already covered rather than re-deriving it, and only adding real new structure where the memo introduces something genuinely absent.
+> ## Category Count: RESOLVED at 17 (final, v1.0-schema baseline)
 >
-> **Category count:** still flagged as needing an explicit decision (17 vs 18) since v0.17 — this memo doesn't address it.
+> Two detailed, worked category breakdowns exist in the source material — Ch.3 §3.3 (18 categories) and Ch.10 §10.5 (17 categories) — and every other mention across the doc set ("17" in Ch.6/Ch.8-intro, "18" in Ch.16/Ch.17-appendix) is a casual restatement of one or the other, not independent evidence. Comparing the two detailed lists directly: **they are identical except for one entry** — Ch.3 includes "Industrial Ink Systems" as its own category (between Printheads and RIP Software); Ch.10 omits it entirely, folding ink into each printing category's own engineering section instead. Everything else — including keeping CNC Routing and Laser Systems split — matches across both lists.
 >
-> **What's new here:** Phase 5 ("Engineering Intelligence" — failure modes, service bulletins, common issues, recommended parts, troubleshooting, known upgrades) has no home in the schema yet. Everything else in the memo's 11 phases maps onto structures already built — see the phase-by-phase note below.
+> **Decision: 17 categories. `Ink` remains a full entity with its own field set and controlled vocabulary (`InkType`), but does not get a standalone `TaxonomyNode` / category code.**
+>
+> Reasoning:
+> 1. Ch.10 is the chapter whose entire purpose is enumerating categories precisely for research use — its omission of Ink is far more likely deliberate than an oversight, especially since it's careful to keep CNC/Laser split (the more tempting place to cut a category if someone were just padding toward a target number).
+> 2. There's a structural argument independent of which chapter is "more authoritative": Printheads, RIP, and Media are **cross-category shared components** — a specific printhead or RIP exists independently of which printer category uses it, which is exactly why they earn their own taxonomy slot. Ink doesn't work that way — UV ink and eco-solvent ink aren't the same concept wearing different labels; ink chemistry is intrinsically tied to its printing category. Folding it into each category's own "Ink System" engineering section (which is what Ch.8's field lists already do for UV/Latex/Eco-Solvent/Textile) is the more defensible design on its own merits, not just the majority-vote outcome.
+>
+> This closes the question raised in v0.3, reopened in v0.10 (resolved to 17), and challenged again in v0.16/v0.17 (18). No further re-litigation unless a future chapter provides comparably detailed, direct evidence — a passing mention of "18" in an objectives list or appendix title does not meet that bar.
 
 ---
 
@@ -117,9 +123,9 @@ Printing (technology)
             └─ [Manufacturer/Family/Series/Model/Generation live on Machine itself]
 ```
 
-**17 primary categories — RESOLVED as of Ch.10 §10.5, replacing the earlier 18-category version**
+**17 primary categories — CLOSED, see decision record at the top of this document**
 
-Ch.10's category-specific engineering standards (§10.5) run Category 1 through Category 17 by name, and this is the most concrete evidence in the whole document set: it keeps **CNC Routers (Cat.12) and Laser Systems (Cat.13) as separate categories** — so the split was never what caused the 17-vs-18 discrepancy. What's actually different from the earlier Ch.3 list is that **Industrial Ink Systems doesn't appear as its own category at all**. Ink is still a real entity (`Ink / Consumable System`) with its own fields and relationships — it's just not a top-level `TaxonomyNode`; it's a sub-domain that lives inside the printer categories (UV, Latex, Eco-Solvent, Textile) instead. That's the resolution: 17 categories, CNC/Laser stay split, Ink Systems demoted from category to cross-cutting entity.
+Ch.10's category-specific engineering standards (§10.5) run Category 1 through Category 17 by name, keeping CNC Routers (Cat.12) and Laser Systems (Cat.13) as separate categories. `Ink` remains a full entity (`Ink / Consumable System`) with its own fields, controlled vocabulary, and relationships — it's just not a top-level `TaxonomyNode`; it's a sub-domain living inside the printer categories (UV, Latex, Eco-Solvent, Textile) instead.
 
 | Code | Category |
 |---|---|

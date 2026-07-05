@@ -26,9 +26,9 @@ GDPPE
 ## Status
 
 - **Specification**: Chapters 1–17 processed (of an apparent ~40-chapter full spec, per the project roadmap memo)
-- **Schema**: v0.18 — 36 core entity types, 5-value governance tier, 9-tier source hierarchy, full edge provenance model
+- **Schema**: v0.19 — 36 core entity types, 5-value governance tier, 9-tier source hierarchy, full edge provenance model
 - **Data**: not yet populated — this repo currently defines the model, not the content
-- **Open issue**: category count (17 vs. 18) has been restated inconsistently across chapters — see the note at the top of `schema/schema.md`. Resolve before scaling up data ingestion, since `TaxonomyNode` records and every `Machine.primary_category_node_id` depend on it.
+- **Category count**: resolved at **17** (see `schema/schema.md` header for the full decision record) — `Ink` is a full entity but not a standalone category, since ink chemistry is intrinsically tied to its printing category rather than being a cross-category shared component like Printheads/RIP/Media.
 
 ## Getting Started
 

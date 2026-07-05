@@ -2,6 +2,11 @@
 
 All notable changes to the GDPPE entity schema, tracked chapter by chapter.
 
+## v0.19 — Category count decision: CLOSED
+- **Resolved permanently at 17 categories.** Two detailed breakdowns exist (Ch.3: 18, Ch.10: 17) and are identical except for one entry — Ch.3 includes "Industrial Ink Systems" as its own category, Ch.10 folds ink into each printing category's engineering section instead.
+- Decision: 17 categories stands. `Ink` remains a full entity with its own controlled vocabulary (`InkType`) but no standalone `TaxonomyNode`/category code, since ink chemistry is intrinsically category-specific (unlike Printheads/RIP/Media, which are genuinely cross-category shared components).
+- This closes the question raised in v0.3, reopened/resolved in v0.10, and challenged again in v0.16/v0.17. Full reasoning recorded in `schema/schema.md`'s header.
+
 ## v0.18 — Project Roadmap memo
 - New: `KnownIssue`, `TroubleshootingEntry`, `MaintenanceRecommendation` entities (Roadmap Phase 5 — failure modes, service bulletins, troubleshooting, known upgrades)
 - New: `Service_Bulletin` added to `DataSource.source_type`
