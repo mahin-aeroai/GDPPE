@@ -1,0 +1,21 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Environment
+.env
+*.env.local
+
+# Dependencies (once /html, /api, /ai get real code)
+node_modules/
+__pycache__/
+*.pyc
+venv/
+
+# Large binary assets (track via Git LFS instead if needed)
+*.zip
+*.tar.gz

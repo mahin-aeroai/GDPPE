@@ -1,0 +1,84 @@
+# GDPPE Schema — Change Log
+
+All notable changes to the GDPPE entity schema, tracked chapter by chapter.
+
+## v0.18 — Project Roadmap memo
+- New: `KnownIssue`, `TroubleshootingEntry`, `MaintenanceRecommendation` entities (Roadmap Phase 5 — failure modes, service bulletins, troubleshooting, known upgrades)
+- New: `Service_Bulletin` added to `DataSource.source_type`
+- Note: source document reveals full spec runs to ~40 chapters; confirmed Phases 6–11 of the roadmap map onto existing structures without changes
+
+## v0.17 — Ch.17: Data Governance, Editorial Policies, Research Ethics
+- New: `Contributor` entity (roles, conflict-of-interest disclosure) — replaces bare name strings across the schema
+- New: `RecordGovernance` (record owner, technical reviewer, editorial reviewer, last editor) per Machine/Manufacturer
+- New: two lifecycle stages — `Monitored`, `Historical`
+- Changed: `ChangeLogEntry.proposed_by` extended to 3 values (`Internal_Researcher | Community_Contributor | AI`)
+- Flagged: category count contradiction resurfaced a third time (18 vs. 17) — needs explicit resolution
+
+## v0.16 — Ch.16: Implementation Roadmap, Development Architecture, Project Governance
+- New: `review_status` on `EditorialReview`/`ComparisonReport` (Draft → ... → Published → Archived), independent of `Machine.lifecycle_stage`
+- Clarified: 5-phase database rollout (Excel/CSV → Postgres → Neo4j → Elasticsearch → Vector DB); Elasticsearch and vector DB confirmed as two distinct search layers
+- Flagged: category count contradiction (18 vs. 17) resurfaced
+
+## v0.15 — Ch.15: AI, Semantic Search, Recommendation Engine
+- Changed: `governance_tier` extended to 5 values — added `Industry_Practice`
+- New: `ChangeLogEntry.proposed_by`/`approval_status` — Human-in-the-Loop gating for AI-suggested edits
+- Confirmed: Hybrid Search Architecture independently validates the Ch.16 stack split (keyword/structured/vector/graph)
+
+## v0.14 — Ch.14: Knowledge Graph, Relationship Mapping
+- New: Edge Provenance (`RelationshipProvenance`) — every relationship now carries source/confidence/date-verified, not just node attributes
+- New: `ConfigurationOption`, `Installation` (optional, privacy-gated) entities
+- New: `Machine -[COMPATIBLE_WITH]-> Machine`, Printhead lineage (`predecessor_printhead_id`/`successor_printhead_id`)
+- Changed: `CompanyRelationship` extended with `product_line_id` and `ProductLine_Transfer` type
+
+## v0.13 — Ch.13: Comparison Framework, Benchmarking
+- New: `EngineeringScorecard`, `ApplicationSuitability`, `TCOProfile`, `ComparisonReport` entities
+- New: Sustainability added as a 14th engineering domain
+- Confirmed: `Manufacturer.market_tier` matches Ch.13's Competitive Positioning example exactly
+
+## v0.12 — Ch.12: Engineering Page Design Standards
+- New: `EditorialReview` entity — Design Philosophy / Mechanical Construction / Production Performance / Reliability / Best Use Cases / Considerations
+- Changed: `Historical Event` formalized with a typed event vocabulary
+- Changed: `DataSource.source_type` extended (ICC_Profile, Template, White_Paper, Release_Notes)
+
+## v0.11 — Ch.11: HTML Information Architecture & UX
+- Changed: `governance_tier` extended to 4 values — added `AI_Generated_Explanation`
+- New: `searchable`/`filterable` flags on `CategoryTemplate` field definitions
+- Confirmation pass: IA/UX requirements mapped onto existing entities without new structures (see §3b coverage table)
+
+## v0.10 — Ch.10: Engineering Data Collection Standards
+- **Category count resolved to 17** (from 18) — Ch.10's category-by-category list demoted Ink Systems from a standalone category to a cross-cutting entity
+- New: Research Level (1–4 priority tiers), Engineering Domains (13-domain controlled list), Availability Class (P/D/M/F/E), `CategoryCompletenessMatrix`
+
+## v0.9 — Ch.9: Technical Data Dictionary, Units, Terminology
+- New: `data_type` field on `FieldValue`; original/converted value pair for unit conversion
+- New: Preferred term / synonym system; 4 controlled vocabularies
+- Reconciled: `machine_status` (kept Ch.5's 8-value version over Ch.9's incomplete 6-value restatement); missing-data sentinels merged to a 6-value superset
+
+## v0.8 — Ch.8: Technology-Specific Research Templates
+- **Major architecture change**: Machine's technical fields split into Section A (universal) + Section B (category-driven via new `CategoryTemplate` entity)
+- New: `TechnologyMilestone` entity
+
+## v0.7 — Ch.7: Research Sources, Documentation Standards
+- Changed: source tier scale expanded from 6 to 9
+- New: image/video sub-fields on `DataSource`; `ReviewSchedule` object; missing-data vocabulary expanded to 4 values
+
+## v0.6 — Ch.6: Master Research Database Architecture
+- New: `Tool Module` entity
+- New: unit standard, data governance tier (`Public_Verifiable | Editorial_Content | Internal_Research_Note`), 19-sheet workbook mapping
+
+## v0.5 — Ch.5: Master Equipment Index & Machine Identification
+- New: UEID primary key scheme; lifecycle stages; full 8-value `machine_status` enum
+- New: Regional Variant relationship; Excel Master Index column mapping
+
+## v0.4 — Ch.4: Global Manufacturer Directory
+- Changed: `Manufacturer` expanded into a full corporate profile (6-class taxonomy, geography, market tier, completeness score)
+- New: `CompanyRelationship` entity
+
+## v0.3 — Ch.3: Global Equipment Taxonomy & Classification
+- New: `TaxonomyNode` self-referencing hierarchy; 18-category list (later revised to 17 in v0.10)
+
+## v0.2 — Ch.2: Research Methodology & Data Collection Framework
+- New: `FieldValue` (per-field provenance), `DataSource`, `ChangeLogEntry`, `ResearchStatus`, `OEMPlatform` entities
+
+## v0.1 — Initial schema
+- Baseline entity/relationship model derived from Chapter 1 (vision/objectives)
