@@ -1,0 +1,20 @@
+source_id,source_title,source_type,tier,organization,url,date_accessed,confidence
+SRC-T001,HP Indigo 100K Digital Press (HP Tech Takes overview),Datasheet,1,HP,https://www.hp.com/us-en/shop/tech-takes/hp-indigo-press-overview,2026-07-05,High
+SRC-T002,HP Disrupts Digital Printing - 100K press release / LEPX,Press_Release,1,HP,https://www.hp.com/us-en/newsroom/press-releases/2020/hp-disrupts-digital-printing-with-worlds-most-productive-press-innovation.html,2026-07-05,High
+SRC-T003,Me & My: HP Indigo 100K (Printweek spec panel),Trade_Press,3,Printweek,https://www.printweek.com/content/features/me-my-hp-indigo-100k,2026-07-05,Medium_High
+SRC-T004,Meet the HP Indigo 100K (Ironmark spec panel),Dealer_Page,2,Ironmark,https://ironmarkusa.com/meet-the-hp-indigo-100k/,2026-07-05,Medium_High
+SRC-T005,Xerox iGen 5 Press - product page,Datasheet,1,Xerox,https://www.xerox.com/en-us/digital-printing/digital-presses/xerox-igen5,2026-07-05,High
+SRC-T006,Xerox iGen5/150 spec panel (PTC reseller),Dealer_Page,2,Printing Technology Canada,https://officeprinterscanada.com/products/xerox-igen5-150-igen-5-high-speed-digital-print-press-production-color-printing,2026-07-05,Medium_High
+SRC-T007,Xerox iGen 5 Press (Fujifilm distributor spec detail),Dealer_Page,2,Fujifilm,https://www.fujifilm.com/us/en/business/graphics-printing/digital-printing/xerox,2026-07-05,Medium_High
+SRC-T008,imagePRESS V1350 datasheet (Canon),Datasheet,1,Canon,https://canon.a.bigcontent.io/v1/static/imagepress-v1350_datasheet_em_final_forweb_c7ddd1cb90be4ac4a66f78fa1e169e5e,2026-07-05,High
+SRC-T009,Canon imagePRESS V1350 - US product page (VCSEL/CV toner),Datasheet,1,Canon USA,https://www.usa.canon.com/business/products/production-printing/imagepress-v1350,2026-07-05,High
+SRC-T010,Canon imagePRESS V1350 - EU specifications (DFE/PDL),Datasheet,1,Canon Europe,https://www.canon-europe.com/business/products/production-printers/digital-presses/imagepress-v1350/specification/,2026-07-05,High
+SRC-T011,AccurioPress C14000/C12000 - KMBS product page,Datasheet,1,Konica Minolta,https://kmbs.konicaminolta.us/products/predecessor-products/production-print-predecessor/predecessor-digital-press/accuriopress-c14000-c12000/,2026-07-05,High
+SRC-T012,AccurioPress C14000 - KM AU spec detail (S.E.A.D. X / Simitri V),Datasheet,1,Konica Minolta,https://www.konicaminolta.com.au/products/production-print/accuriopress-c14000,2026-07-05,High
+SRC-T013,Konica Minolta launches AccurioPress C14000 series (duty cycle),Trade_Press,3,Printing Impressions,https://www.piworld.com/article/konica-minolta-launches-digital-press-series/,2026-07-05,Medium_High
+SRC-T014,RICOH Pro C9500 sheetfed press - EU specifications,Datasheet,1,Ricoh Europe,https://www.ricoh-europe.com/products/production-printers/cut-sheet-printers/pro-c9500/,2026-07-05,High
+SRC-T015,Pro C9500 - Ricoh USA product page (Fiery/135ppm),Datasheet,1,Ricoh USA,https://www.ricoh-usa.com/en/products/pd/equipment/commercial-and-industrial-printing/sheet-fed/pro-c9500-color-sheet-fed-digital-printer,2026-07-05,High
+SRC-T016,RICOH Pro C9500 brochure (speed footnote),Datasheet,1,Ricoh,https://assets.ctfassets.net/j2jqn9lauv41/2u3RuGfCXX7ViGudJe9BJG/339a1b7afe2c16f970ebae4cab64fa81/ProC9500_Brochure_EN.pdf,2026-07-05,High
+SRC-T017,Xerox Versant 4100 Press - product page,Datasheet,1,Xerox,https://www.xerox.com/en-us/digital-printing/digital-presses/xerox-versant-4100,2026-07-05,High
+SRC-T018,Xerox Versant 4100 spec panel (Xerotech reseller),Dealer_Page,2,Xerotech Solutions,https://xerotechsolutions.com/product/xerox-4100/,2026-07-05,Medium_High
+SRC-T019,Xerox Versant 4100 user documentation (media/press facts),Datasheet,1,Xerox,https://download.support.xerox.com/pub/docs/VERSANT_4100/userdocs/any-os/en_GB/Xerox_Versant4100Press_user_doc_en-us.pdf,2026-07-05,High

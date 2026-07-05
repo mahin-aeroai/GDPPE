@@ -1,0 +1,5 @@
+rip_id,rip_name,vendor_manufacturer_id,source_id
+DFE-HP-SMARTSTREAM-PRO,HP SmartStream Production Pro Print Server,MFG-HP,SRC-T003
+DFE-XEROX-FREEFLOW,Xerox FreeFlow Print Server,MFG-XEROX,SRC-T006
+DFE-CANON-PRISMASYNC,Canon PRISMAsync Print Server (Mark 9),MFG-CANON,SRC-T010
+DFE-EFI-FIERY,EFI Fiery Print Server,,SRC-T015

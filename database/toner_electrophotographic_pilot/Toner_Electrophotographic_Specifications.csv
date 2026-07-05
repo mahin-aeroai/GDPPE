@@ -1,0 +1,59 @@
+ueid,field_name,engineering_domain,value,unit,original_value,original_unit,data_type,confidence,source_id,conflicting_value,conflicting_source_id,resolution_note,governance_tier
+GDPPE-TONER-HP-INDIGO-100K,imaging_technology,Print_System,Liquid Electrophotography (LEP/LEPX),,,,Text,High,SRC-T002,,,,Public_Verifiable
+GDPPE-TONER-HP-INDIGO-100K,toner_type,Ink_System,Liquid_Toner,,,,Enumeration,High,SRC-T001,,,,Public_Verifiable
+GDPPE-TONER-HP-INDIGO-100K,toner_chemistry,Ink_System,ElectroInk,,,,Enumeration,High,SRC-T001,,,,Public_Verifiable
+GDPPE-TONER-HP-INDIGO-100K,native_resolution,Print_System,812,dpi,812 dpi 8-bit (virtual 2438 x 2438 dpi),dpi,Text,High,SRC-T003,,,,Public_Verifiable
+GDPPE-TONER-HP-INDIGO-100K,max_speed_sph,Print_System,6000,sheets/hr,,,Integer,High,SRC-T004,4600,SRC-T001,"6000 sph is the headline EPM 3/0 figure (HP press release / Ironmark). HP Tech Takes cites 'up to 4,600 sph in EPM'. 4/0 rated 4500 sph; 4/4 duplex 2250 sph. Figures are mode-dependent, not contradictory.",Public_Verifiable
+GDPPE-TONER-HP-INDIGO-100K,ink_stations,Ink_System,7,count,,,Integer,High,SRC-T001,,,,Public_Verifiable
+GDPPE-TONER-HP-INDIGO-100K,max_sheet_size,Mechanical,750 x 530,mm,,,Text,High,SRC-T003,,,,Public_Verifiable
+GDPPE-TONER-HP-INDIGO-100K,min_sheet_size,Mechanical,510 x 330,mm,,,Text,High,SRC-T003,,,,Public_Verifiable
+GDPPE-TONER-HP-INDIGO-100K,max_paper_weight,Media_Handling,400,gsm,Uncoated 70-400 gsm; Coated 90-400 gsm,gsm,Integer,High,SRC-T003,,,,Public_Verifiable
+GDPPE-TONER-HP-INDIGO-100K,substrate_thickness_max,Media_Handling,450,micron,,,Integer,High,SRC-T003,,,,Public_Verifiable
+GDPPE-TONER-HP-INDIGO-100K,monthly_duty_cycle,Print_System,2000000,sheets/month,,,Integer,Medium_High,SRC-T001,,,HP states 'over 2 million B2 sheets per month'; press release cites 'more than one million B2 duplex sheets per month'. Recorded 2M as the stated max throughput figure.,Public_Verifiable
+GDPPE-TONER-HP-INDIGO-100K,print_server_dfe,Workflow,HP SmartStream Production Pro,,,,Text,High,SRC-T003,,,,Public_Verifiable
+GDPPE-TONER-XEROX-IGEN5,imaging_technology,Print_System,Dry electrophotography (VCSEL ROS),,,,Text,High,SRC-T007,,,,Public_Verifiable
+GDPPE-TONER-XEROX-IGEN5,toner_type,Ink_System,Dry_Toner,,,,Enumeration,High,SRC-T005,,,,Public_Verifiable
+GDPPE-TONER-XEROX-IGEN5,toner_chemistry,Ink_System,EA,,,,Enumeration,High,SRC-T007,,,Xerox EA (Emulsion Aggregation) low-melt toner per Fujifilm/Xerox iGen materials.,Public_Verifiable
+GDPPE-TONER-XEROX-IGEN5,native_resolution,Print_System,2400 x 2400,dpi,,,Text,High,SRC-T006,,,,Public_Verifiable
+GDPPE-TONER-XEROX-IGEN5,max_speed_ppm,Print_System,150,ppm,,,Integer,High,SRC-T006,,,Offered at 90/120/150 ppm; prints at rated speed in 4- or 5-color mode. 150 recorded for flagship variant.,Public_Verifiable
+GDPPE-TONER-XEROX-IGEN5,color_stations,Ink_System,5,count,CMYK + optional 5th station,,Integer,High,SRC-T005,,,4 standard (CMYK) + optional 5th print station for Orange/Green/Blue gamut extension or White/Clear/Fluorescent Yellow.,Public_Verifiable
+GDPPE-TONER-XEROX-IGEN5,max_sheet_length,Mechanical,889,mm,35 in / 889 mm extra-long sheet (XLS) option,mm,Integer,High,SRC-T006,,,,Public_Verifiable
+GDPPE-TONER-XEROX-IGEN5,monthly_duty_cycle,Print_System,1000000,pages/month,Up to 1 million pages/month,pages/month,Integer,Medium_High,SRC-T006,,,,Public_Verifiable
+GDPPE-TONER-XEROX-IGEN5,print_server_dfe,Workflow,Xerox FreeFlow Print Server / EX-P 5 Fiery,,,,Text,High,SRC-T006,,,,Public_Verifiable
+GDPPE-TONER-CANON-IPV1350,imaging_technology,Print_System,Colour Laser Beam Printing (Red VCSEL),,,,Text,High,SRC-T009,,,,Public_Verifiable
+GDPPE-TONER-CANON-IPV1350,toner_type,Ink_System,Dry_Toner,,,,Enumeration,High,SRC-T008,,,,Public_Verifiable
+GDPPE-TONER-CANON-IPV1350,toner_chemistry,Ink_System,CV,,,,Enumeration,High,SRC-T009,,,Canon 'CV Toner' (incl. translucent CV toner); toner set T14 BK/C/M/Y per Canon UK spec.,Public_Verifiable
+GDPPE-TONER-CANON-IPV1350,native_resolution,Print_System,2400 x 2400,dpi,,,Text,High,SRC-T009,1200 x 1200,SRC-T010,"Engine print resolution 2400x2400 dpi (Canon USA/datasheet). PRISMAsync DFE controller resolution listed as 1200x1200/600x600 - controller rasterisation vs engine addressability, not a true conflict.",Public_Verifiable
+GDPPE-TONER-CANON-IPV1350,max_speed_ppm,Print_System,135,ppm,"CL:135ppm, BW:130ppm",ppm,Integer,High,SRC-T008,,,,Public_Verifiable
+GDPPE-TONER-CANON-IPV1350,recommended_monthly_volume,Print_System,1200000,pages/month,,,Integer,High,SRC-T008,,,,Public_Verifiable
+GDPPE-TONER-CANON-IPV1350,monthly_peak_volume,Print_System,2400000,pages/month,,,Integer,High,SRC-T008,,,,Public_Verifiable
+GDPPE-TONER-CANON-IPV1350,max_paper_weight,Media_Handling,400,gsm,,,Integer,Medium_High,SRC-T010,,,,Public_Verifiable
+GDPPE-TONER-CANON-IPV1350,print_server_dfe,Workflow,PRISMAsync (Mark 9),,,,Text,High,SRC-T010,,,,Public_Verifiable
+GDPPE-TONER-KM-C14000,imaging_technology,Print_System,Dry electrophotography (S.E.A.D. X),,,,Text,High,SRC-T012,,,,Public_Verifiable
+GDPPE-TONER-KM-C14000,toner_type,Ink_System,Dry_Toner,,,,Enumeration,High,SRC-T012,,,,Public_Verifiable
+GDPPE-TONER-KM-C14000,toner_chemistry,Ink_System,Simitri_V,,,,Enumeration,High,SRC-T012,,,"Simitri V polymerised toner, low-fusing-temperature 3D hybrid structure.",Public_Verifiable
+GDPPE-TONER-KM-C14000,native_resolution,Print_System,2400 x 3600,dpi,,,Text,Medium_High,SRC-T012,3600 x 2400,SRC-T013,"KM official: 'S.E.A.D. X 2,400 x 3,600 equiv. dpi x 8bit'. Trade/reseller pages variously print it 3600x2400 or (typo) 3600x3400. Recorded per KM AU official ordering; it is an equivalent-dpi figure.",Public_Verifiable
+GDPPE-TONER-KM-C14000,max_speed_ppm,Print_System,140,ppm,,,Integer,High,SRC-T011,,,,Public_Verifiable
+GDPPE-TONER-KM-C14000,monthly_duty_cycle,Print_System,2500000,pages/month,2.5 million A4 prints/month,pages/month,Integer,High,SRC-T013,,,,Public_Verifiable
+GDPPE-TONER-KM-C14000,max_paper_weight,Media_Handling,450,gsm,,,Integer,High,SRC-T012,,,,Public_Verifiable
+GDPPE-TONER-KM-C14000,max_sheet_length,Mechanical,1300,mm,1300 mm simplex; 900 mm auto duplex,mm,Integer,High,SRC-T012,,,,Public_Verifiable
+GDPPE-TONER-KM-C14000,print_server_dfe,Workflow,IQ-501 quality unit; external DFE (Fiery/Creo options),,,,Text,Medium,SRC-T011,,,"IQ-501 is the inline quality optimiser, not the DFE. C14000 supports external DFEs; specific controller not captured on pages fetched this session - Medium confidence.",Public_Verifiable
+GDPPE-TONER-RICOH-C9500,imaging_technology,Print_System,4-drum dry electrostatic transfer (VCSEL),,,,Text,High,SRC-T014,,,,Public_Verifiable
+GDPPE-TONER-RICOH-C9500,toner_type,Ink_System,Dry_Toner,,,,Enumeration,High,SRC-T014,,,,Public_Verifiable
+GDPPE-TONER-RICOH-C9500,toner_chemistry,Ink_System,PxP,,,,Enumeration,High,SRC-T014,,,"PxP polymerised chemical toner, low-melt; oil-less belt fusing.",Public_Verifiable
+GDPPE-TONER-RICOH-C9500,native_resolution,Print_System,2400 x 4800,dpi,Max 2400 x 4800 dpi; Print 1200 x 1200 dpi,dpi,Text,High,SRC-T014,,,Ricoh lists Maximum 2400x4800 dpi and Print 1200x1200 dpi separately; max (imaging) recorded as native_resolution.,Public_Verifiable
+GDPPE-TONER-RICOH-C9500,max_speed_ppm,Print_System,135,ppm,,,Integer,High,SRC-T015,115,SRC-T016,Standard 115 ppm; 135 ppm requires optional Productivity Upgrade Kit (per Ricoh brochure footnote). 135 recorded as max with the conflicting standard value preserved.,Public_Verifiable
+GDPPE-TONER-RICOH-C9500,monthly_duty_cycle,Print_System,2600000,pages/month,,,Integer,High,SRC-T014,,,,Public_Verifiable
+GDPPE-TONER-RICOH-C9500,max_paper_weight,Media_Handling,470,gsm,40-470 g/m2,gsm,Integer,High,SRC-T014,,,,Public_Verifiable
+GDPPE-TONER-RICOH-C9500,max_sheet_length,Mechanical,1260,mm,,,Integer,High,SRC-T014,,,,Public_Verifiable
+GDPPE-TONER-RICOH-C9500,max_paper_capacity,Media_Handling,18100,sheets,,,Integer,High,SRC-T015,,,,Public_Verifiable
+GDPPE-TONER-RICOH-C9500,print_server_dfe,Workflow,Fiery controller (Ricoh Pro C9500),,,,Text,High,SRC-T015,,,,Public_Verifiable
+GDPPE-TONER-XEROX-V4100,imaging_technology,Print_System,Dry electrophotography (Full Width Array),,,,Text,High,SRC-T017,,,,Public_Verifiable
+GDPPE-TONER-XEROX-V4100,toner_type,Ink_System,Dry_Toner,,,,Enumeration,High,SRC-T018,,,,Public_Verifiable
+GDPPE-TONER-XEROX-V4100,toner_chemistry,Ink_System,EA,,EA Low melt Dry ink toner,,Enumeration,High,SRC-T018,,,,Public_Verifiable
+GDPPE-TONER-XEROX-V4100,native_resolution,Print_System,2400 x 2400,dpi,"2400 x 2400 dpi Ultra HD, 10-bit RIP",dpi,Text,High,SRC-T017,,,,Public_Verifiable
+GDPPE-TONER-XEROX-V4100,max_speed_ppm,Print_System,100,ppm,100 ppm (A4),ppm,Integer,High,SRC-T018,,,,Public_Verifiable
+GDPPE-TONER-XEROX-V4100,monthly_duty_cycle,Print_System,1200000,pages/month,"Duty cycle 1.2 Million; AMPV up to 250,000",pages/month,Integer,High,SRC-T018,,,,Public_Verifiable
+GDPPE-TONER-XEROX-V4100,max_paper_weight,Media_Handling,400,gsm,52-400 gsm from bypass/OHCF; 52-256 trays 1-3,gsm,Integer,High,SRC-T018,,,,Public_Verifiable
+GDPPE-TONER-XEROX-V4100,max_sheet_length,Mechanical,1200,mm,up to 47 in / 1.2 m sheets,mm,Integer,High,SRC-T017,,,,Public_Verifiable
+GDPPE-TONER-XEROX-V4100,print_server_dfe,Workflow,Xerox EX-4100 Print Server Powered by Fiery,,,,Text,High,SRC-T017,,,,Public_Verifiable
