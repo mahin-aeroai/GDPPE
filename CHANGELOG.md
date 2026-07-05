@@ -2,6 +2,15 @@
 
 All notable changes to the GDPPE entity schema, tracked chapter by chapter.
 
+## v0.20 — UVCuringType resolved to Arc_Lamp | LED_Lamp
+- **Domain correction**: the original 5-value `UVCuringType` vocabulary (LED, Mercury, Hybrid, UV_Gel, Not_Applicable) conflated three different kinds of error. Resolved to exactly two values: `Arc_Lamp | LED_Lamp`.
+  - `Mercury` folded into `Arc_Lamp` (mercury-vapor is the standard arc-lamp implementation, not a separate mechanism)
+  - `Hybrid` removed — a machine with both lamp types gets two `FieldValue` records, not a third enum value
+  - `UV_Gel` removed — that's an ink chemistry, already correctly present in `InkType`; it was a category error to have duplicated it here
+  - `Not_Applicable` removed from this vocabulary specifically — if UV curing doesn't apply (e.g. latex's thermal drying), the field is simply absent, not populated with a UV-specific sentinel
+- This also resolves the open question flagged during the Latex pilot about whether `UVCuringType` should be renamed to cover non-UV drying too: **no** — it stays narrowly scoped, and `drying_technology` remains its own separate field for thermal-drying categories.
+- Updated all 8 UV Printing pilot machines' `curing_technology_type` from `LED` to `LED_Lamp` — no data was factually wrong, just needed to match the corrected vocabulary spelling.
+
 ## Phase 2 — Second category: Latex Printing (3 machines)
 - Added `database/latex_printing_pilot/`: HP Latex 700W, R530, and 1500 — first cross-category test of the schema (previously only UV Printing had real data)
 - **Schema gap found, not yet fixed**: the `UVCuringType` controlled vocabulary (LED/Mercury/Hybrid/UV_Gel/Not_Applicable) doesn't accommodate latex's thermal drying process. Worked around with a new `drying_technology` free-text field for this pilot; a real fix (renaming to a technology-neutral `CuringDryingType` vocabulary, or splitting UV curing and thermal drying into genuinely separate fields) needs a decision before a third category surfaces the same gap again.

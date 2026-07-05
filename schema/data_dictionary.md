@@ -24,8 +24,6 @@
 | Resolution | dpi | | |
 | Drop size | pL | | |
 | Humidity | %RH | | new in Ch.9 — environmental fields (§9.12) |
-| Noise | dB(A) | | A-weighted, not plain dB |
-| Air flow | L/min | CFM (where appropriate) | new in Ch.9 |
 
 **Approved acronym glossary (Ch.9 §9.15):**
 
@@ -35,7 +33,6 @@
 
 ## FieldValue Structure — Data Types & Unit Conversion
 
-```
 FieldValue {
   field_name
   data_type            // Text | Integer | Decimal | Boolean | Enumeration | Date | URL | Image | Document | Relationship — Ch.9 §9.3
@@ -52,13 +49,13 @@ FieldValue {
 
 **Unit conversion policy (Ch.9 §9.6):** `value` always holds the converted, standardized-unit number; `original_value`/`original_unit` preserve exactly what the source published (e.g. `original_value: 100, original_unit: "in"` alongside `value: 2540` in mm). Never discard the original — that's the traceability the whole `FieldValue` model exists for.
 
+
 ---
 
 ## Missing-Data Sentinel Values
 
-**Reconciling Ch.7 §7.10 and Ch.9 §9.14 into one 6-value vocabulary** (superset, since the two chapters' lists only partially overlap):
+**Missing-data sentinel values — reconciling Ch.7 §7.10 and Ch.9 §9.14 into one 6-value vocabulary** (superset, since the two chapters' lists only partially overlap):
 `Not_Publicly_Available | Under_Verification | Manufacturer_Not_Disclosed | Information_Pending | Not_Applicable | Unknown`
-
 
 ---
 
@@ -70,10 +67,9 @@ FieldValue {
 
 | Vocabulary | Values | Applies to |
 |---|---|---|
-| `UVCuringType` | LED, Mercury, Hybrid, UV_Gel, Not_Applicable | Template 1 (UV Printing) "UV Curing" section |
+| `UVCuringType` | Arc_Lamp \| LED_Lamp | Template 1 (UV Printing) "UV Curing" section — corrected per domain review: only two real curing mechanisms exist. `Mercury` is folded into `Arc_Lamp` (mercury-vapor is the standard arc-lamp implementation, not a separate mechanism); `Hybrid` removed since it described a machine capability (supports both lamp types) rather than a value for one machine's curing type — a machine with both would need two `FieldValue` records, one per installed lamp, not a third enum value; `UV_Gel` removed since it's an ink chemistry (already correctly present in `InkType`), not a curing mechanism, and was a category error in the original vocabulary. `Not_Applicable` removed from this vocabulary specifically — if UV curing doesn't apply to a machine (e.g. a latex printer, which dries via heat instead — see `drying_technology`, a separate field, not a merged vocabulary), the field is simply absent rather than populated with a sentinel value from a UV-specific enum. |
 | `PrintheadTechnology` | Piezoelectric, Thermal_Inkjet, Continuous_Inkjet, MEMS, Electrostatic, Not_Applicable | `Printhead` entity |
 | `InkType` | UV, Latex, Eco_Solvent, Solvent, Dye_Sublimation, Reactive, Acid, Pigment, Ceramic, Textile_Pigment, Water_Based, UV_Gel | `Ink` entity |
 | `MachineConfiguration` | Flatbed, Hybrid, Roll_to_Roll, Single_Pass, Object_Printer, Cylindrical, Conveyor, Static_Table | Template 1 "Machine Platform" section |
 
 A Machine's Section B is not stored as fixed columns — it's `Machine.technical_specs: { [section_name]: { [field_name]: FieldValue } }`, validated at write-time against the `CategoryTemplate` its `primary_category_node_id` resolves to. This is the same "flexible field-set validated against a schema" pattern as `FieldValue`, just applied one level up.
-
