@@ -110,6 +110,30 @@ def check_enum_values(label, files_and_cols, valid_values):
     return True
 
 
+def check_unique(label, path, column):
+    """Fail if `column` has duplicate values in `path`. Catches duplicate
+    primary keys - two rows sharing a UEID pass reference-resolution checks
+    (the value still resolves) but are a real data bug."""
+    from pathlib import Path as _P
+    p = _P(path)
+    if not p.exists():
+        return True
+    seen, dupes = set(), []
+    with open(p, newline='', encoding='utf-8') as f:
+        for row in csv.DictReader(f):
+            v = (row.get(column) or '').strip()
+            if not v:
+                continue
+            if v in seen:
+                dupes.append(v)
+            seen.add(v)
+    if dupes:
+        print(f"  BAD   {label}: duplicate {column} -> " + ", ".join(sorted(set(dupes))))
+        return False
+    print(f"  OK    {label}: {len(seen)} unique {column}, no duplicates")
+    return True
+
+
 GOVERNANCE_TIERS = {'Public_Verifiable', 'Editorial_Content', 'Internal_Research_Note', 'AI_Generated_Explanation', 'Industry_Practice'}
 
 
@@ -123,6 +147,9 @@ def main(category_dir):
     print(f"Validating {p}\n")
 
     # --- Sources ---
+    # --- Primary-key uniqueness: every machine UEID must appear once ---
+    ok &= check_unique("ueid uniqueness", p / 'Equipment_Master_Index.csv', 'ueid')
+
     sources = load_column(p / 'Sources.csv', 'source_id')
     used_sources = set()
     used_sources |= load_column(p / 'Manufacturers.csv', 'source_id')
