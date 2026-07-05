@@ -1,0 +1,178 @@
+/* GDPPE frontend — "spec sheet as instrument"
+   Cool graphite ground; CMYK process colors used only as functional signal
+   (cyan=data/liquid, magenta=conflict, amber=medium confidence). Mono for
+   data, sans for prose. Dark by default with a light-mode fallback. */
+
+:root {
+  --ink-0:#0e1116;      /* page */
+  --ink-1:#151a21;      /* card */
+  --ink-2:#1c232c;      /* raised */
+  --line:#26303b;       /* hairline */
+  --line-2:#33404e;     /* strong */
+  --tx-0:#e7edf3;       /* primary */
+  --tx-1:#9fb0c0;       /* secondary */
+  --tx-2:#63748a;       /* muted */
+  --cyan:#38bec9;       /* data / liquid-toner / accent */
+  --cyan-dim:#164e57;
+  --magenta:#d64d8b;    /* conflict */
+  --magenta-dim:#3d1a2b;
+  --amber:#e0a63c;      /* medium confidence */
+  --green:#3fb27f;      /* high confidence */
+  --gray-dot:#63748a;   /* low / n-a */
+  --radius:10px;
+  --mono:"IBM Plex Mono",ui-monospace,monospace;
+  --sans:"Inter",system-ui,sans-serif;
+  --display:"Space Grotesk","Inter",system-ui,sans-serif;
+  --maxw:1080px;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --ink-0:#f5f7f9; --ink-1:#ffffff; --ink-2:#fbfcfd;
+    --line:#e2e8ee; --line-2:#cdd7e0;
+    --tx-0:#16202b; --tx-1:#455565; --tx-2:#7c8b9c;
+    --cyan:#0f8b98; --cyan-dim:#d6f0f3;
+    --magenta:#b4356e; --magenta-dim:#f7e3ec;
+    --amber:#a9781a; --green:#1c8a5c;
+  }
+}
+
+* { box-sizing:border-box; }
+html,body { margin:0; padding:0; }
+body {
+  background:var(--ink-0); color:var(--tx-0);
+  font-family:var(--sans); font-size:15px; line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+a { color:var(--cyan); text-decoration:none; }
+a:hover { text-decoration:underline; }
+
+/* ---------- top bar ---------- */
+.topbar { position:sticky; top:0; z-index:10; background:var(--ink-0); border-bottom:1px solid var(--line); }
+.topbar-inner { max-width:var(--maxw); margin:0 auto; padding:0 20px; height:60px; display:flex; align-items:center; gap:24px; }
+.brand { display:flex; flex-direction:column; line-height:1.1; }
+.brand-mark { font-family:var(--display); font-weight:600; font-size:20px; letter-spacing:0.02em; color:var(--tx-0); }
+.brand-sub { font-family:var(--mono); font-size:10px; color:var(--tx-2); letter-spacing:0.04em; }
+.topnav { display:flex; gap:4px; margin-left:8px; flex-wrap:wrap; }
+.topnav a { font-family:var(--mono); font-size:12px; color:var(--tx-1); padding:5px 10px; border-radius:6px; border:1px solid transparent; }
+.topnav a:hover { color:var(--tx-0); text-decoration:none; background:var(--ink-1); }
+.topnav a.active { color:var(--cyan); border-color:var(--cyan-dim); background:var(--ink-1); }
+.compare-pill { margin-left:auto; font-family:var(--mono); font-size:12px; color:var(--cyan); background:var(--cyan-dim); border:1px solid var(--cyan); border-radius:20px; padding:5px 13px; cursor:pointer; }
+.compare-pill:hover { filter:brightness(1.12); }
+
+/* ---------- layout ---------- */
+.view { max-width:var(--maxw); margin:0 auto; padding:28px 20px 64px; min-height:60vh; }
+.loading { color:var(--tx-2); font-family:var(--mono); font-size:13px; padding:40px 0; }
+.crumb { font-family:var(--mono); font-size:12px; color:var(--tx-2); margin-bottom:16px; display:flex; align-items:center; gap:7px; flex-wrap:wrap; }
+.crumb a { color:var(--tx-1); }
+.crumb .sep { color:var(--tx-2); }
+
+.page-head { display:flex; justify-content:space-between; align-items:flex-end; gap:20px; padding-bottom:16px; border-bottom:2px solid var(--line-2); margin-bottom:20px; flex-wrap:wrap; }
+.page-title { font-family:var(--display); font-size:26px; font-weight:600; margin:0; line-height:1.1; }
+.page-desc { color:var(--tx-1); font-size:14px; margin-top:4px; }
+
+/* ---------- metric cards ---------- */
+.metrics { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin-bottom:8px; }
+.metric { background:var(--ink-1); border-radius:var(--radius); padding:14px 16px; }
+.metric-label { font-size:12px; color:var(--tx-1); }
+.metric-val { font-family:var(--mono); font-size:26px; font-weight:500; margin-top:2px; }
+.metric-val small { font-size:14px; color:var(--tx-2); font-weight:400; }
+
+/* ---------- category rows (dashboard) ---------- */
+.section-label { display:flex; align-items:center; gap:10px; margin:26px 0 12px; }
+.section-label h2 { font-family:var(--display); font-size:16px; font-weight:500; margin:0; }
+.section-label span { font-size:12px; color:var(--tx-2); }
+.catrow { display:block; padding:14px 16px; border:1px solid var(--line); border-radius:12px; background:var(--ink-1); margin-bottom:10px; cursor:pointer; transition:border-color .12s; }
+.catrow:hover { border-color:var(--line-2); text-decoration:none; }
+.catrow-top { display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:10px; }
+.catrow-name { display:flex; align-items:center; gap:10px; min-width:0; }
+.tag { font-family:var(--mono); font-size:10px; padding:2px 8px; border-radius:5px; white-space:nowrap; }
+.catrow-name b { font-family:var(--display); font-size:15px; font-weight:500; color:var(--tx-0); }
+.catrow-count { font-family:var(--mono); flex-shrink:0; }
+.catrow-count b { font-size:18px; font-weight:500; }
+.catrow-count span { font-size:11px; color:var(--tx-2); margin-left:3px; }
+.bar { height:5px; background:var(--ink-2); border-radius:3px; overflow:hidden; margin-bottom:10px; }
+.bar > i { display:block; height:100%; border-radius:3px; }
+.catrow-stats { display:flex; gap:16px; font-family:var(--mono); font-size:11px; color:var(--tx-1); flex-wrap:wrap; }
+.catrow-stats .push { margin-left:auto; color:var(--tx-2); }
+.chips { display:flex; flex-wrap:wrap; gap:6px; margin-top:6px; }
+.chip { font-size:11px; color:var(--tx-2); padding:3px 9px; border:1px dashed var(--line-2); border-radius:20px; }
+
+/* ---------- machine list (category view) ---------- */
+.mcard { padding:14px 16px; border:1px solid var(--line); border-radius:12px; background:var(--ink-1); margin-bottom:10px; cursor:pointer; transition:border-color .12s; }
+.mcard:hover { border-color:var(--line-2); }
+.mcard-top { display:flex; align-items:flex-start; justify-content:space-between; gap:12px; margin-bottom:12px; }
+.mcard-name { font-family:var(--display); font-size:15px; font-weight:500; }
+.mcard-sub { font-size:12px; color:var(--tx-2); margin-top:2px; }
+.spec-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; }
+.spec-cell .k { font-size:10px; color:var(--tx-2); text-transform:uppercase; letter-spacing:0.04em; }
+.spec-cell .v { font-family:var(--mono); font-size:14px; margin-top:2px; }
+.spec-cell .v .u { font-size:10px; color:var(--tx-2); }
+
+/* ---------- confidence + tier signals ---------- */
+.cdot { width:8px; height:8px; border-radius:50%; display:inline-block; vertical-align:1px; margin-right:5px; }
+.cdot.high { background:var(--green); }
+.cdot.medium { background:var(--amber); }
+.cdot.low, .cdot.na { background:var(--gray-dot); }
+.tierbadge { font-family:var(--mono); font-size:10px; padding:1px 6px; border-radius:4px; background:var(--ink-2); color:var(--tx-1); }
+.tierbadge.t1 { background:var(--cyan-dim); color:var(--cyan); }
+.conflict { display:inline-flex; align-items:center; gap:3px; font-family:var(--mono); font-size:10px; color:var(--magenta); background:var(--magenta-dim); border:1px solid var(--magenta); padding:1px 7px; border-radius:20px; }
+.legend { display:flex; gap:16px; font-family:var(--mono); font-size:11px; color:var(--tx-2); padding:2px 0 14px; flex-wrap:wrap; }
+.legend .push { margin-left:auto; }
+
+/* ---------- machine detail (spec explorer) ---------- */
+.badges { display:flex; gap:6px; flex-shrink:0; flex-wrap:wrap; }
+.badge { font-family:var(--mono); font-size:11px; padding:4px 9px; border-radius:20px; border:1px solid var(--line-2); color:var(--tx-1); background:var(--ink-1); }
+.badge.liquid { background:var(--cyan-dim); color:var(--cyan); border-color:var(--cyan); }
+.specrow { padding:11px 2px; border-bottom:1px solid var(--line); display:flex; align-items:baseline; gap:12px; }
+.specrow .field { flex:0 0 180px; min-width:0; }
+.specrow .field .fn { font-family:var(--mono); font-size:12px; color:var(--tx-1); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.specrow .field .dom { font-size:10px; color:var(--tx-2); text-transform:uppercase; letter-spacing:0.04em; margin-top:1px; }
+.specrow .val { flex:1; min-width:0; }
+.specrow .val .vnum { font-family:var(--mono); font-size:15px; font-weight:500; }
+.specrow .val .vnum .u { font-size:12px; color:var(--tx-2); }
+.specrow .val .note { font-size:11px; color:var(--tx-2); margin-top:4px; line-height:1.5; }
+.specrow .prov { flex:0 0 auto; display:flex; align-items:center; gap:7px; padding-left:6px; }
+.specrow .prov .src { font-family:var(--mono); font-size:10px; color:var(--tx-2); }
+.sourcebox { margin-top:18px; padding:14px 16px; background:var(--ink-1); border:1px solid var(--line); border-radius:12px; }
+.sourcebox h3 { font-family:var(--display); font-size:13px; font-weight:500; margin:0 0 10px; display:flex; align-items:center; gap:7px; }
+.srcline { display:flex; align-items:center; gap:9px; font-size:12px; padding:3px 0; }
+.srcline .sid { font-family:var(--mono); font-size:11px; color:var(--tx-2); flex:0 0 66px; }
+.srcline .org { color:var(--tx-1); font-weight:500; }
+.srcline .stitle { color:var(--tx-2); overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+
+/* ---------- compare ---------- */
+.cmp { display:grid; border:1px solid var(--line); border-radius:12px; overflow:hidden; }
+.cmp-head { background:var(--ink-1); padding:14px; border-bottom:1px solid var(--line); }
+.cmp-head:not(:first-child) { border-left:1px solid var(--line); }
+.cmp-name { font-family:var(--display); font-size:15px; font-weight:500; }
+.cmp-sub { font-size:12px; color:var(--tx-2); margin-top:2px; }
+.cmp-cell { padding:12px 14px; border-bottom:1px solid var(--line); border-left:1px solid var(--line); }
+.cmp-rowlabel { padding:12px; border-bottom:1px solid var(--line); display:flex; flex-direction:column; justify-content:center; }
+.cmp-rowlabel .rl { font-size:12px; color:var(--tx-1); font-weight:500; }
+.cmp-rowlabel .rg { font-size:9px; color:var(--tx-2); text-transform:uppercase; letter-spacing:0.04em; margin-top:2px; }
+.units-warn { display:flex; align-items:flex-start; gap:8px; margin-top:12px; padding:11px 13px; background:var(--magenta-dim); border:1px solid var(--magenta); border-radius:12px; font-size:12px; color:var(--tx-1); line-height:1.5; }
+.badge-units { font-family:var(--mono); font-size:9px; color:var(--amber); background:var(--ink-2); padding:1px 5px; border-radius:4px; }
+
+/* ---------- buttons ---------- */
+.btnrow { margin-top:16px; display:flex; gap:8px; flex-wrap:wrap; }
+.btn { font-family:var(--sans); font-size:13px; color:var(--tx-0); background:var(--ink-1); border:1px solid var(--line-2); border-radius:8px; padding:8px 14px; cursor:pointer; }
+.btn:hover { border-color:var(--cyan); color:var(--cyan); }
+.btn.mini { font-family:var(--mono); font-size:11px; padding:4px 10px; }
+.btn.on { background:var(--cyan-dim); color:var(--cyan); border-color:var(--cyan); }
+
+/* ---------- error ---------- */
+.err { color:var(--magenta); font-family:var(--mono); font-size:13px; padding:20px; border:1px solid var(--magenta); border-radius:12px; background:var(--magenta-dim); }
+
+/* ---------- responsive ---------- */
+@media (max-width:720px) {
+  .metrics { grid-template-columns:repeat(2,1fr); }
+  .spec-grid { grid-template-columns:repeat(2,1fr); }
+  .specrow { flex-wrap:wrap; }
+  .specrow .field { flex-basis:100%; }
+  .specrow .prov { padding-left:0; }
+  .topnav { display:none; }
+}
+
+:focus-visible { outline:2px solid var(--cyan); outline-offset:2px; }
+@media (prefers-reduced-motion:reduce) { * { transition:none !important; } }
