@@ -1,0 +1,19 @@
+source_id,source_title,source_type,tier,organization,url,date_accessed,confidence
+SRC-001,Canon Corporate/Brand Overview,Business_Filing,7,Canon,https://www.canon-europe.com,2026-07-05,N/A
+SRC-001a,Arizona 2300 series - Canon Europe Specifications,Datasheet,1,Canon,https://www.canon-europe.com/business/products/large-format-printers/arizona-2300-series/specifications/,2026-07-05,High
+SRC-001d,NEW ARIZONA 2300 SERIES press release,Business_Filing,1,Canon Middle East Press Centre,https://en.canon-me.com/press-centre/press-releases/2020/09/new-arizona-2300-series-a-real-game-changer/,2026-07-05,High
+SRC-001e,Star product: Canon Arizona 2300,Trade_Press,3,Printweek,https://www.printweek.com/content/review/star-product-canon-arizona-2300,2026-07-05,Medium_High
+SRC-002,EFI Corporate Overview,Business_Filing,7,EFI,https://www.efi.com/,2026-07-05,N/A
+SRC-002b,EFI Pro 30f+ Flatbed LED Printer product page,Datasheet,1,EFI,https://www.efi.com/products/sign-display/flatbed-printers/efi-pro-30f-plus-flatbed-led-printer/,2026-07-05,High
+SRC-002c,EFI Pro 30f Printer - dealer product page,Dealer_Page,2,Vibrant Print Solutions,https://vibrantprintsolutions.com/product/efi-pro-30f-printer/,2026-07-05,Medium_High
+SRC-002d,EFI Pro 30f+ Flatbed LED UV Printer,Dealer_Page,2,Trigon Imaging,https://www.trigonimaging.com/efi-pro-30f-flatbed-led-uv-printer,2026-07-05,Medium_High
+SRC-002e,EFI announce new Pro 30f+ flatbed and Pro 16h+ hybrid printers,Trade_Press,3,Large Format Review,https://www.largeformatreview.com/hardware/wide-format-print/efi-announce-new-pro-30f-flatbed-and-pro-16h-hybrid-printers/,2026-07-05,Medium_High
+SRC-002f,EFI Wide-Format Pro+ Series printers bring new opportunities,Trade_Press,3,Specialist Printing Worldwide,https://www.specialistprinting.com/articles/fr-325-efi-wide-format-pro-series-printers-bring-new-opportunities/,2026-07-05,Medium_High
+SRC-003,Durst Group - Company History,Business_Filing,1,Durst Image Technology US,https://durstus.com/durst-company-overview/history/,2026-07-05,High
+SRC-003d,P5 350/HS - Durst Virtual Showroom Technical Data,Datasheet,1,Durst Group,https://showroom.durst-group.com/P5-350-HS,2026-07-05,High
+SRC-004,Our Story of Innovative Printing,Business_Filing,1,Mimaki USA,https://www.mimakiusa.com/about/,2026-07-05,High
+SRC-004a,Specification | JFX200-2513,Datasheet,1,Mimaki,https://mimaki.com/product/inkjet/i-flat/jfx200-2513/specification.html,2026-07-05,High
+SRC-004b,Mimaki JFX200-2513 EX - Millcraft product page,Dealer_Page,2,Millcraft,https://kwgraphicsdirect.com/mimaki-jfx200-2513-ex/,2026-07-05,Medium_High
+SRC-004c,Mimaki JFX200-2513 EX Flatbed Printer - ITNH,Dealer_Page,2,ITNH,https://itnh.com/store/mimaki-jfx200-2513-flatbed-uv-led-inkjet-printer-492.html,2026-07-05,Medium_High
+SRC-004g,Mimaki JFX200-2513 EX 4x8 UV Flatbed Printer,Dealer_Page,2,GPI Supplies,https://www.gpisupplies.com/products/mimaki-jfx200-2513-ex-uv-flatbed,2026-07-05,Low
+SRC-005,Ricoh corporate website,Business_Filing,7,Ricoh Company Ltd.,https://www.ricoh.com,2026-07-05,N/A

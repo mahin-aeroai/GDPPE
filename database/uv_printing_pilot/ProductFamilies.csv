@@ -1,0 +1,5 @@
+family_id,family_name,manufacturer_id,category_node_id
+FAM-ARIZONA,Arizona,MFG-CANON,CAT-01
+FAM-PRO,Pro Series,MFG-EFI,CAT-01
+FAM-P5,P5,MFG-DURST,CAT-01
+FAM-JFX200,JFX200,MFG-MIMAKI,CAT-01

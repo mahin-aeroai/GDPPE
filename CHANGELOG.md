@@ -2,6 +2,12 @@
 
 All notable changes to the GDPPE entity schema, tracked chapter by chapter.
 
+## Phase 2 kickoff — UV Printing pilot dataset
+- Added `database/uv_printing_pilot/`: 4 real, sourced UV flatbed/hybrid printers (Canon Arizona 2380 GTF, EFI Pro 30f+, Durst P5 350 HS, Mimaki JFX200-2513 EX) — first real-data test of the schema
+- Validated: `CategoryTemplate` field list for UV Printing holds up against real manufacturer specs; conflicting-value model correctly captured two genuine real-world discrepancies (Canon speed rating, Mimaki speed rating) and resolved them per the schema's own tier-priority rules
+- Confirmed discipline: unconfirmed facts (EFI/Mimaki exact launch years, Ricoh founding year) recorded as `Under_Verification`, not guessed
+- Full referential integrity verified across all 7 CSV files (UEIDs, manufacturer_ids, source_ids all cross-check cleanly)
+
 ## v0.19 — Category count decision: CLOSED
 - **Resolved permanently at 17 categories.** Two detailed breakdowns exist (Ch.3: 18, Ch.10: 17) and are identical except for one entry — Ch.3 includes "Industrial Ink Systems" as its own category, Ch.10 folds ink into each printing category's engineering section instead.
 - Decision: 17 categories stands. `Ink` remains a full entity with its own controlled vocabulary (`InkType`) but no standalone `TaxonomyNode`/category code, since ink chemistry is intrinsically category-specific (unlike Printheads/RIP/Media, which are genuinely cross-category shared components).

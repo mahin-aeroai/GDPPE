@@ -1,0 +1,47 @@
+ueid,field_name,engineering_domain,value,unit,original_value,original_unit,data_type,confidence,source_id,conflicting_value,conflicting_source_id,resolution_note,governance_tier
+GDPPE-UV-CANON-ARIZONA-2380-GTF,print_width,Mechanical,1250,mm,125,cm,Decimal,High,SRC-001a,,,,Public_Verifiable
+GDPPE-UV-CANON-ARIZONA-2380-GTF,working_area_length,Mechanical,2500,mm,250,cm,Decimal,High,SRC-001a,,,,Public_Verifiable
+GDPPE-UV-CANON-ARIZONA-2380-GTF,max_media_thickness,Mechanical,50.8,mm,2.0,in,Decimal,High,SRC-001a,,,,Public_Verifiable
+GDPPE-UV-CANON-ARIZONA-2380-GTF,max_speed,Print_System,95,m2/hr,95,m2/hr,Decimal,High,SRC-001d,89,SRC-001e,"Manufacturer press release states 95 m2/hr top speed; Printweek independent review states 11.1-89 m2/hr range depending on quality setting. Kept both per Ch.2 SS2.9 - manufacturer figure is peak/draft speed, Printweek's is likely production-quality range, not a true conflict but different measurement conditions.",Public_Verifiable
+GDPPE-UV-CANON-ARIZONA-2380-GTF,printhead_model,Print_System,VariaDot (Canon proprietary),,,,Text,High,SRC-001a,,,,Public_Verifiable
+GDPPE-UV-CANON-ARIZONA-2380-GTF,printhead_count,Print_System,16,count,two per channel x 8 channels,,Integer,High,SRC-001a,,,,Public_Verifiable
+GDPPE-UV-CANON-ARIZONA-2380-GTF,nozzle_count_per_head,Print_System,636,count,636,count,Integer,High,SRC-001a,,,,Public_Verifiable
+GDPPE-UV-CANON-ARIZONA-2380-GTF,drop_size,Print_System,6-30,pL,6-30,pL,Decimal,High,SRC-001a,,,,Public_Verifiable
+GDPPE-UV-CANON-ARIZONA-2380-GTF,native_resolution,Print_System,1440,dpi,1440,dpi,Integer,High,SRC-001a,,,,Public_Verifiable
+GDPPE-UV-CANON-ARIZONA-2380-GTF,ink_type,Ink_System,UV,,,,Enumeration,High,SRC-001a,,,,Public_Verifiable
+GDPPE-UV-CANON-ARIZONA-2380-GTF,ink_channels,Ink_System,CMYK+WW/V+cm (8ch),,,,Text,High,SRC-001a,,,,Public_Verifiable
+GDPPE-UV-CANON-ARIZONA-2380-GTF,curing_technology_type,UV_Curing,LED,,,,Enumeration,High,SRC-001a,,,,Public_Verifiable
+GDPPE-UV-EFI-PRO-30F-PLUS,print_width,Mechanical,3048,mm,120,in,Decimal,High,SRC-002b,,,,Public_Verifiable
+GDPPE-UV-EFI-PRO-30F-PLUS,working_area_length,Mechanical,2032,mm,80,in,Decimal,High,SRC-002b,,,,Public_Verifiable
+GDPPE-UV-EFI-PRO-30F-PLUS,max_media_thickness,Mechanical,100,mm,4,in,Decimal,High,SRC-002b,,,,Public_Verifiable
+GDPPE-UV-EFI-PRO-30F-PLUS,production_speed,Print_System,54,m2/hr,582,sq ft/hr,Decimal,High,SRC-002c,,,,Public_Verifiable
+GDPPE-UV-EFI-PRO-30F-PLUS,max_speed,Print_System,253,m2/hr,2727,sq ft/hr,Decimal,Medium,SRC-002d,198,SRC-002e,"Trigon Imaging (dealer) states 2727 ft2/hr express mode; an older EFI marketing page (SRC-002e, describing prior-generation Pro 30f without plus) states 2130 ft2/hr. The + model is stated elsewhere to be 25 percent faster than the original, consistent with the higher figure. Kept both, treating the dealer figure for the + model as more relevant to this specific UEID.",Public_Verifiable
+GDPPE-UV-EFI-PRO-30F-PLUS,printhead_model,Print_System,Ricoh Gen6,,,,Text,High,SRC-002f,,,,Public_Verifiable
+GDPPE-UV-EFI-PRO-30F-PLUS,drop_size,Print_System,5,pL,5,pL,Decimal,High,SRC-002b,,,,Public_Verifiable
+GDPPE-UV-EFI-PRO-30F-PLUS,native_resolution,Print_System,1200,dpi,1200 x 1200,dpi,Integer,High,SRC-002b,,,,Public_Verifiable
+GDPPE-UV-EFI-PRO-30F-PLUS,ink_type,Ink_System,UV,,,,Enumeration,High,SRC-002b,,,,Public_Verifiable
+GDPPE-UV-EFI-PRO-30F-PLUS,ink_channels,Ink_System,CMYK + 2ch White (+optional clear),,,,Text,High,SRC-002b,,,,Public_Verifiable
+GDPPE-UV-EFI-PRO-30F-PLUS,curing_technology_type,UV_Curing,LED,,,,Enumeration,High,SRC-002b,,,,Public_Verifiable
+GDPPE-UV-EFI-PRO-30F-PLUS,rip_software,Software,EFI Fiery proServer Core,,,,Text,High,SRC-002c,,,,Public_Verifiable
+GDPPE-UV-DURST-P5-350-HS,print_width,Mechanical,3500,mm,3500,mm,Decimal,High,SRC-003d,,,,Public_Verifiable
+GDPPE-UV-DURST-P5-350-HS,max_board_thickness,Mechanical,70,mm,70,mm,Decimal,High,SRC-003d,,,,Public_Verifiable
+GDPPE-UV-DURST-P5-350-HS,max_roll_width,Mechanical,3470,mm,3470,mm,Decimal,High,SRC-003d,,,,Public_Verifiable
+GDPPE-UV-DURST-P5-350-HS,production_speed,Print_System,708,m2/hr,708,m2/hr,Decimal,High,SRC-003d,,,,Public_Verifiable
+GDPPE-UV-DURST-P5-350-HS,max_speed,Print_System,930,m2/hr,930,m2/hr,Decimal,High,SRC-003d,,,,"HS D4 mode figure; base HS mode is 708 m2/hr, non-HS mode is 325 m2/hr - three distinct operating modes, not a conflict",Public_Verifiable
+GDPPE-UV-DURST-P5-350-HS,printhead_model,Print_System,Ricoh Gen5,,,,Text,High,SRC-003d,,,,Public_Verifiable
+GDPPE-UV-DURST-P5-350-HS,drop_modulation,Print_System,Binary,,,,Enumeration,High,SRC-003d,,,,Public_Verifiable
+GDPPE-UV-DURST-P5-350-HS,native_resolution,Print_System,1200,dpi,1200,dpi,Integer,High,SRC-003d,,,,Public_Verifiable
+GDPPE-UV-DURST-P5-350-HS,ink_type,Ink_System,UV,,,,Enumeration,High,SRC-003d,,,,Public_Verifiable
+GDPPE-UV-DURST-P5-350-HS,ink_channels,Ink_System,CMYK standard; optional LC/LM/White/Varnish/Primer,,,,Text,High,SRC-003d,,,,Public_Verifiable
+GDPPE-UV-DURST-P5-350-HS,curing_technology_type,UV_Curing,LED,,,,Enumeration,High,SRC-003d,,,,Public_Verifiable
+GDPPE-UV-DURST-P5-350-HS,rip_software,Software,Durst Workflow,,,,Text,High,SRC-003d,,,,Public_Verifiable
+GDPPE-UV-MIMAKI-JFX200-2513-EX,print_width,Mechanical,2500,mm,2500,mm,Decimal,High,SRC-004b,,,,Public_Verifiable
+GDPPE-UV-MIMAKI-JFX200-2513-EX,working_area_length,Mechanical,1300,mm,1300,mm,Decimal,High,SRC-004b,,,,Public_Verifiable
+GDPPE-UV-MIMAKI-JFX200-2513-EX,max_media_thickness,Mechanical,50,mm,2.0,in,Decimal,High,SRC-004b,,,,Public_Verifiable
+GDPPE-UV-MIMAKI-JFX200-2513-EX,max_speed,Print_System,35,m2/hr,35 (376.7 sq ft/hr),m2/hr,Decimal,High,SRC-004a,200,SRC-004g,"Official Mimaki spec page and datasheet (Tier 1) both state 35 m2/hr / 376.7 sq ft/hr. One reseller page (GPI Supplies, Tier 2) states 200 m2/hr, a 5.7x discrepancy that is almost certainly a reseller error rather than a genuine alternate figure. Per Ch.17 SS17.10 conflict resolution order, official manufacturer source takes precedence.",Public_Verifiable
+GDPPE-UV-MIMAKI-JFX200-2513-EX,printhead_model,Print_System,On-demand piezo (Mimaki proprietary),,,,Text,High,SRC-004c,,,,Public_Verifiable
+GDPPE-UV-MIMAKI-JFX200-2513-EX,printhead_count,Print_System,3,count,three staggered,,Integer,High,SRC-004c,,,,Public_Verifiable
+GDPPE-UV-MIMAKI-JFX200-2513-EX,ink_type,Ink_System,UV,,,,Enumeration,High,SRC-004c,,,,Public_Verifiable
+GDPPE-UV-MIMAKI-JFX200-2513-EX,ink_channels,Ink_System,CMYK + White + Clear,,,,Text,High,SRC-004c,,,,Public_Verifiable
+GDPPE-UV-MIMAKI-JFX200-2513-EX,curing_technology_type,UV_Curing,LED,,,,Enumeration,High,SRC-004c,,,,Public_Verifiable
+GDPPE-UV-MIMAKI-JFX200-2513-EX,rip_software,Software,RasterLink6 Plus,,,,Text,High,SRC-004c,,,,Public_Verifiable

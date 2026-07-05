@@ -1,0 +1,5 @@
+printhead_id,printhead_name,printhead_manufacturer_id,technology,nozzle_count,drop_size_pl,native_resolution_dpi,source_id
+PH-RICOH-GEN5,Ricoh Gen5,MFG-RICOH,Piezoelectric,Not_Publicly_Available,7,Not_Publicly_Available,SRC-003d
+PH-RICOH-GEN6,Ricoh Gen6,MFG-RICOH,Piezoelectric,Not_Publicly_Available,5,1200,SRC-002f
+PH-CANON-VARIADOT,Canon VariaDot (3rd gen),MFG-CANON,Piezoelectric,636,6-30 variable,1440,SRC-001a
+PH-MIMAKI-ONDEMAND,Mimaki On-Demand Piezo,MFG-MIMAKI,Piezoelectric,Not_Publicly_Available,Not_Publicly_Available,Not_Publicly_Available,SRC-004c
