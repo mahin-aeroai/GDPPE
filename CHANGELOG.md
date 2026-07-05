@@ -2,10 +2,21 @@
 
 All notable changes to the GDPPE entity schema, tracked chapter by chapter.
 
+## Phase 2 — Second category: Latex Printing (3 machines)
+- Added `database/latex_printing_pilot/`: HP Latex 700W, R530, and 1500 — first cross-category test of the schema (previously only UV Printing had real data)
+- **Schema gap found, not yet fixed**: the `UVCuringType` controlled vocabulary (LED/Mercury/Hybrid/UV_Gel/Not_Applicable) doesn't accommodate latex's thermal drying process. Worked around with a new `drying_technology` free-text field for this pilot; a real fix (renaming to a technology-neutral `CuringDryingType` vocabulary, or splitting UV curing and thermal drying into genuinely separate fields) needs a decision before a third category surfaces the same gap again.
+- **Finding**: this category has only one manufacturer (HP) — true latex ink chemistry is HP-proprietary. Confirmed the schema handles single-manufacturer categories without breaking, but cross-manufacturer relationships (`CompanyRelationship`, `COMPETES_WITH`) are largely inapplicable here.
+- `scripts/validate_database.py` caught two real CSV-escaping bugs during construction (unquoted commas inside parenthetical values shifted subsequent columns) — fixed before commit. Separately, two unsourced inferences (`COMPETES_WITH` between two of HP's own products, a fabricated printhead lineage claim) were caught by manual review, not the validator, and removed per `CONTRIBUTING.md`.
+
+## Process formalization — CONTRIBUTING.md and generic validator
+- Added `CONTRIBUTING.md` — formalizes the data-integrity workflow that emerged from the fabrication incident during the pilot widening: source everything in-session, run the validator before every commit, never guess.
+- Generalized `scripts/validate_pilot.py` → `scripts/validate_database.py` — now works against any category folder following the standard file-naming convention, not just `uv_printing_pilot`. Adding a second category (Latex, Digital Cutting, etc.) gets integrity checking for free without touching the script.
+- Updated `README.md` and `database/uv_printing_pilot/README.md` to close out the "validation script is a gap" note, since it's now built and enforced.
+
 ## Phase 2 — UV Printing pilot widened to 8 machines
 - Added 4 more real, sourced UV printers: Agfa Jeti Tauro H3300 LED, swissQprint Nyala 5, Roland VersaUV LEJ-640FT, HandTop HT2512UV — now spans 3 of 5 `Manufacturer.market_tier` values (Global Premium down to Industrial Value)
 - **Caught and removed fabricated content** during this expansion: an invented "Agfa H3300 UHS" variant with a made-up source article, and an entire "Flora Q25" entry for a manufacturer never actually researched. Neither had a corresponding search in the session that produced it. Full details in `database/uv_printing_pilot/README.md`.
-- Added `scripts/validate_pilot.py` — automated referential-integrity checker (source_id, manufacturer_id, family_id, printhead_id, rip_id, UEID cross-references). Explicitly documented as checking structure only, not truth — catching a fabricated-but-internally-consistent record still requires human review against actual search results.
+- Added `scripts/validate_database.py` — automated referential-integrity checker (source_id, manufacturer_id, family_id, printhead_id, rip_id, UEID cross-references). Explicitly documented as checking structure only, not truth — catching a fabricated-but-internally-consistent record still requires human review against actual search results.
 - HandTop HT2512UV is the first pilot machine with no official-manufacturer datasheet found at all — every spec traces to a single Tier-2 dealer page, recorded at Medium confidence throughout. Real test of the tier-priority model at the low end of documentation quality.
 
 ## Phase 2 kickoff — UV Printing pilot dataset (4 machines)

@@ -1,0 +1,3 @@
+printhead_id,printhead_name,printhead_manufacturer_id,technology,nozzle_count,drop_size_pl,native_resolution_dpi,source_id
+PH-HP-836,HP 836,MFG-HP,Thermal_Inkjet,Not_Publicly_Available,Not_Publicly_Available,1200,SRC-L006
+PH-HP-THERMAL-UNSPEC,HP Thermal Inkjet (generation unspecified),MFG-HP,Thermal_Inkjet,Not_Publicly_Available,Not_Publicly_Available,1200,SRC-L010

@@ -6,7 +6,7 @@ Phase 2 proof-of-concept, now widened to 8 real UV flatbed/hybrid printers acros
 
 While widening this pilot, a review pass caught fabricated content that had made it into the working files: an invented "Agfa Jeti Tauro H3300 UHS" variant with a made-up source article and specific numbers that were never actually retrieved from any search, and an entire "Flora Q25" printer entry for a manufacturer that was never researched at all in this session. Both were removed entirely, along with a handful of duplicate rows and mismatched source-ID references that surfaced during the same review.
 
-This is exactly the failure mode the whole schema (FieldValue provenance, source tiers, governance_tier, the "never guess" rule) is designed to catch. It got caught here by manual review before being committed, not by an automated check, which is itself a gap: a real validation script (per the /tests and /scripts folders in the repo root) that checks every source_id in every data file resolves to a real, fetched URL would have caught this automatically. Worth prioritizing before this pilot scales further.
+This is exactly the failure mode the whole schema (FieldValue provenance, source tiers, governance_tier, the "never guess" rule) is designed to catch. It got caught here by manual review before being committed, not by an automated check — which was itself a gap at the time. **That gap is now closed**: `scripts/validate_database.py` (generic across categories, not just UV printing) checks referential integrity — every source_id, manufacturer_id, printhead_id, rip_id, and family_id resolves to a real record — and running it clean is now a required step before every commit touching `database/`, per `CONTRIBUTING.md`. It still can't verify that a source was actually fetched rather than invented, which is why the sourcing discipline in `CONTRIBUTING.md` comes first and the validator second, not the other way around.
 
 Everything in the tables below has been re-verified against the actual search results gathered in this session, with full referential integrity confirmed programmatically across all 8 files (every UEID, manufacturer_id, printhead_id, rip_id, family_id, and source_id cross-checked).
 
@@ -55,4 +55,5 @@ Everything in the tables below has been re-verified against the actual search re
 - Images, documents (only citations to them, not the documents themselves)
 - EditorialReview, TCOProfile, ApplicationSuitability, EngineeringScorecard, KnownIssue/TroubleshootingEntry/MaintenanceRecommendation - deliberately deferred per the schema's own sequencing
 - CategoryTemplate/CategoryCompletenessMatrix as formal data records (still informal via CSV column headers)
-- A real validation script - see the data integrity note above. This is the most important gap to close before widening further.
+- A real validation script - **now resolved**, see `scripts/validate_database.py` and `CONTRIBUTING.md`
+- Extending the validator's checks if a future category needs an entity type this one doesn't (e.g. Tool Modules for a cutting category) — see the "Extending the validator" section of `CONTRIBUTING.md`
