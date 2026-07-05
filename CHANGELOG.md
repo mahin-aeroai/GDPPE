@@ -2,7 +2,13 @@
 
 All notable changes to the GDPPE entity schema, tracked chapter by chapter.
 
-## Phase 2 kickoff — UV Printing pilot dataset
+## Phase 2 — UV Printing pilot widened to 8 machines
+- Added 4 more real, sourced UV printers: Agfa Jeti Tauro H3300 LED, swissQprint Nyala 5, Roland VersaUV LEJ-640FT, HandTop HT2512UV — now spans 3 of 5 `Manufacturer.market_tier` values (Global Premium down to Industrial Value)
+- **Caught and removed fabricated content** during this expansion: an invented "Agfa H3300 UHS" variant with a made-up source article, and an entire "Flora Q25" entry for a manufacturer never actually researched. Neither had a corresponding search in the session that produced it. Full details in `database/uv_printing_pilot/README.md`.
+- Added `scripts/validate_pilot.py` — automated referential-integrity checker (source_id, manufacturer_id, family_id, printhead_id, rip_id, UEID cross-references). Explicitly documented as checking structure only, not truth — catching a fabricated-but-internally-consistent record still requires human review against actual search results.
+- HandTop HT2512UV is the first pilot machine with no official-manufacturer datasheet found at all — every spec traces to a single Tier-2 dealer page, recorded at Medium confidence throughout. Real test of the tier-priority model at the low end of documentation quality.
+
+## Phase 2 kickoff — UV Printing pilot dataset (4 machines)
 - Added `database/uv_printing_pilot/`: 4 real, sourced UV flatbed/hybrid printers (Canon Arizona 2380 GTF, EFI Pro 30f+, Durst P5 350 HS, Mimaki JFX200-2513 EX) — first real-data test of the schema
 - Validated: `CategoryTemplate` field list for UV Printing holds up against real manufacturer specs; conflicting-value model correctly captured two genuine real-world discrepancies (Canon speed rating, Mimaki speed rating) and resolved them per the schema's own tier-priority rules
 - Confirmed discipline: unconfirmed facts (EFI/Mimaki exact launch years, Ricoh founding year) recorded as `Under_Verification`, not guessed

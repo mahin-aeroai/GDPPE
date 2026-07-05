@@ -29,7 +29,7 @@ GDPPE
 - **Specification**: Chapters 1–17 processed (of an apparent ~40-chapter full spec, per the project roadmap memo)
 - **Schema**: v0.19 — 36 core entity types, 5-value governance tier, 9-tier source hierarchy, full edge provenance model
 - **Category count**: resolved at **17** (see `schema/schema.md` header for the full decision record) — `Ink` is a full entity but not a standalone category, since ink chemistry is intrinsically tied to its printing category rather than being a cross-category shared component like Printheads/RIP/Media.
-- **Phase 2 — Master Database**: pilot started. `database/uv_printing_pilot/` has 4 real UV flatbed/hybrid printers (Canon Arizona 2380 GTF, EFI Pro 30f+, Durst P5 350 HS, Mimaki JFX200-2513 EX) fully researched and sourced against the schema — including two genuine real-world conflicting-source cases, resolved per the schema's own tier-priority rules. See `database/uv_printing_pilot/README.md` for what this proved and what's still missing.
+- **Phase 2 — Master Database**: pilot expanded. `database/uv_printing_pilot/` has **8 real UV flatbed/hybrid printers** across 3 market tiers (Canon Arizona 2380 GTF, EFI Pro 30f+, Durst P5 350 HS, Agfa Jeti Tauro H3300 LED, Mimaki JFX200-2513 EX, swissQprint Nyala 5, Roland VersaUV LEJ-640FT, HandTop HT2512UV) — fully sourced, with `scripts/validate_pilot.py` for automated referential-integrity checking. See `database/uv_printing_pilot/README.md` for what this proved, including a data-integrity issue caught and fixed during the expansion.
 
 ## Getting Started
 
