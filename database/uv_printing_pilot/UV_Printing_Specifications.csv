@@ -10,7 +10,7 @@ GDPPE-UV-CANON-ARIZONA-2380-GTF,drop_size,Print_System,6-30,pL,6-30,pL,Decimal,H
 GDPPE-UV-CANON-ARIZONA-2380-GTF,native_resolution,Print_System,1440,dpi,1440,dpi,Integer,High,SRC-001a,,,,Public_Verifiable
 GDPPE-UV-CANON-ARIZONA-2380-GTF,ink_type,Ink_System,UV,,,,Enumeration,High,SRC-001a,,,,Public_Verifiable
 GDPPE-UV-CANON-ARIZONA-2380-GTF,ink_channels,Ink_System,CMYK+WW/V+cm (8ch),,,,Text,High,SRC-001a,,,,Public_Verifiable
-GDPPE-UV-CANON-ARIZONA-2380-GTF,curing_technology_type,UV_Curing,LED_Lamp,,,,Enumeration,High,SRC-001a,,,,Public_Verifiable
+GDPPE-UV-CANON-ARIZONA-2380-GTF,curing_technology_type,UV_Curing,LED,,,,Enumeration,High,SRC-001a,,,,Public_Verifiable
 GDPPE-UV-EFI-PRO-30F-PLUS,print_width,Mechanical,3048,mm,120,in,Decimal,High,SRC-002b,,,,Public_Verifiable
 GDPPE-UV-EFI-PRO-30F-PLUS,working_area_length,Mechanical,2032,mm,80,in,Decimal,High,SRC-002b,,,,Public_Verifiable
 GDPPE-UV-EFI-PRO-30F-PLUS,max_media_thickness,Mechanical,100,mm,4,in,Decimal,High,SRC-002b,,,,Public_Verifiable
@@ -21,19 +21,19 @@ GDPPE-UV-EFI-PRO-30F-PLUS,drop_size,Print_System,5,pL,5,pL,Decimal,High,SRC-002b
 GDPPE-UV-EFI-PRO-30F-PLUS,native_resolution,Print_System,1200,dpi,1200 x 1200,dpi,Integer,High,SRC-002b,,,,Public_Verifiable
 GDPPE-UV-EFI-PRO-30F-PLUS,ink_type,Ink_System,UV,,,,Enumeration,High,SRC-002b,,,,Public_Verifiable
 GDPPE-UV-EFI-PRO-30F-PLUS,ink_channels,Ink_System,CMYK + 2ch White (+optional clear),,,,Text,High,SRC-002b,,,,Public_Verifiable
-GDPPE-UV-EFI-PRO-30F-PLUS,curing_technology_type,UV_Curing,LED_Lamp,,,,Enumeration,High,SRC-002b,,,,Public_Verifiable
+GDPPE-UV-EFI-PRO-30F-PLUS,curing_technology_type,UV_Curing,LED,,,,Enumeration,High,SRC-002b,,,,Public_Verifiable
 GDPPE-UV-EFI-PRO-30F-PLUS,rip_software,Software,EFI Fiery proServer Core,,,,Text,High,SRC-002c,,,,Public_Verifiable
 GDPPE-UV-DURST-P5-350-HS,print_width,Mechanical,3500,mm,3500,mm,Decimal,High,SRC-003d,,,,Public_Verifiable
 GDPPE-UV-DURST-P5-350-HS,max_board_thickness,Mechanical,70,mm,70,mm,Decimal,High,SRC-003d,,,,Public_Verifiable
 GDPPE-UV-DURST-P5-350-HS,max_roll_width,Mechanical,3470,mm,3470,mm,Decimal,High,SRC-003d,,,,Public_Verifiable
 GDPPE-UV-DURST-P5-350-HS,production_speed,Print_System,708,m2/hr,708,m2/hr,Decimal,High,SRC-003d,,,,Public_Verifiable
-GDPPE-UV-DURST-P5-350-HS,max_speed,Print_System,930,m2/hr,930,m2/hr,Decimal,High,SRC-003d,,,"HS D4 mode figure; base HS mode is 708 m2/hr, non-HS mode is 325 m2/hr - three distinct operating modes, not a conflict",Public_Verifiable
+GDPPE-UV-DURST-P5-350-HS,max_speed,Print_System,930,m2/hr,930,m2/hr,Decimal,High,SRC-003d,,,,"HS D4 mode figure; base HS mode is 708 m2/hr, non-HS mode is 325 m2/hr - three distinct operating modes, not a conflict",Public_Verifiable
 GDPPE-UV-DURST-P5-350-HS,printhead_model,Print_System,Ricoh Gen5,,,,Text,High,SRC-003d,,,,Public_Verifiable
 GDPPE-UV-DURST-P5-350-HS,drop_modulation,Print_System,Binary,,,,Enumeration,High,SRC-003d,,,,Public_Verifiable
 GDPPE-UV-DURST-P5-350-HS,native_resolution,Print_System,1200,dpi,1200,dpi,Integer,High,SRC-003d,,,,Public_Verifiable
 GDPPE-UV-DURST-P5-350-HS,ink_type,Ink_System,UV,,,,Enumeration,High,SRC-003d,,,,Public_Verifiable
 GDPPE-UV-DURST-P5-350-HS,ink_channels,Ink_System,CMYK standard; optional LC/LM/White/Varnish/Primer,,,,Text,High,SRC-003d,,,,Public_Verifiable
-GDPPE-UV-DURST-P5-350-HS,curing_technology_type,UV_Curing,LED_Lamp,,,,Enumeration,High,SRC-003d,,,,Public_Verifiable
+GDPPE-UV-DURST-P5-350-HS,curing_technology_type,UV_Curing,LED,,,,Enumeration,High,SRC-003d,,,,Public_Verifiable
 GDPPE-UV-DURST-P5-350-HS,rip_software,Software,Durst Workflow,,,,Text,High,SRC-003d,,,,Public_Verifiable
 GDPPE-UV-MIMAKI-JFX200-2513-EX,print_width,Mechanical,2500,mm,2500,mm,Decimal,High,SRC-004b,,,,Public_Verifiable
 GDPPE-UV-MIMAKI-JFX200-2513-EX,working_area_length,Mechanical,1300,mm,1300,mm,Decimal,High,SRC-004b,,,,Public_Verifiable
@@ -43,7 +43,7 @@ GDPPE-UV-MIMAKI-JFX200-2513-EX,printhead_model,Print_System,On-demand piezo (Mim
 GDPPE-UV-MIMAKI-JFX200-2513-EX,printhead_count,Print_System,3,count,three staggered,,Integer,High,SRC-004c,,,,Public_Verifiable
 GDPPE-UV-MIMAKI-JFX200-2513-EX,ink_type,Ink_System,UV,,,,Enumeration,High,SRC-004c,,,,Public_Verifiable
 GDPPE-UV-MIMAKI-JFX200-2513-EX,ink_channels,Ink_System,CMYK + White + Clear,,,,Text,High,SRC-004c,,,,Public_Verifiable
-GDPPE-UV-MIMAKI-JFX200-2513-EX,curing_technology_type,UV_Curing,LED_Lamp,,,,Enumeration,High,SRC-004c,,,,Public_Verifiable
+GDPPE-UV-MIMAKI-JFX200-2513-EX,curing_technology_type,UV_Curing,LED,,,,Enumeration,High,SRC-004c,,,,Public_Verifiable
 GDPPE-UV-MIMAKI-JFX200-2513-EX,rip_software,Software,RasterLink6 Plus,,,,Text,High,SRC-004c,,,,Public_Verifiable
 GDPPE-UV-SWISSQPRINT-NYALA-5,rip_software,Software,Not_Publicly_Available,,,,Text,N/A,,,,"Not confirmed in sources reviewed this session",Public_Verifiable
 GDPPE-UV-AGFA-JETI-TAURO-H3300-LED,print_width,Mechanical,3300,mm,3.3,m,Decimal,High,SRC-006a,,,,Public_Verifiable
@@ -54,30 +54,30 @@ GDPPE-UV-AGFA-JETI-TAURO-H3300-LED,drop_size,Print_System,7,pL,7,pL,Decimal,High
 GDPPE-UV-AGFA-JETI-TAURO-H3300-LED,native_resolution,Print_System,635 x 1200,dpi,635 x 1200,dpi,Text,High,SRC-006c,,,,Public_Verifiable
 GDPPE-UV-AGFA-JETI-TAURO-H3300-LED,ink_type,Ink_System,UV,,,,Enumeration,High,SRC-006c,,,,Public_Verifiable
 GDPPE-UV-AGFA-JETI-TAURO-H3300-LED,ink_channels,Ink_System,4 or 6 colour (CMYK or CMYKLcLk) + optional white/primer/varnish,,,,Text,High,SRC-006a,,,,Public_Verifiable
-GDPPE-UV-AGFA-JETI-TAURO-H3300-LED,curing_technology_type,UV_Curing,LED_Lamp,,,,Enumeration,High,SRC-006a,,,,Public_Verifiable
+GDPPE-UV-AGFA-JETI-TAURO-H3300-LED,curing_technology_type,UV_Curing,LED,,,,Enumeration,High,SRC-006a,,,,Public_Verifiable
 GDPPE-UV-AGFA-JETI-TAURO-H3300-LED,rip_software,Software,Asanti,,,,Text,High,SRC-006c,,,,Public_Verifiable
 GDPPE-UV-SWISSQPRINT-NYALA-5,print_width,Mechanical,3200,mm,3.2,m,Decimal,High,SRC-007a,,,,Public_Verifiable
 GDPPE-UV-SWISSQPRINT-NYALA-5,working_area_length,Mechanical,2000,mm,2,m,Decimal,High,SRC-007a,,,,Public_Verifiable
-GDPPE-UV-SWISSQPRINT-NYALA-5,max_speed,Print_System,253,m2/hr,253,m2/hr,Decimal,High,SRC-007a,,,"Single-pass mode at 450x1200dpi per SignLink; a 23% increase over the 4th generation's 206 m2/hr, reflecting genuine generational improvement, not a conflict",Public_Verifiable
+GDPPE-UV-SWISSQPRINT-NYALA-5,max_speed,Print_System,253,m2/hr,253,m2/hr,Decimal,High,SRC-007a,,,,"Single-pass mode at 450x1200dpi per SignLink; a 23% increase over the 4th generation's 206 m2/hr, reflecting genuine generational improvement, not a conflict",Public_Verifiable
 GDPPE-UV-SWISSQPRINT-NYALA-5,printhead_model,Print_System,Konica Minolta 1280i,,,,Text,High,SRC-007a,,,,Public_Verifiable
 GDPPE-UV-SWISSQPRINT-NYALA-5,native_resolution,Print_System,1350,dpi,1350,dpi,Integer,High,SRC-007a,,,,Public_Verifiable
 GDPPE-UV-SWISSQPRINT-NYALA-5,ink_type,Ink_System,UV,,,,Enumeration,High,SRC-007a,,,,Public_Verifiable
 GDPPE-UV-SWISSQPRINT-NYALA-5,ink_channels,Ink_System,Up to 10 freely configurable colour channels,,,,Text,High,SRC-007a,,,,Public_Verifiable
-GDPPE-UV-SWISSQPRINT-NYALA-5,curing_technology_type,UV_Curing,LED_Lamp,,,,Enumeration,High,SRC-007a,,,,Public_Verifiable
+GDPPE-UV-SWISSQPRINT-NYALA-5,curing_technology_type,UV_Curing,LED,,,,Enumeration,High,SRC-007a,,,,Public_Verifiable
 GDPPE-UV-ROLAND-VERSAUV-LEJ-640FT,print_width,Mechanical,1625,mm,64,in,Decimal,High,SRC-008a,,,,Public_Verifiable
 GDPPE-UV-ROLAND-VERSAUV-LEJ-640FT,working_area_length,Mechanical,2489,mm,98,in,Decimal,High,SRC-008a,,,,Public_Verifiable
 GDPPE-UV-ROLAND-VERSAUV-LEJ-640FT,max_media_thickness,Mechanical,152,mm,6,in,Decimal,High,SRC-008a,,,,Public_Verifiable
-GDPPE-UV-ROLAND-VERSAUV-LEJ-640FT,production_speed,Print_System,6,m2/hr,40 minutes per full bed (~6 sqm/hr equivalent),m2/hr,Decimal,Medium,SRC-008b,,,"Derived from Printweek's timing description (full bed ~12 sqm in 40 min production mode) rather than a directly published sqm/hr figure - this is a notably smaller-format, lower-throughput machine class than the other four in this pilot",Public_Verifiable
+GDPPE-UV-ROLAND-VERSAUV-LEJ-640FT,production_speed,Print_System,6,m2/hr,40 minutes per full bed (~6 sqm/hr equivalent),m2/hr,Decimal,Medium,SRC-008b,,,,"Derived from Printweek's timing description (full bed ~12 sqm in 40 min production mode) rather than a directly published sqm/hr figure - this is a notably smaller-format, lower-throughput machine class than the other four in this pilot",Public_Verifiable
 GDPPE-UV-ROLAND-VERSAUV-LEJ-640FT,printhead_model,Print_System,Not_Publicly_Available,,,,Text,Pending,,,,"Not specified in any source reviewed for this specific model - genuine documentation gap, not a guess",Public_Verifiable
 GDPPE-UV-ROLAND-VERSAUV-LEJ-640FT,ink_type,Ink_System,UV,,,,Enumeration,High,SRC-008b,,,,Public_Verifiable
 GDPPE-UV-ROLAND-VERSAUV-LEJ-640FT,ink_channels,Ink_System,ECO-UV: CMYK + White + Gloss,,,,Text,High,SRC-008a,,,,Public_Verifiable
-GDPPE-UV-ROLAND-VERSAUV-LEJ-640FT,curing_technology_type,UV_Curing,LED_Lamp,,,,Enumeration,High,SRC-008b,,,,Public_Verifiable
+GDPPE-UV-ROLAND-VERSAUV-LEJ-640FT,curing_technology_type,UV_Curing,LED,,,,Enumeration,High,SRC-008b,,,,Public_Verifiable
 GDPPE-UV-ROLAND-VERSAUV-LEJ-640FT,rip_software,Software,Roland VersaWorks,,,,Text,High,SRC-008b,,,,Public_Verifiable
 GDPPE-UV-HANDTOP-HT2512UV,print_width,Mechanical,2500,mm,2.5,m,Decimal,Medium_High,SRC-009a,,,,Public_Verifiable
-GDPPE-UV-HANDTOP-HT2512UV,working_area_length,Mechanical,1200,mm,1.2,m,Decimal,Medium_High,SRC-009a,,,"Dealer page (Midcomp) states 1.2m; HandTop's own site lists the model as 2.5m x 1.22m - minor rounding difference, not a real conflict",Public_Verifiable
-GDPPE-UV-HANDTOP-HT2512UV,max_speed,Print_System,42,m2/hr,42,m2/hr,Decimal,Medium,SRC-009a,,,"Source is a dealer/reseller page (Tier 2), not an official HandTop datasheet - no official spec sheet with this figure was found",Public_Verifiable
-GDPPE-UV-HANDTOP-HT2512UV,printhead_model,Print_System,Ricoh Gen6,,,,Text,Medium,SRC-009a,,,"Per dealer page; HandTop's broader product range uses Ricoh Gen5, Gen6, or Kyocera heads depending on configuration, and the exact head fitted to a specific unit may vary by order",Public_Verifiable
+GDPPE-UV-HANDTOP-HT2512UV,working_area_length,Mechanical,1200,mm,1.2,m,Decimal,Medium_High,SRC-009a,,,,"Dealer page (Midcomp) states 1.2m; HandTop's own site lists the model as 2.5m x 1.22m - minor rounding difference, not a real conflict",Public_Verifiable
+GDPPE-UV-HANDTOP-HT2512UV,max_speed,Print_System,42,m2/hr,42,m2/hr,Decimal,Medium,SRC-009a,,,,"Source is a dealer/reseller page (Tier 2), not an official HandTop datasheet - no official spec sheet with this figure was found",Public_Verifiable
+GDPPE-UV-HANDTOP-HT2512UV,printhead_model,Print_System,Ricoh Gen6,,,,Text,Medium,SRC-009a,,,,"Per dealer page; HandTop's broader product range uses Ricoh Gen5, Gen6, or Kyocera heads depending on configuration, and the exact head fitted to a specific unit may vary by order",Public_Verifiable
 GDPPE-UV-HANDTOP-HT2512UV,native_resolution,Print_System,1200 x 1200,dpi,1200 x 1200,dpi,Text,Medium,SRC-009a,,,,Public_Verifiable
 GDPPE-UV-HANDTOP-HT2512UV,ink_type,Ink_System,UV,,,,Enumeration,Medium,SRC-009a,,,,Public_Verifiable
 GDPPE-UV-HANDTOP-HT2512UV,ink_channels,Ink_System,CMYK + Lc + Lm + White (+ optional Varnish),,,,Text,Medium,SRC-009a,,,,Public_Verifiable
-GDPPE-UV-HANDTOP-HT2512UV,curing_technology_type,UV_Curing,LED_Lamp,,,,Enumeration,Medium,SRC-009a,,,,Public_Verifiable
+GDPPE-UV-HANDTOP-HT2512UV,curing_technology_type,UV_Curing,LED,,,,Enumeration,Medium,SRC-009a,,,,Public_Verifiable
