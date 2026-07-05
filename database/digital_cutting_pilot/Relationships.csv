@@ -1,0 +1,18 @@
+from_entity,relationship_type,to_entity,source_id,confidence,governance_tier,notes
+GDPPE-CUT-ZUND-G3-M2500,MANUFACTURED_BY,MFG-ZUND,SRC-D004,High,Public_Verifiable,
+GDPPE-CUT-ZUND-G3-M2500,USES_TOOL_MODULE,TM-ZUND-UM,SRC-D007,High,Public_Verifiable,
+GDPPE-CUT-ZUND-G3-M2500,USES_TOOL_MODULE,TM-ZUND-WKT,SRC-D007,High,Public_Verifiable,
+GDPPE-CUT-ZUND-G3-M2500,USES_TOOL_MODULE,TM-ZUND-URT,SRC-D007,High,Public_Verifiable,
+GDPPE-CUT-ZUND-G3-M2500,PART_OF_SERIES,FAM-ZUND-G3,SRC-D004,High,Public_Verifiable,
+GDPPE-CUT-ZUND-G3-M2500,REQUIRES_SOFTWARE,RIP-ZUND-ZCC,SRC-D004,High,Public_Verifiable,
+GDPPE-CUT-ESKO-KONGSBERG-X24,MANUFACTURED_BY,MFG-ESKO,SRC-D008,High,Public_Verifiable,
+GDPPE-CUT-ESKO-KONGSBERG-X24,USES_TOOL_MODULE,TM-ESKO-MULTICUT,SRC-D009,High,Public_Verifiable,
+GDPPE-CUT-ESKO-KONGSBERG-X24,USES_TOOL_MODULE,TM-ESKO-MULTICUT-HP,SRC-D009,Medium,Public_Verifiable,"Multicut-HP confirmed as available/retrofittable for Kongsberg X-series generally per Printweek coverage of the related XN range; not independently confirmed as included specifically on the X24 configuration researched"
+GDPPE-CUT-ESKO-KONGSBERG-X24,PART_OF_SERIES,FAM-KONGSBERG-X,SRC-D008,High,Public_Verifiable,
+GDPPE-CUT-ESKO-KONGSBERG-X24,REQUIRES_SOFTWARE,RIP-ESKO-ICUT,SRC-D010,High,Public_Verifiable,
+GDPPE-CUT-SUMMA-F1612,MANUFACTURED_BY,MFG-SUMMA,SRC-D011,High,Public_Verifiable,
+GDPPE-CUT-SUMMA-F1612,USES_TOOL_MODULE,TM-SUMMA-DRAG,SRC-D013,High,Public_Verifiable,
+GDPPE-CUT-SUMMA-F1612,USES_TOOL_MODULE,TM-SUMMA-TANGENTIAL,SRC-D013,Medium,Public_Verifiable,"Tangential Module confirmed as an available optional module for the F Series generally; not confirmed as included standard on this specific F1612 configuration"
+GDPPE-CUT-SUMMA-F1612,USES_TOOL_MODULE,TM-SUMMA-ROUTER,SRC-D013,Medium,Public_Verifiable,"Router System confirmed as an optional module for the F Series generally; not confirmed as included standard on this specific F1612 configuration"
+GDPPE-CUT-SUMMA-F1612,PART_OF_SERIES,FAM-SUMMA-F,SRC-D011,High,Public_Verifiable,
+GDPPE-CUT-SUMMA-F1612,REQUIRES_SOFTWARE,RIP-SUMMA-GOPRODUCE,SRC-D014,High,Public_Verifiable,

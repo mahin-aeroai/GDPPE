@@ -1,0 +1,9 @@
+tool_module_id,tool_module_name,tool_manufacturer_id,tool_type,source_id
+TM-ZUND-UM,Universal Module (UM),MFG-ZUND,Universal_Multi_Tool,SRC-D007
+TM-ZUND-WKT,Wheel Knife Tool (WKT),MFG-ZUND,Knife,SRC-D007
+TM-ZUND-URT,Universal Router Tool (URT),MFG-ZUND,Router,SRC-D007
+TM-ESKO-MULTICUT,Multi-Cut Head,MFG-ESKO,Universal_Multi_Tool,SRC-D009
+TM-ESKO-MULTICUT-HP,MultiCUT-HP Milling Spindle (3kW water-cooled),MFG-ESKO,Router,SRC-D009
+TM-SUMMA-DRAG,Drag Module,MFG-SUMMA,Knife,SRC-D013
+TM-SUMMA-TANGENTIAL,Tangential Module,MFG-SUMMA,Knife,SRC-D013
+TM-SUMMA-ROUTER,Router System,MFG-SUMMA,Router,SRC-D013

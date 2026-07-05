@@ -16,15 +16,18 @@ the standard file set from schema/database_schema.md's workbook mapping:
     Equipment_Master_Index.csv        (required)
     *_Specifications.csv               (one or more - e.g. UV_Printing_Specifications.csv,
                                         Latex_Specifications.csv, Digital_Cutting_Specifications.csv)
-    Printheads.csv                      (optional)
-    RIP_Software.csv                     (optional)
+    Printheads.csv                      (optional - printing categories)
+    Tool_Modules.csv                     (optional - cutting/finishing categories)
+    RIP_Software.csv                      (optional)
     Relationships.csv                     (required)
 
 Adding a new category folder under database/ that follows this naming
 convention gets integrity checking for free - no changes to this script
-needed. If a category genuinely needs a different file (e.g. a cutting
-category might have Tool_Modules.csv instead of Printheads.csv), extend
-the CHECKS list below rather than writing a category-specific script.
+needed for most categories. Printhead-based categories and tool-module-
+based categories (cutters, routers) are both natively supported; if a
+category needs a genuinely different entity type from either of these,
+extend the CHECKS list below rather than writing a category-specific
+script.
 
 Run from the repo root:
     python3 scripts/validate_database.py database/uv_printing_pilot
@@ -80,6 +83,36 @@ def check(label, used, defined, required=True):
     return True
 
 
+def check_enum_values(label, files_and_cols, valid_values):
+    """Scan the given (file, column) pairs and flag any value not in valid_values.
+    Catches structural corruption where a free-text note lands in an enum column
+    (e.g. a resolution_note shifted into governance_tier because a file had an
+    extra unnamed column) - a class of bug the referential-integrity checks above
+    cannot see, since the corrupted value is still a non-empty string."""
+    bad = []
+    for path, col in files_and_cols:
+        if not path.exists():
+            continue
+        with open(path, newline='', encoding='utf-8') as f:
+            for i, row in enumerate(csv.DictReader(f), start=2):
+                v = (row.get(col) or '').strip()
+                if v and v not in valid_values:
+                    bad.append((path.name, i, v))
+    if bad:
+        print(f"  FAIL  {label}: {len(bad)} value(s) outside the known enum")
+        for fname, line, val in bad[:10]:
+            shown = val if len(val) <= 80 else val[:77] + '...'
+            print(f"          -> {fname}:{line}  '{shown}'")
+        if len(bad) > 10:
+            print(f"          ... and {len(bad) - 10} more")
+        return False
+    print(f"  OK    {label}: all values match the known enum")
+    return True
+
+
+GOVERNANCE_TIERS = {'Public_Verifiable', 'Editorial_Content', 'Internal_Research_Note', 'AI_Generated_Explanation', 'Industry_Practice'}
+
+
 def main(category_dir):
     p = Path(category_dir)
     if not p.exists():
@@ -107,6 +140,7 @@ def main(category_dir):
     used_mfg |= load_column(p / 'Equipment_Master_Index.csv', 'manufacturer_id')
     used_mfg |= load_column(p / 'ProductFamilies.csv', 'manufacturer_id')
     used_mfg |= load_column(p / 'Printheads.csv', 'printhead_manufacturer_id')
+    used_mfg |= load_column(p / 'Tool_Modules.csv', 'tool_manufacturer_id')
     used_mfg |= load_column(p / 'RIP_Software.csv', 'vendor_manufacturer_id')
     ok &= check("manufacturer_id", used_mfg, manufacturers)
 
@@ -122,10 +156,27 @@ def main(category_dir):
     used_ph = load_column_where(p / 'Relationships.csv', 'to_entity', 'relationship_type', 'USES_PRINTHEAD')
     ok &= check("printhead_id (via USES_PRINTHEAD)", used_ph, printheads)
 
+    # --- Tool Modules (cutting/finishing categories) ---
+    tool_modules = load_column(p / 'Tool_Modules.csv', 'tool_module_id')
+    used_tm = load_column_where(p / 'Relationships.csv', 'to_entity', 'relationship_type', 'USES_TOOL_MODULE')
+    ok &= check("tool_module_id (via USES_TOOL_MODULE)", used_tm, tool_modules)
+
     # --- RIP / software ---
     rips = load_column(p / 'RIP_Software.csv', 'rip_id')
     used_rip = load_column_where(p / 'Relationships.csv', 'to_entity', 'relationship_type', 'REQUIRES_SOFTWARE')
     ok &= check("rip_id (via REQUIRES_SOFTWARE)", used_rip, rips)
+
+    # --- Enum sanity: governance_tier ---
+    # Catches a real bug class: a free-text note landing in this column because
+    # a row had one more comma-separated value than the header defines. This is
+    # invisible to the referential-integrity checks above since the corrupted
+    # value is still non-empty - it just isn't one of the five valid values.
+    gt_files = [
+        (p / 'Relationships.csv', 'governance_tier'),
+    ]
+    for sf in spec_files:
+        gt_files.append((sf, 'governance_tier'))
+    ok &= check_enum_values("governance_tier", gt_files, GOVERNANCE_TIERS)
 
     # --- UEIDs: every machine should have specs ---
     ueids_emi = load_column(p / 'Equipment_Master_Index.csv', 'ueid')

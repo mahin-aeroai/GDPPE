@@ -1,0 +1,27 @@
+ueid,field_name,engineering_domain,value,unit,original_value,original_unit,data_type,confidence,source_id,conflicting_value,conflicting_source_id,resolution_note,governance_tier
+GDPPE-CUT-ZUND-G3-M2500,cutting_area_width,Mechanical,1330,mm,1330,mm,Decimal,High,SRC-D004,,,,Public_Verifiable
+GDPPE-CUT-ZUND-G3-M2500,cutting_area_length,Mechanical,2500,mm,2500,mm,Decimal,High,SRC-D004,,,,Public_Verifiable
+GDPPE-CUT-ZUND-G3-M2500,max_speed_xy,Motion,1414,mm/s,1414,mm/s,Decimal,High,SRC-D004,,,,Public_Verifiable
+GDPPE-CUT-ZUND-G3-M2500,max_acceleration_xy,Motion,9.3,m/s2,9.3,m/s2,Decimal,High,SRC-D004,,,,Public_Verifiable
+GDPPE-CUT-ZUND-G3-M2500,max_material_thickness,Mechanical,50,mm,50,mm,Decimal,Medium,SRC-D005,110,SRC-D006,"Base/standard configuration cuts up to 50mm per several marketing sources; one dealer page (Sign-Tronic) states up to 110mm depending on beam height configuration (60 vs 120mm beam). Likely both correct for different configured variants of the same model family, not a true conflict, but the exact configuration boundary isn't consistently documented.",Public_Verifiable
+GDPPE-CUT-ZUND-G3-M2500,tool_positions,Tooling,3,count,up to 3,count,Integer,High,SRC-D004,,,"Modular tool holder accepts up to 3 modules simultaneously",Public_Verifiable
+GDPPE-CUT-ZUND-G3-M2500,vacuum_power,Utilities,1-9,kW,1-9 (optional up to 15),kW,Text,High,SRC-D007,,,"Automatically controlled vacuum, zoned across machine width",Public_Verifiable
+GDPPE-CUT-ZUND-G3-M2500,registration_system,Vision,ICC camera (optional),,,,Text,Medium,SRC-D007,,,"Described as optional accessory, not standard equipment",Public_Verifiable
+GDPPE-CUT-ZUND-G3-M2500,rip_software,Software,Zund Cut Center (ZCC),,,,Text,High,SRC-D004,,,,Public_Verifiable
+GDPPE-CUT-ESKO-KONGSBERG-X24,cutting_area_width,Mechanical,1680,mm,1680,mm,Decimal,High,SRC-D008,,,,Public_Verifiable
+GDPPE-CUT-ESKO-KONGSBERG-X24,cutting_area_length,Mechanical,3200,mm,3200,mm,Decimal,High,SRC-D008,,,,Public_Verifiable
+GDPPE-CUT-ESKO-KONGSBERG-X24,max_material_area,Mechanical,1740 x 3575,mm,1740 x 3575,mm,Text,High,SRC-D009,,,,Public_Verifiable
+GDPPE-CUT-ESKO-KONGSBERG-X24,max_speed,Motion,50,m/min,50,m/min,Decimal,High,SRC-D008,,,,Public_Verifiable
+GDPPE-CUT-ESKO-KONGSBERG-X24,max_acceleration,Motion,5.6,m/s2,5.6,m/s2,Decimal,High,SRC-D008,,,,Public_Verifiable
+GDPPE-CUT-ESKO-KONGSBERG-X24,traverse_clearance,Mechanical,50,mm,50,mm,Decimal,High,SRC-D008,95,SRC-D008,"50mm standard, 95mm optional upgrade - two configurations, not a conflict",Public_Verifiable
+GDPPE-CUT-ESKO-KONGSBERG-X24,tool_positions,Tooling,Multi-cut head (multiple insert positions),,,,Text,Medium,SRC-D009,,,"Described as 'Multi-cut head with positions for various knives, crease tools, and a milling spindle' - exact insert count not consistently specified across sources for this exact model",Public_Verifiable
+GDPPE-CUT-ESKO-KONGSBERG-X24,registration_system,Vision,Camera (standard on higher configurations),,,,Text,Low,SRC-D010,,,"Camera system mentioned for related X-series models (e.g. X20 Light Sign listing) but not independently confirmed as standard for X24 specifically",Public_Verifiable
+GDPPE-CUT-ESKO-KONGSBERG-X24,rip_software,Software,iCut Production Console,,,,Text,High,SRC-D010,,,,Public_Verifiable
+GDPPE-CUT-SUMMA-F1612,cutting_area_width,Mechanical,1600,mm,160,cm,Decimal,High,SRC-D011,,,,Public_Verifiable
+GDPPE-CUT-SUMMA-F1612,cutting_area_length,Mechanical,1200,mm,120,cm,Decimal,High,SRC-D011,,,,Public_Verifiable
+GDPPE-CUT-SUMMA-F1612,max_speed,Motion,1000,mm/s,1000,mm/sec,Decimal,High,SRC-D012,,,,Public_Verifiable
+GDPPE-CUT-SUMMA-F1612,accuracy,Motion,0.05,mm,"0.05% of move or 0.05mm, whichever is greater",mm,Text,High,SRC-D012,,,,Public_Verifiable
+GDPPE-CUT-SUMMA-F1612,tool_positions,Tooling,3,count,up to 3,count,Integer,High,SRC-D013,,,"Multi-module tool holder, single-point fastening for quick changes",Public_Verifiable
+GDPPE-CUT-SUMMA-F1612,vacuum_power,Utilities,1.3,kW,1.3,kW,Decimal,High,SRC-D012,,,,Public_Verifiable
+GDPPE-CUT-SUMMA-F1612,registration_system,Vision,OPOS-CAM optical camera,,,,Text,High,SRC-D013,,,"Standard equipment, not optional",Public_Verifiable
+GDPPE-CUT-SUMMA-F1612,rip_software,Software,GoProduce,,,,Text,High,SRC-D014,,,,Public_Verifiable

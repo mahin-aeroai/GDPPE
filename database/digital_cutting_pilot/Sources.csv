@@ -1,0 +1,15 @@
+source_id,source_title,source_type,tier,organization,url,date_accessed,confidence
+SRC-D001,G3 digital cutter product page,Datasheet,1,Zund,https://www.zund.com/en/cutting-systems/digital-cutting-systems/g3-cutter,2026-07-05,High
+SRC-D002,Esko Kongsberg cutting tables overview,Datasheet,1,Esko,https://www.esko.com/en/products/kongsberg-cutting-tables,2026-07-05,High
+SRC-D003,F Series Flatbed Cutters overview,Datasheet,1,Summa,https://www.summa.com/en-int/cutters/flatbed-cutters/f-series,2026-07-05,High
+SRC-D004,Technical Data G3 Digital Cutter (PDF datasheet),Datasheet,1,Zund,https://www.zund.com/media/391/download/tda_technical%20data%20G3_13_EN-us.pdf,2026-07-05,High
+SRC-D005,Technical Overview G3 Digital Cutter,Datasheet,1,SSE Worldwide (authorized reseller citing Zund specs),https://www.sseworldwide.co.uk/wp-content/uploads/2019/02/Zund-G3_Techn-overview.pdf,2026-07-05,High
+SRC-D006,G3 Digital Cutter product page,Dealer_Page,2,Sign-Tronic,https://sign-tronic.com/zund-digital-cutters/g3-digital-cutter/,2026-07-05,Medium_High
+SRC-D007,G3 Digital Cutter Overview (PDF),Datasheet,1,Zund,https://www.zund.com/media/391/download/Cutter_sales-overview_G3_EN-us.pdf,2026-07-05,High
+SRC-D008,Esko Kongsberg X Cutting Table listing,Dealer_Page,2,AIM Equipment Company,https://aimequipmentcompany.com/products/used-esko-kongsberg-x-cutting-table-ue-110625a/,2026-07-05,Medium_High
+SRC-D009,The Kongsberg X cutting table product page,Datasheet,1,Kongsberg Systems (Esko brand site),https://www.kongsbergsystems.com/en/cutting-systems/tables/kongsberg-x,2026-07-05,High
+SRC-D010,Kongsberg X24 Cutting Table listing,Dealer_Page,2,IGS,https://www.igs-digital.com/product/kongsberg-x24-cutting-table/,2026-07-05,Medium_High
+SRC-D011,SUMMA F1612 cutting table listing,Dealer_Page,2,Graphic Art Mart,https://www.gamart.com.au/summa-f1612-cutting-table-working-area-160cm-x-120cm-summaf1612-42,2026-07-05,Medium_High
+SRC-D012,Summa F Series F1612 Flatbed Cutter Technical Specifications,Dealer_Page,2,OYEA (blade supplier citing Summa specs),https://www.oyea-blades.com/summa-f-series-f1612-flatbed-cutter-technical-specifications/,2026-07-05,Medium_High
+SRC-D013,F1612 Flatbed Cutter product page,Datasheet,1,Summa,https://www.summa.com/en-int/cutters/flatbed-cutters/f-series/f1612,2026-07-05,High
+SRC-D014,Summa F1612 Flatbed Cutter,Dealer_Page,2,Atlantic Graphic Systems,https://atlanticgraphicsystems.com/product/summa-f1612/,2026-07-05,Medium_High

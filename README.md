@@ -32,10 +32,10 @@ GDPPE
 - **Specification**: Chapters 1–17 processed (of an apparent ~40-chapter full spec, per the project roadmap memo)
 - **Schema**: v0.19 — 36 core entity types, 5-value governance tier, 9-tier source hierarchy, full edge provenance model
 - **Category count**: resolved at **17** (see `schema/schema.md` header for the full decision record) — `Ink` is a full entity but not a standalone category, since ink chemistry is intrinsically tied to its printing category rather than being a cross-category shared component like Printheads/RIP/Media.
-- **Phase 2 — Master Database**: two categories now populated.
+- **Phase 2 — Master Database**: three categories now populated.
   - `database/uv_printing_pilot/` — **8 real UV flatbed/hybrid printers** across 3 market tiers (Canon, EFI, Durst, Agfa, Mimaki, swissQprint, Roland DG, HandTop)
-  - `database/latex_printing_pilot/` — **3 real HP Latex printers**, the first test of the schema across categories. Found a real gap (`UVCuringType` vocabulary doesn't fit non-UV curing technologies — flagged, not yet fixed) and a genuinely different manufacturer landscape (single-vendor category vs. UV printing's 8 competitors)
-  - `scripts/validate_database.py` (generic across categories) confirmed clean on both, and caught two real CSV-escaping bugs during the Latex pilot's construction
+  - `database/latex_printing_pilot/` — **3 real HP Latex printers**, first cross-category test. Led to a real schema fix (`UVCuringType` simplified to `Arc_Lamp | LED_Lamp`, resolved via direct domain correction)
+  - `database/digital_cutting_pilot/` — **3 real digital cutters** (Zünd, Esko Kongsberg, Summa), the first category with no printhead/ink/curing at all. Uses `Tool_Modules.csv` instead of `Printheads.csv` — the exact case `CONTRIBUTING.md` anticipated. This also forced `scripts/validate_database.py` to gain real new capability: native Tool Module support, plus enum-value validation that retroactively found 7 pre-existing CSV bugs in the other two categories
   - See each category's `README.md` for full findings, and `CONTRIBUTING.md` for the workflow rules that govern adding more.
 
 ## Getting Started

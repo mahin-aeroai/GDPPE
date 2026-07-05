@@ -2,6 +2,13 @@
 
 All notable changes to the GDPPE entity schema, tracked chapter by chapter.
 
+## Phase 2 — Third category: Digital Cutting (3 machines), validator extended
+- Added `database/digital_cutting_pilot/`: Zünd G3 M-2500, Esko Kongsberg X24, Summa F1612 — first category with no printhead, ink, or curing/drying step at all
+- **`scripts/validate_database.py` extended with native `Tool_Modules.csv`/`USES_TOOL_MODULE` support** — exactly the scenario `CONTRIBUTING.md` anticipated when it said "if a category needs Tool_Modules.csv instead of Printheads.csv, extend the checks rather than writing a separate script." Fixed a real bug in the process: the manufacturer-reference check for tool modules was originally added after the manufacturer check had already run, making it dead code — caught and corrected before commit.
+- **`scripts/validate_database.py` gained enum validation** (`check_enum_values()`), checking `governance_tier` against its 5 known values, not just referential integrity. Added after a CSV-escaping bug (extra comma shifting a resolution note into the `governance_tier` column) went undetected by referential checks alone.
+- **Running the upgraded validator against the two already-committed categories retroactively found 7 more instances of the same bug** — 6 in `uv_printing_pilot`, 1 in `latex_printing_pilot` — sitting in already-pushed data since earlier sessions. All 7 fixed in this pass. This is the clearest demonstration yet of why improving the validator has value beyond the data it's built alongside.
+- **Finding**: cutting speed is reported in linear units (mm/s, m/min) across all 3 sources, not area-per-hour like the printing categories — a genuine structural difference already anticipated by `schema/data_dictionary.md`'s unit table, requiring no schema change, just the expected field-naming choice (`max_speed_xy` vs. printing's generic `max_speed`).
+
 ## v0.20 — UVCuringType resolved to Arc_Lamp | LED_Lamp
 - **Domain correction**: the original 5-value `UVCuringType` vocabulary (LED, Mercury, Hybrid, UV_Gel, Not_Applicable) conflated three different kinds of error. Resolved to exactly two values: `Arc_Lamp | LED_Lamp`.
   - `Mercury` folded into `Arc_Lamp` (mercury-vapor is the standard arc-lamp implementation, not a separate mechanism)

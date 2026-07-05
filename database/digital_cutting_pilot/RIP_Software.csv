@@ -1,0 +1,4 @@
+rip_id,rip_name,vendor_manufacturer_id,source_id
+RIP-ZUND-ZCC,Zund Cut Center (ZCC),MFG-ZUND,SRC-D004
+RIP-ESKO-ICUT,iCut Production Console,MFG-ESKO,SRC-D010
+RIP-SUMMA-GOPRODUCE,GoProduce,MFG-SUMMA,SRC-D014

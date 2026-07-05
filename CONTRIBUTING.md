@@ -31,9 +31,11 @@ It **cannot** tell you whether a `source_id` points to a URL that was ever actua
 
 ## Extending the validator for a new category
 
-The validator is generic — it works on any folder under `database/` that follows the standard file-naming convention from `schema/database_schema.md` (`Sources.csv`, `Manufacturers.csv`, `Equipment_Master_Index.csv`, `<Category>_Specifications.csv`, `Relationships.csv`, plus optional `Printheads.csv`/`RIP_Software.csv`). Adding a new category folder that follows this convention gets integrity checking for free.
+The validator is generic — it works on any folder under `database/` that follows the standard file-naming convention from `schema/database_schema.md` (`Sources.csv`, `Manufacturers.csv`, `Equipment_Master_Index.csv`, `<Category>_Specifications.csv`, `Relationships.csv`, plus optional `Printheads.csv`/`Tool_Modules.csv`/`RIP_Software.csv`). Adding a new category folder that follows this convention gets integrity checking for free.
 
-If a category genuinely needs an entity type the others don't (e.g. `Tool_Modules.csv` for a cutting category instead of `Printheads.csv`), extend the checks in `scripts/validate_database.py` rather than writing a separate category-specific script — the whole point of generalizing it was to have one validator, not one per category.
+`Printheads.csv`/`USES_PRINTHEAD` and `Tool_Modules.csv`/`USES_TOOL_MODULE` are both natively supported as of the Digital Cutting pilot — the first real case of a category needing a different core entity than printing categories. If a category needs a genuinely different entity type from either of these, extend the checks in `scripts/validate_database.py` rather than writing a separate category-specific script — the whole point of generalizing it was to have one validator, not one per category.
+
+The validator also checks enum-typed columns (currently `governance_tier`) against their known valid values, not just referential integrity. This was added after a CSV-escaping bug (an extra comma shifting a resolution note into the `governance_tier` column) went undetected by the referential checks alone — the corrupted value was still a non-empty string, just not one of the five valid tiers. Running this check against already-committed data retroactively found the same bug in 7 rows across two earlier categories, none caught at the time they were written. If you add a new enum-typed field to the schema, consider whether it's worth adding to this check too.
 
 ## Governance context
 
