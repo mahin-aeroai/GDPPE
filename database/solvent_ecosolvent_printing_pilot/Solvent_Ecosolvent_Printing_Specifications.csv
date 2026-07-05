@@ -1,0 +1,64 @@
+ueid,field_name,engineering_domain,value,unit,original_value,original_unit,data_type,confidence,source_id,conflicting_value,conflicting_source_id,resolution_note,governance_tier
+GDPPE-SOLV-EPSON-S80600,solvent_type,Ink_System,True_Solvent,,,,Enumeration,High,SRC-S001,,,,Public_Verifiable
+GDPPE-SOLV-EPSON-S80600,solvent_ink_line,Ink_System,UltraChrome_GS3,,,,Enumeration,High,SRC-S001,,,,Public_Verifiable
+GDPPE-SOLV-EPSON-S80600,ink_type,Ink_System,Solvent,,UltraChrome GS3 solvent-based,,Enumeration,High,SRC-S001,,,,Public_Verifiable
+GDPPE-SOLV-EPSON-S80600,print_technology,Print_System,Drop-on-demand piezo (Dual-Array PrecisionCore TFP),,,,Text,High,SRC-S001,,,,Public_Verifiable
+GDPPE-SOLV-EPSON-S80600,ink_channels,Ink_System,9,colours,CMYKLcLmLkOR + optional White or Metallic Silver,,Integer,High,SRC-S001,,,Up to 9-colour incl. Red; White/Metallic Silver optional (11-cartridge bay). Base recorded as 9.,Public_Verifiable
+GDPPE-SOLV-EPSON-S80600,native_resolution,Print_System,1440 x 1440,dpi,,,Text,High,SRC-S002,,,,Public_Verifiable
+GDPPE-SOLV-EPSON-S80600,max_speed,Print_System,1020,sqft/hr,"Draft up to 1,020 sqft/hr; vinyl 195 sqft/hr",sqft/hr,Decimal,High,SRC-S003,195,SRC-S001,"1020 sqft/hr is draft/banner max (Equipment Zone); Epson US cites 195 sqft/hr adhesive-vinyl production quality. Mode-dependent, not a conflict.",Public_Verifiable
+GDPPE-SOLV-EPSON-S80600,print_width,Mechanical,1615,mm,63.6 in max printable,in,Integer,High,SRC-S001,,,,Public_Verifiable
+GDPPE-SOLV-EPSON-S80600,min_droplet_size,Print_System,4.2,picolitre,,,Decimal,High,SRC-S003,,,,Public_Verifiable
+GDPPE-SOLV-EPSON-S80600,ink_cartridge_size,Ink_System,700,ml,,,Integer,High,SRC-S001,,,,Public_Verifiable
+GDPPE-SOLV-EPSON-S80600,ventilation_requirement,Environmental,None required,,no special ventilation or air purification is required,,Text,High,SRC-S001,,,Epson explicitly markets this vs legacy true-solvent machines that DID need extraction. First category where ventilation is a real sourced spec.,Public_Verifiable
+GDPPE-SOLV-EPSON-S80600,rip_software,Workflow,ONYX GamaPrint Pro,,,,Text,High,SRC-S003,,,,Public_Verifiable
+GDPPE-SOLV-EPSON-S80600,weight,Mechanical,615,lb,,,Integer,Medium_High,SRC-S001,635,SRC-S004,"S80600 listed 615 lb (Epson US); the sibling S60600 is 635 lb. Values are per-model, not conflicting.",Public_Verifiable
+GDPPE-SOLV-EPSON-S60600,solvent_type,Ink_System,True_Solvent,,,,Enumeration,High,SRC-S004,,,,Public_Verifiable
+GDPPE-SOLV-EPSON-S60600,solvent_ink_line,Ink_System,UltraChrome_GS3,,,,Enumeration,High,SRC-S004,,,,Public_Verifiable
+GDPPE-SOLV-EPSON-S60600,ink_type,Ink_System,Solvent,,,,Enumeration,High,SRC-S004,,,,Public_Verifiable
+GDPPE-SOLV-EPSON-S60600,print_technology,Print_System,Drop-on-demand piezo (Dual-Array PrecisionCore TFP),,,,Text,High,SRC-S004,,,,Public_Verifiable
+GDPPE-SOLV-EPSON-S60600,ink_channels,Ink_System,4,colours,Dual CMYK (4-colour),,Integer,High,SRC-S004,,,,Public_Verifiable
+GDPPE-SOLV-EPSON-S60600,native_resolution,Print_System,1440 x 1440,dpi,,,Text,High,SRC-S006,,,,Public_Verifiable
+GDPPE-SOLV-EPSON-S60600,max_speed,Print_System,550,sqft/hr,Banner 550 sqft/hr; adhesive vinyl 310 sqft/hr,sqft/hr,Integer,High,SRC-S004,310,SRC-S006,"550 sqft/hr banner production (Epson US); vinyl quoted 310 (Epson) vs 190 (Argecy, different quality mode). Mode-dependent.",Public_Verifiable
+GDPPE-SOLV-EPSON-S60600,print_width,Mechanical,1615,mm,63.6 in max printable,in,Integer,High,SRC-S004,,,,Public_Verifiable
+GDPPE-SOLV-EPSON-S60600,min_droplet_size,Print_System,4.2,picolitre,,,Decimal,High,SRC-S006,,,,Public_Verifiable
+GDPPE-SOLV-EPSON-S60600,ink_cartridge_size,Ink_System,700,ml,,,Integer,High,SRC-S004,,,,Public_Verifiable
+GDPPE-SOLV-EPSON-S60600,ventilation_requirement,Environmental,None required,,no special ventilation or air purification is required,,Text,High,SRC-S004,,,,Public_Verifiable
+GDPPE-SOLV-EPSON-S60600,rip_software,Workflow,ONYX GamaPrint Pro,,,,Text,High,SRC-S004,,,,Public_Verifiable
+GDPPE-SOLV-EPSON-S60600,weight,Mechanical,635,lb,,,Integer,High,SRC-S004,,,,Public_Verifiable
+GDPPE-SOLV-ROLAND-RF640,solvent_type,Ink_System,Eco_Solvent,,,,Enumeration,High,SRC-S009,,,,Public_Verifiable
+GDPPE-SOLV-ROLAND-RF640,solvent_ink_line,Ink_System,Eco_Sol_MAX_2,,,,Enumeration,High,SRC-S009,,,,Public_Verifiable
+GDPPE-SOLV-ROLAND-RF640,ink_type,Ink_System,Eco_Solvent,,,,Enumeration,High,SRC-S009,,,,Public_Verifiable
+GDPPE-SOLV-ROLAND-RF640,print_technology,Print_System,"Piezo (gold-plated mirrored CMYKKYMC head, variable dot)",,,,Text,High,SRC-S008,,,,Public_Verifiable
+GDPPE-SOLV-ROLAND-RF640,ink_channels,Ink_System,4,colours,4-colour CMYK; 8-colour option (adds Lk/Or/Gr etc.),,Integer,High,SRC-S008,8,SRC-S008,Sold as 4-colour CMYK (mirrored 8-channel head) or an 8-colour gamut config. Base CMYK recorded; 8-colour preserved.,Public_Verifiable
+GDPPE-SOLV-ROLAND-RF640,native_resolution,Print_System,1440 x 720,dpi,,,Text,High,SRC-S008,,,,Public_Verifiable
+GDPPE-SOLV-ROLAND-RF640,max_speed,Print_System,48.4,sqm/hr,Up to 521 sqft/hr,sqft/hr,Decimal,High,SRC-S008,,,521 sqft/hr converted to 48.4 sqm/hr for cross-category comparability; original imperial figure preserved.,Public_Verifiable
+GDPPE-SOLV-ROLAND-RF640,print_width,Mechanical,1615,mm,,,Integer,High,SRC-S008,,,,Public_Verifiable
+GDPPE-SOLV-ROLAND-RF640,max_media_width,Mechanical,1625,mm,,,Integer,High,SRC-S008,,,,Public_Verifiable
+GDPPE-SOLV-ROLAND-RF640,ink_cartridge_size,Ink_System,440,ml,,,Integer,High,SRC-S008,,,,Public_Verifiable
+GDPPE-SOLV-ROLAND-RF640,greenguard_certified,Environmental,GREENGUARD Gold,,,,Text,High,SRC-S009,,,"Eco-Sol MAX 2 ink is GREENGUARD Gold (UL 2818) certified - indoor-safe, the eco-solvent selling point vs true solvent.",Public_Verifiable
+GDPPE-SOLV-ROLAND-RF640,rip_software,Workflow,Roland VersaWorks,,,,Text,High,SRC-S009,,,,Public_Verifiable
+GDPPE-SOLV-MIMAKI-CJV300-160P,solvent_type,Ink_System,Mild_Solvent,,SS21 mild solvent,,Enumeration,High,SRC-S011,,,Mimaki markets SS21 as 'eco & mild solvent'; SS21 meets Nordic Swan Ecolabel chemical requirements. Classed Mild_Solvent (between eco and true).,Public_Verifiable
+GDPPE-SOLV-MIMAKI-CJV300-160P,solvent_ink_line,Ink_System,SS21,,,,Enumeration,High,SRC-S010,,,,Public_Verifiable
+GDPPE-SOLV-MIMAKI-CJV300-160P,ink_type,Ink_System,Eco_Solvent,,,,Enumeration,High,SRC-S011,,,InkType enum has no Mild_Solvent value; recorded as Eco_Solvent (nearest existing enum) with solvent_type=Mild_Solvent carrying the finer distinction.,Public_Verifiable
+GDPPE-SOLV-MIMAKI-CJV300-160P,print_technology,Print_System,"Two on-demand piezo heads, staggered",,,,Text,High,SRC-S012,,,,Public_Verifiable
+GDPPE-SOLV-MIMAKI-CJV300-160P,integrated_cutter,Finishing,Yes,,Print + cut in one unit; ID Cut function,,Boolean,High,SRC-S010,,,"Print+cut hybrid - shares the finishing/cutting axis with the Digital Cutting category. Cut speed 30 cm/sec, max 450 g pressure.",Public_Verifiable
+GDPPE-SOLV-MIMAKI-CJV300-160P,ink_channels,Ink_System,10,colours,Up to 10 eco-solvent colours incl. Silver/White/Orange/Light Black,,Integer,High,SRC-S012,,,,Public_Verifiable
+GDPPE-SOLV-MIMAKI-CJV300-160P,native_resolution,Print_System,1440,dpi,360/540/720/1080/1440 dpi,dpi,Text,High,SRC-S010,,,,Public_Verifiable
+GDPPE-SOLV-MIMAKI-CJV300-160P,max_speed,Print_System,105.9,sqm/hr,"Up to 1,139.9 SqFt/Hr (105.9 m2/h) 4-colour mode",sqm/hr,Decimal,High,SRC-S010,,,,Public_Verifiable
+GDPPE-SOLV-MIMAKI-CJV300-160P,print_width,Mechanical,1610,mm,63.4 in,in,Integer,High,SRC-S012,,,,Public_Verifiable
+GDPPE-SOLV-MIMAKI-CJV300-160P,max_media_width,Mechanical,1620,mm,,,Integer,High,SRC-S012,,,,Public_Verifiable
+GDPPE-SOLV-MIMAKI-CJV300-160P,max_media_thickness,Media_Handling,1.0,mm,,,Decimal,High,SRC-S012,,,,Public_Verifiable
+GDPPE-SOLV-MIMAKI-CJV300-160P,greenguard_certified,Environmental,GREENGUARD Gold,,,,Text,High,SRC-S011,,,,Public_Verifiable
+GDPPE-SOLV-MIMAKI-CJV300-160P,rip_software,Workflow,Mimaki RasterLink6 Plus,,,,Text,High,SRC-S011,,,,Public_Verifiable
+GDPPE-SOLV-MUTOH-VJ1638X,solvent_type,Ink_System,Mild_Solvent,,Eco-Ultra / Universal Mild Solvent (UMS),,Enumeration,High,SRC-S014,,,"Mutoh Eco-Ultra / UMS = 'Universal Mild Solvent', 4th-gen mild-solvent ink. Sources state inks do not spread harmful VOCs.",Public_Verifiable
+GDPPE-SOLV-MUTOH-VJ1638X,solvent_ink_line,Ink_System,Eco_Ultra_UMS,,,,Enumeration,High,SRC-S014,,,,Public_Verifiable
+GDPPE-SOLV-MUTOH-VJ1638X,ink_type,Ink_System,Eco_Solvent,,,,Enumeration,High,SRC-S014,,,InkType enum lacks Mild_Solvent; recorded Eco_Solvent with solvent_type=Mild_Solvent for the finer class.,Public_Verifiable
+GDPPE-SOLV-MUTOH-VJ1638X,print_technology,Print_System,"Drop-on-demand piezo, two staggered heads (180 nozzles x 8 rows each)",,,,Text,High,SRC-S014,,,,Public_Verifiable
+GDPPE-SOLV-MUTOH-VJ1638X,ink_channels,Ink_System,4,colours,CMYK x2 (dual) or CMYK+LcLmLk 7-colour,,Integer,High,SRC-S013,7,SRC-S013,Dual CMYK standard; 7-colour (adds Lc/Lm/Lk) option. Base CMYK recorded; 7 preserved.,Public_Verifiable
+GDPPE-SOLV-MUTOH-VJ1638X,native_resolution,Print_System,1440,dpi,1440/1080/720/540/360 dpi,dpi,Text,High,SRC-S014,,,,Public_Verifiable
+GDPPE-SOLV-MUTOH-VJ1638X,max_speed,Print_System,48.0,sqm/hr,Billboard 48.0 m2/h (360x720); Speed Production 36.0 m2/h,sqm/hr,Decimal,High,SRC-S014,36.0,SRC-S014,"48.0 sqm/hr billboard mode; 36.0 speed-production; ~10-15 quality modes. Mode-dependent, both preserved.",Public_Verifiable
+GDPPE-SOLV-MUTOH-VJ1638X,print_width,Mechanical,1615,mm,,,Integer,High,SRC-S014,,,,Public_Verifiable
+GDPPE-SOLV-MUTOH-VJ1638X,max_media_width,Mechanical,1625,mm,,,Integer,High,SRC-S014,,,,Public_Verifiable
+GDPPE-SOLV-MUTOH-VJ1638X,drop_size_range,Print_System,3.5 to 35,picolitre,3.5 to 35 pl variable,pl,Text,High,SRC-S014,,,,Public_Verifiable
+GDPPE-SOLV-MUTOH-VJ1638X,ink_cartridge_size,Ink_System,440,ml,220 / 440 / 1000 ml options,ml,Integer,High,SRC-S014,,,,Public_Verifiable
+GDPPE-SOLV-MUTOH-VJ1638X,outdoor_durability,Performance,3,years,up to 3 years outdoor without lamination,years,Integer,High,SRC-S014,,,,Public_Verifiable

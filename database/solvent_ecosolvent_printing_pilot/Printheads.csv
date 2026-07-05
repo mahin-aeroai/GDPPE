@@ -1,0 +1,5 @@
+printhead_id,printhead_name,printhead_manufacturer_id,technology,nozzle_count,drop_size_pl,native_resolution_dpi,source_id
+PH-EPSON-PRECISIONCORE-TFP,Epson Dual-Array PrecisionCore TFP,MFG-EPSON,Piezoelectric,,4.2,1440,SRC-S001
+PH-MUTOH-STAGGERED-1440,Mutoh staggered dual piezo (180x8),MFG-MUTOH,Piezoelectric,1440,3.5-35,1440,SRC-S014
+PH-MIMAKI-STAGGERED-PIEZO,Mimaki staggered dual on-demand piezo,MFG-MIMAKI,Piezoelectric,,,1440,SRC-S012
+PH-ROLAND-MIRRORED-DX,Roland gold-plated mirrored CMYKKYMC piezo,MFG-ROLAND,Piezoelectric,,,1440,SRC-S008

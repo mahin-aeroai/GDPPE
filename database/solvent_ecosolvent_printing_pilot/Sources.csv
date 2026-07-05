@@ -1,0 +1,17 @@
+source_id,source_title,source_type,tier,organization,url,date_accessed,confidence
+SRC-S001,Epson SureColor S80600 Printer - Epson US product page,Datasheet,1,Epson,https://epson.com/For-Work/Printers/Large-Format/Epson-SureColor-S80600-Printer/p/SCS80600PE,2026-07-06,High
+SRC-S002,"SureColor S80600 Specification Sheet (Epson PDF, CPD-50273)",Datasheet,1,Epson,https://mediaserver.goepson.com/ImConvServlet/imconv/b74d8b67ce1814466df49afbbade99d320136462/original,2026-07-06,High
+SRC-S003,Epson SureColor S80600 spec panel (Equipment Zone),Dealer_Page,2,Equipment Zone,https://www.equipmentzone.com/epson/s80600/,2026-07-06,Medium_High
+SRC-S004,Epson SureColor S60600 Printer - Epson US product page,Datasheet,1,Epson,https://epson.com/For-Work/Printers/Large-Format/Epson-SureColor-S60600-Printer/p/SCS60600PE,2026-07-06,High
+SRC-S005,"SureColor S60600 Specification Sheet (Epson PDF, CPD-51203)",Datasheet,1,Epson,https://mediaserver.goepson.com/ImConvServlet/imconv/a2345aa56b47088755832aa05b605f6c8dff745b/original,2026-07-06,High
+SRC-S006,Epson SureColor S60600 spec panel (Argecy),Dealer_Page,2,Argecy,https://www.argecy.com/epson-surecolor-s60600-printer,2026-07-06,Medium_High
+SRC-S007,VersaEXPRESS RF-640 Specifications - Roland DG EU,Datasheet,1,Roland DG,https://www.rolanddg.eu/en/products/printers/versaexpress-rf-640/specifications,2026-07-06,High
+SRC-S008,VersaEXPRESS RF-640 8-Color spec panel (Digitally Driven),Dealer_Page,2,Digitally Driven,https://digitally-driven.com/products/versaexpress-rf-640-8-color-large-format-printer,2026-07-06,Medium_High
+SRC-S009,Roland VersaEXPRESS RF-640 features (Roland DGA support),Datasheet,1,Roland DGA,https://www.rolanddga.com/support/products/print-printcut/versaexpress-rf-640-64-eco-solvent-inkjet-printer,2026-07-06,Medium_High
+SRC-S010,CJV300 Plus Series Specification - Mimaki (global),Datasheet,1,Mimaki,https://mimaki.com/product/inkjet/print-cut/cjv300_plus-series/specification.html,2026-07-06,High
+SRC-S011,CJV300-160plus - Mimaki Europe product page,Datasheet,1,Mimaki Europe,https://www.mimakieurope.com/products/cjv-series/cjv300-160plus/,2026-07-06,High
+SRC-S012,Mimaki CJV300 Plus Series full specs (All Print Head),Dealer_Page,2,All Print Heads,https://www.allprintheads.com/products/mimaki-cjv300-plus-series,2026-07-06,Medium_High
+SRC-S013,VJ-1638X Specifications - Mutoh Industries (Japan),Datasheet,1,Mutoh,https://www.mutoh.co.jp/en/products/vj/eco/vj_1638x.html,2026-07-06,High
+SRC-S014,Mutoh ValueJet 1638X full specs (PlotterPro),Dealer_Page,2,PlotterPro,https://plotterpro.com/shop/mutoh-valuejet-1638x-64-printer/,2026-07-06,Medium_High
+SRC-S015,Mutoh ValueJet 1638X performance table (Gaolito reseller),Reseller_Page,3,Gaolito,https://www.gaolitoprinter.com/products/Mutoh-ValueJET-1638X-64%22-Large-Format-Color-Printers.html,2026-07-06,Medium
+SRC-S016,Large-format solvent printer market overview (Accio industry summary),Trade_Press,3,Accio,https://www.accio.com/plp/512i-konica-printer,2026-07-06,Low_Medium
