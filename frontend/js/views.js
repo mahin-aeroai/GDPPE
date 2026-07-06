@@ -45,7 +45,8 @@
     latex: [[["print_width"], "width"], [["max_speed"], "speed"], [["native_resolution"], "resolution"], [["ink_type", "drying_technology"], "ink"]],
     cut:   [[["cutting_area_width", "max_material_area"], "cut width"], [["max_speed", "max_speed_xy"], "speed"], [["accuracy"], "accuracy"], [["tool_positions"], "tools"]],
     solvent: [[["print_width"], "width"], [["max_speed"], "speed"], [["solvent_type"], "solvent"], [["native_resolution"], "resolution"]],
-    dyesub: [[["sublimation_workflow"], "workflow"], [["max_speed", "throughput"], "speed"], [["native_resolution"], "resolution"], [["ink_channels"], "colours"]]
+    dyesub: [[["sublimation_workflow"], "workflow"], [["max_speed", "throughput"], "speed"], [["native_resolution"], "resolution"], [["ink_channels"], "colours"]],
+    aqueous: [[["ink_subtype"], "ink"], [["print_architecture"], "architecture"], [["native_resolution"], "resolution"], [["ink_channels"], "colours"]]
   };
 
   function fmtVal(sp) {

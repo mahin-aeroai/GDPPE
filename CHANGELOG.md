@@ -2,6 +2,15 @@
 
 All notable changes to the GDPPE entity schema, tracked chapter by chapter.
 
+## Phase 2 — Aqueous / Inkjet Printing pilot (5 machines)
+- Added `database/aqueous_inkjet_printing_pilot/`: 5 real, sourced water-based inkjet printers — Canon PIXMA PRO-200, Canon imagePROGRAF PRO-4600, HP DesignJet T950, Epson SureColor P8570DL, HP PageWide XL 5200. Every spec value traces to a source fetched in the same session (15 sources).
+- **Two new controlled vocabularies** (aqueous is broad enough to need two axes): `InkSubtype` (Dye | Pigment) and `PrintArchitecture` (Scanning_Carriage | Pagewide_Array). Both registered in `schema/data_dictionary.md`.
+- **Both axes deliberately exercised, not uniform:** the PIXMA PRO-200 is the sole dye machine (honest to the market — dye is now a desktop-photo niche), and the PageWide XL 5200 is the sole pagewide-array machine (the rest scan). Minority values included on purpose so the columns aren't single-valued.
+- **Spans all three application segments** — photo/fine-art, CAD/technical, production — which are rated in different units (per-print seconds, sqft/hr, A1 pages/hr, pages/min). Captured faithfully rather than forced to a common metric; the T950 also carries a CAD-only line-accuracy spec (±0.1%).
+- Mode-dependent production speeds preserved as conflicts (Epson 361 vs 1571 sqft/hr; PageWide 20 pages/min vs ~400 m2/hr).
+- Frontend updated to show the 7th category.
+- Full referential integrity + uniqueness verified via `scripts/validate_database.py`.
+
 ## Phase 2 — Dye-Sublimation Printing pilot (5 machines)
 - Added `database/dye_sublimation_printing_pilot/`: 5 real, sourced dye-sublimation printers — Sawgrass SG1000 (desktop), Epson SureColor F6470, Roland Texart RT-640, Mimaki TS330-1600, Durst P5 TEX iSUB. Every spec value traces to a source fetched in the same session (15 sources).
 - **Scoped by the sublimation workflow, not ink** — dye-sub ink is uniformly disperse-dye, so the distinguishing axis is how the image reaches the fabric.

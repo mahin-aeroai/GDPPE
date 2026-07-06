@@ -37,7 +37,11 @@
     { id: "dyesub", code: "DyeSub", name: "Dye-Sublimation",
       dir: "dye_sublimation_printing_pilot", specs: "Dye_Sublimation_Printing_Specifications.csv",
       blurb: "Textile & soft-signage · transfer, direct & dual workflow",
-      accent: ["#2b1430", "#d977c8"] }
+      accent: ["#2b1430", "#d977c8"] },
+    { id: "aqueous", code: "Aqueous", name: "Aqueous / Inkjet",
+      dir: "aqueous_inkjet_printing_pilot", specs: "Aqueous_Inkjet_Printing_Specifications.csv",
+      blurb: "Water-based photo, CAD & production · dye and pigment",
+      accent: ["#0f2a2e", "#43c9c0"] }
   ];
 
   // path from frontend/index.html up to the database folder

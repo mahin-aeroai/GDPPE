@@ -1,0 +1,54 @@
+ueid,field_name,engineering_domain,value,unit,original_value,original_unit,data_type,confidence,source_id,conflicting_value,conflicting_source_id,resolution_note,governance_tier
+GDPPE-AQ-CANON-PIXMA-PRO200,ink_subtype,Ink_System,Dye,,8-colour dye-based ink system (ChromaLife 100+),,Enumeration,High,SRC-A001,,,The dye anchor of the pilot. Dye now survives mainly in desktop photo printers; large-format has shifted to pigment.,Public_Verifiable
+GDPPE-AQ-CANON-PIXMA-PRO200,print_architecture,Print_System,Scanning_Carriage,,,,Enumeration,High,SRC-A001,,,,Public_Verifiable
+GDPPE-AQ-CANON-PIXMA-PRO200,ink_type,Ink_System,Aqueous,,dye-based (water-based),,Enumeration,High,SRC-A001,,,,Public_Verifiable
+GDPPE-AQ-CANON-PIXMA-PRO200,print_technology,Print_System,Canon FINE thermal inkjet,,,,Text,High,SRC-A002,,,,Public_Verifiable
+GDPPE-AQ-CANON-PIXMA-PRO200,ink_channels,Ink_System,8,colours,8-colour: BK/C/M/Y/PC/PM/GY/LGY (CLI-65),,Integer,High,SRC-A001,,,,Public_Verifiable
+GDPPE-AQ-CANON-PIXMA-PRO200,native_resolution,Print_System,4800 x 2400,dpi,,,Text,High,SRC-A001,,,,Public_Verifiable
+GDPPE-AQ-CANON-PIXMA-PRO200,nozzle_count,Print_System,6144,count,"6,144 total (768 x 8)",,Integer,High,SRC-A001,,,,Public_Verifiable
+GDPPE-AQ-CANON-PIXMA-PRO200,max_media_size,Media_Handling,13 x 19,in,Borderless to 13x19 (A3+); custom to 13x39,in,Text,High,SRC-A002,,,,Public_Verifiable
+GDPPE-AQ-CANON-PIXMA-PRO200,print_speed_detail,Print_System,90,sec/A3+,bordered A3+ approx 90s; 8x10 in 53s,sec,Integer,High,SRC-A002,,,"Desktop unit rated per-print, not m2/hr. Bordered A3+ colour ~90 sec.",Public_Verifiable
+GDPPE-AQ-CANON-PIXMA-PRO200,connectivity,Workflow,"Wi-Fi, Ethernet, USB",,,,Text,High,SRC-A001,,,,Public_Verifiable
+GDPPE-AQ-CANON-IPF-PRO4600,ink_subtype,Ink_System,Pigment,,LUCIA PRO II pigment,,Enumeration,High,SRC-A004,,,,Public_Verifiable
+GDPPE-AQ-CANON-IPF-PRO4600,print_architecture,Print_System,Scanning_Carriage,,,,Enumeration,High,SRC-A004,,,,Public_Verifiable
+GDPPE-AQ-CANON-IPF-PRO4600,ink_type,Ink_System,Aqueous,,aqueous pigment (LUCIA PRO II),,Enumeration,High,SRC-A004,,,,Public_Verifiable
+GDPPE-AQ-CANON-IPF-PRO4600,print_technology,Print_System,Canon PF-10 thermal inkjet (12-channel),,,,Text,High,SRC-A005,,,,Public_Verifiable
+GDPPE-AQ-CANON-IPF-PRO4600,ink_channels,Ink_System,12,colours,11 colours + Chroma Optimizer (12 channels: MBK PBK C M Y Gy PC PM PGy R B + CO),,Integer,High,SRC-A004,,,,Public_Verifiable
+GDPPE-AQ-CANON-IPF-PRO4600,native_resolution,Print_System,2400 x 1200,dpi,,,Text,High,SRC-A006,,,,Public_Verifiable
+GDPPE-AQ-CANON-IPF-PRO4600,nozzle_count,Print_System,18432,count,"18,432 nozzles (1536 x 12)",,Integer,High,SRC-A006,,,,Public_Verifiable
+GDPPE-AQ-CANON-IPF-PRO4600,print_width,Mechanical,1118,mm,44 in,in,Integer,High,SRC-A006,,,,Public_Verifiable
+GDPPE-AQ-CANON-IPF-PRO4600,min_droplet_size,Print_System,4,picolitre,,,Integer,High,SRC-A006,,,,Public_Verifiable
+GDPPE-AQ-CANON-IPF-PRO4600,max_speed,Print_System,8.4,sqm/hr,up to 90 sqft/hr,sqft/hr,Decimal,Medium_High,SRC-A005,,,"90 sqft/hr (~8.4 m2/h) per dealer guide; Canon rates an A1 in ~32s. Fine-art speed, not production.",Public_Verifiable
+GDPPE-AQ-CANON-IPF-PRO4600,ink_cartridge_size,Ink_System,160,ml,160 / 330 / 700 ml options (PFI-3x00 / PFI-2x00 MBK),ml,Integer,High,SRC-A004,,,,Public_Verifiable
+GDPPE-AQ-CANON-IPF-PRO4600,certification,Environmental,EPEAT Gold,,,,Text,High,SRC-A004,,,,Public_Verifiable
+GDPPE-AQ-HP-DESIGNJET-T950,ink_subtype,Ink_System,Pigment,,HP Flex Tech pigment-based ink,,Enumeration,High,SRC-A009,,,HP moved DesignJet to pigment for durability - dealer notes pigment prints last longer than dye for wall displays.,Public_Verifiable
+GDPPE-AQ-HP-DESIGNJET-T950,print_architecture,Print_System,Scanning_Carriage,,,,Enumeration,High,SRC-A007,,,,Public_Verifiable
+GDPPE-AQ-HP-DESIGNJET-T950,ink_type,Ink_System,Aqueous,,water-based pigment (HP Flex Tech),,Enumeration,High,SRC-A009,,,,Public_Verifiable
+GDPPE-AQ-HP-DESIGNJET-T950,print_technology,Print_System,HP Thermal Inkjet,,,,Text,High,SRC-A007,,,,Public_Verifiable
+GDPPE-AQ-HP-DESIGNJET-T950,ink_channels,Ink_System,4,colours,4-colour pigment CMYmK (matte black + colour),,Integer,High,SRC-A008,,,,Public_Verifiable
+GDPPE-AQ-HP-DESIGNJET-T950,native_resolution,Print_System,2400 x 1200,dpi,up to 2400 x 1200 optimized dpi,dpi,Text,High,SRC-A008,,,,Public_Verifiable
+GDPPE-AQ-HP-DESIGNJET-T950,max_speed,Print_System,120,A1/hr,up to 120 A1/D pages per hour (21 sec/A1),A1/hr,Integer,High,SRC-A007,,,"CAD/technical machines rated in A1 or D pages/hour, not m2/hr - different metric than the graphics machines.",Public_Verifiable
+GDPPE-AQ-HP-DESIGNJET-T950,print_width,Mechanical,914,mm,36 in,in,Integer,High,SRC-A007,,,,Public_Verifiable
+GDPPE-AQ-HP-DESIGNJET-T950,line_accuracy,Performance,0.1,percent,+/-0.1% line accuracy,%,Decimal,High,SRC-A008,,,Line accuracy is a CAD-specific spec that photo/graphics machines don't quote - reflects the technical-drawing application.,Public_Verifiable
+GDPPE-AQ-HP-DESIGNJET-T950,ink_cartridge_size,Ink_System,130,ml,130 or 300 ml (HP Flex Tech),ml,Integer,High,SRC-A009,,,,Public_Verifiable
+GDPPE-AQ-EPSON-P8570DL,ink_subtype,Ink_System,Pigment,,UltraChrome PRO6 aqueous pigment,,Enumeration,High,SRC-A010,,,,Public_Verifiable
+GDPPE-AQ-EPSON-P8570DL,print_architecture,Print_System,Scanning_Carriage,,,,Enumeration,High,SRC-A010,,,,Public_Verifiable
+GDPPE-AQ-EPSON-P8570DL,ink_type,Ink_System,Aqueous,,aqueous-based pigment (UltraChrome PRO6),,Enumeration,High,SRC-A011,,,,Public_Verifiable
+GDPPE-AQ-EPSON-P8570DL,print_technology,Print_System,Epson PrecisionCore MicroTFP piezo (2.64in),,,,Text,High,SRC-A011,,,,Public_Verifiable
+GDPPE-AQ-EPSON-P8570DL,ink_channels,Ink_System,6,colours,6-colour: C M Y PK MK GY,,Integer,High,SRC-A010,,,,Public_Verifiable
+GDPPE-AQ-EPSON-P8570DL,native_resolution,Print_System,2400 x 1200,dpi,,,Text,High,SRC-A011,,,,Public_Verifiable
+GDPPE-AQ-EPSON-P8570DL,nozzle_count,Print_System,9600,count,"9,600 nozzles (400 x 24 channels)",,Integer,High,SRC-A011,,,,Public_Verifiable
+GDPPE-AQ-EPSON-P8570DL,max_speed,Print_System,361,sqft/hr,"Glossy photo: Speed 361, Quality 195, Max Quality 89 sqft/hr; Plain: Draft 1571, Speed 1200 sqft/hr",sqft/hr,Integer,High,SRC-A011,1571,SRC-A011,361 sqft/hr photo speed mode; up to 1571 sqft/hr plain-paper draft. Highly mode-dependent - both preserved.,Public_Verifiable
+GDPPE-AQ-EPSON-P8570DL,min_droplet_size,Print_System,3.5,picolitre,,,Decimal,High,SRC-A011,,,,Public_Verifiable
+GDPPE-AQ-EPSON-P8570DL,print_width,Mechanical,1118,mm,44 in,in,Integer,High,SRC-A010,,,,Public_Verifiable
+GDPPE-AQ-EPSON-P8570DL,rip_software,Workflow,Adobe Embedded Print Engine,,,,Text,High,SRC-A010,,,,Public_Verifiable
+GDPPE-AQ-HP-PAGEWIDE-XL5200,ink_subtype,Ink_System,Pigment,,HP PageWide XL water-based pigment,,Enumeration,High,SRC-A013,,,,Public_Verifiable
+GDPPE-AQ-HP-PAGEWIDE-XL5200,print_architecture,Print_System,Pagewide_Array,,single-pass pagewide array (stationary full-width printhead),,Enumeration,High,SRC-A013,,,The only non-scanning machine in the pilot. A stationary printhead spans the full page width; media moves under it in one pass - fundamentally different from the scanning carriage of the other four.,Public_Verifiable
+GDPPE-AQ-HP-PAGEWIDE-XL5200,ink_type,Ink_System,Aqueous,,water-based HP pigment,,Enumeration,High,SRC-A013,,,,Public_Verifiable
+GDPPE-AQ-HP-PAGEWIDE-XL5200,print_technology,Print_System,HP PageWide thermal inkjet (single-pass array),,,,Text,High,SRC-A013,,,,Public_Verifiable
+GDPPE-AQ-HP-PAGEWIDE-XL5200,ink_channels,Ink_System,4,colours,CMYK water-based pigment,,Integer,High,SRC-A014,,,,Public_Verifiable
+GDPPE-AQ-HP-PAGEWIDE-XL5200,native_resolution,Print_System,1200,dpi,1200 dpi,dpi,Text,High,SRC-A014,,,,Public_Verifiable
+GDPPE-AQ-HP-PAGEWIDE-XL5200,max_speed,Print_System,20,D-A1 pages/min,up to 20 D/A1 pages per minute; Pro up to ~400 m2/hr,pages/min,Integer,High,SRC-A013,400,SRC-A015,20 D/A1 pages/min (single-pass); the Pro variant is quoted up to ~400 m2/hr. Vastly faster than the scanning machines - the point of pagewide.,Public_Verifiable
+GDPPE-AQ-HP-PAGEWIDE-XL5200,print_width,Mechanical,1016,mm,40 in,in,Integer,High,SRC-A013,,,,Public_Verifiable
+GDPPE-AQ-HP-PAGEWIDE-XL5200,ink_cartridge_size,Ink_System,1000,ml,1 L HP Eco-Carton cartridges,ml,Integer,High,SRC-A013,,,,Public_Verifiable
+GDPPE-AQ-HP-PAGEWIDE-XL5200,media_rolls,Media_Handling,4,count,up to 4 media rolls with auto-switching,,Integer,High,SRC-A013,,,,Public_Verifiable

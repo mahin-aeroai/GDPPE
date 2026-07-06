@@ -1,0 +1,16 @@
+source_id,source_title,source_type,tier,organization,url,date_accessed,confidence
+SRC-A001,PIXMA PRO-200 Specifications - Canon (CNA),Datasheet,1,Canon,https://en.canon-cna.com/printers/pixma-pro-200/specifications/,2026-07-06,High
+SRC-A002,Canon PIXMA PRO-200 / PRO-200S product page - Canon USA,Datasheet,1,Canon USA,https://www.usa.canon.com/shop/p/pixma-pro-200,2026-07-06,High
+SRC-A003,Canon PIXMA PRO-200 spec panel (The Pixel Connection),Dealer_Page,2,The Pixel Connection,https://thepixelconnection.com/products/canon-pixma-pro-200-wireless-professional-inkjet-photo-printer,2026-07-06,Medium_High
+SRC-A004,imagePROGRAF PRO-4600 Specifications - Canon Europe,Datasheet,1,Canon Europe,https://www.canon-europe.com/business/products/large-format-printers/imageprograf-pro-4600/specifications/,2026-07-06,High
+SRC-A005,Canon imagePROGRAF PRO-4600 full spec table (Trigon Imaging),Dealer_Page,2,Trigon Imaging,https://www.trigonimaging.com/canon-imageprograf-pro-4600,2026-07-06,Medium_High
+SRC-A006,Canon imagePROGRAF PRO-4600 spec panel (B&H Photo),Dealer_Page,2,B&H Photo,https://www.bhphotovideo.com/c/product/1810790-REG/canon_6407c002aa_imageprograf_pro_4600.html,2026-07-06,Medium_High
+SRC-A007,HP DesignJet T850/T870/T950 Plotter Printer Series - HP US,Datasheet,1,HP,https://www.hp.com/us-en/printers/large-format/designjet-t850-t870-t950-plotters.html,2026-07-06,High
+SRC-A008,HP DesignJet T950 spec panel (CAD Hardware),Dealer_Page,2,CAD Hardware,https://cadstore.co.za/shop/cad-hardware/printers-plotters/hp-designjet-t950-printer-36-inch/,2026-07-06,Medium_High
+SRC-A009,HP DesignJet T950 pigment ink / CAD detail (Graphic Design Supplies),Dealer_Page,2,Graphic Design Supplies,https://graphicdesignsupplies.co.uk/product/hp-designjet-t950-printer-36-inch-a0-4-colour-pigment-ink-cad-general-purpose-technical-plotter-2y9h1a/,2026-07-06,Medium_High
+SRC-A010,SureColor P8570DL 44in Dual-Roll Printer - Epson US,Datasheet,1,Epson,https://epson.com/For-Work/Printers/Large-Format/SureColor-P8570DL-44-Inch-Wide-Format-Dual-Roll-Printer-with-High-Capacity-1-6-L-Ink-Pack-System/p/SCP8570DL,2026-07-06,High
+SRC-A011,Epson SureColor P8570DL full spec table (Trigon Imaging),Dealer_Page,2,Trigon Imaging,https://www.trigonimaging.com/epson-surecolor-p8570dl,2026-07-06,Medium_High
+SRC-A012,Epson SureColor P8570DL spec panel (Imaging Spectrum),Dealer_Page,2,Imaging Spectrum,https://imagingspectrum.com/products/epson-surecolor-p8570dl-44-inch-wide-format-dual-roll-printer-with-high-capacity-1-6-l-ink-pack-system-scp8570dl,2026-07-06,Medium_High
+SRC-A013,HP PageWide XL 5200 multifunction printer - HP US,Datasheet,1,HP,https://www.hp.com/us-en/printers/large-format/pagewide-xl-5200.html,2026-07-06,High
+SRC-A014,HP PageWide XL 5200 datasheet (HP c07007044),Datasheet,1,HP,https://h20195.www2.hp.com/v2/GetDocument.aspx?docname=c07007044,2026-07-06,High
+SRC-A015,HP PageWide XL Pro 5200 speed/area (Source Graphics),Dealer_Page,2,Source Graphics,https://sourcegraphics.com/product/hp-pagewide-xl-pro-5200-40-multifunctional-printer,2026-07-06,Medium_High
