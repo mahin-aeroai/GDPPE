@@ -2,6 +2,15 @@
 
 All notable changes to the GDPPE entity schema, tracked chapter by chapter.
 
+## Phase 2 — Dye-Sublimation Printing pilot (5 machines)
+- Added `database/dye_sublimation_printing_pilot/`: 5 real, sourced dye-sublimation printers — Sawgrass SG1000 (desktop), Epson SureColor F6470, Roland Texart RT-640, Mimaki TS330-1600, Durst P5 TEX iSUB. Every spec value traces to a source fetched in the same session (15 sources).
+- **Scoped by the sublimation workflow, not ink** — dye-sub ink is uniformly disperse-dye, so the distinguishing axis is how the image reaches the fabric.
+- **New controlled vocabulary `SublimationWorkflow`** (Transfer | Direct | Dual). Registered in `schema/data_dictionary.md`. Durst P5 TEX iSUB additionally captures inline (contactless) fixation — direct-to-fabric with no separate calender.
+- **Widest tier spread of any pilot:** a desktop unit rated in prints/hr and page sizes (Sawgrass, 11x17 in) up to a 3.3 m industrial press at 383 m2/hr (Durst) — ~1000x throughput range in one category, stress-testing the speed/size fields.
+- Mode-dependent speeds and colour-count options preserved as conflicts throughout (7 conflicts kept).
+- Frontend updated to show the 6th category.
+- Full referential integrity + uniqueness verified via `scripts/validate_database.py`.
+
 ## Phase 2 — Solvent / Eco-Solvent Printing pilot (5 machines)
 - Added `database/solvent_ecosolvent_printing_pilot/`: 5 real, sourced wide-format solvent sign printers — Epson SureColor S80600 & S60600, Roland VersaEXPRESS RF-640, Mimaki CJV300-160 Plus, Mutoh ValueJet VJ-1638X. All four major sign-printer OEMs represented. Every spec value traces to a source fetched in the same session (16 sources).
 - **Ink-chemistry scoped across the solvent gradient** (True → Eco → Mild), not a single ink type.

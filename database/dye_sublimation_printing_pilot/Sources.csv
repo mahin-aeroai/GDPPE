@@ -1,0 +1,16 @@
+source_id,source_title,source_type,tier,organization,url,date_accessed,confidence
+SRC-D001,SG1000 - Sawgrass Technologies product page,Datasheet,1,Sawgrass,https://www.sawgrassink.com/products/printers/sg1000/,2026-07-06,High
+SRC-D002,Sawgrass SG1000 spec panel (Coastal Business),Dealer_Page,2,Coastal Business,https://www.coastalbusiness.com/sawgrass-sg1000-sublimation-printer-sublijet-uhd-package.html,2026-07-06,Medium_High
+SRC-D003,Sawgrass SG1000 specs (uSCutter),Dealer_Page,2,USCutter,https://uscutter.com/Sawgrass-Sg1000-Printer-With-Sublijet-Inks/,2026-07-06,Medium_High
+SRC-D004,SureColor F6470 44in Dye-Sublimation Printer - Epson US,Datasheet,1,Epson,https://epson.com/For-Work/Printers/Large-Format/SureColor-F6470-44%22-Dye-Sublimation-Printer/p/SCF6470PE,2026-07-06,High
+SRC-D005,Epson SureColor F6470 full spec table (Trigon Imaging),Dealer_Page,2,Trigon Imaging,https://www.trigonimaging.com/epson-surecolor-f6470,2026-07-06,Medium_High
+SRC-D006,SureColor F6470H 44in (6-colour variant) - Epson US,Datasheet,1,Epson,https://epson.com/For-Work/Printers/Large-Format/SureColor-F6470H-44%22-Dye-Sublimation-Printer/p/SCF6470HPE,2026-07-06,High
+SRC-D007,Texart RT-640 Dye Sublimation Printer - Roland DGA,Datasheet,1,Roland DGA,https://www.rolanddga.com/products/printers/texart-rt-640-dye-sublimation-printer,2026-07-06,High
+SRC-D008,Roland DG launches Texart RT-640 (speed-by-pass detail) - Printweek,Trade_Press,3,Printweek,https://www.printweek.com/content/event/roland-dg-launches-texart-rt-640-dye-sublimation-printer/,2026-07-06,Medium_High
+SRC-D009,Roland Texart RT-640 dual transfer/direct spec panel (Absolute Toner),Dealer_Page,2,Absolute Toner,https://www.absolutetoner.com/products/1990-month-roland-texart-rt-640-rt640-64-inch-dye-sublimation-transfer-printer-direct-to-textile-printer,2026-07-06,Medium_High
+SRC-D010,TS330-1600 - Mimaki (global) product page,Datasheet,1,Mimaki,https://mimaki.com/product/inkjet/textile/ts330-1600/,2026-07-06,High
+SRC-D011,TS330 Series - Mimaki USA product page,Datasheet,1,Mimaki USA,https://www.mimakiusa.com/products/textile-dye-sub/ts330-series/,2026-07-06,High
+SRC-D012,Mimaki TS330-1600 spec panel (RB Digital),Dealer_Page,2,RB Digital,https://rbdigital.ca/products/mimaki-ts330-1600-wide-format-sublimation-transfer-inkjet-printer,2026-07-06,Medium_High
+SRC-D013,Durst P5 TEX iSUB - A Milestone for Sublimation Printing (Durst US),Datasheet,1,Durst,https://durstus.com/p5-tex-isub-a-milestone-for-sublimation-printing/,2026-07-06,High
+SRC-D014,Uncovering the Durst P5 500 TEX iSUB (technical feature) - SignLink,Trade_Press,3,SignLink,https://www.signlink.co.uk/features/under-the-hood/uncovering-the-durst-p5-500-tex-isub/,2026-07-06,Medium_High
+SRC-D015,Durst P5 500 TEX iSUB printing specifications (Midcomp),Dealer_Page,2,Midcomp,https://midcomp.co.za/durst-p5-500-tex-isub/,2026-07-06,Medium_High

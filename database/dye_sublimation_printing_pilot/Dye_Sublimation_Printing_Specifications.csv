@@ -1,0 +1,49 @@
+ueid,field_name,engineering_domain,value,unit,original_value,original_unit,data_type,confidence,source_id,conflicting_value,conflicting_source_id,resolution_note,governance_tier
+GDPPE-DYESUB-SAWGRASS-SG1000,sublimation_workflow,Print_System,Transfer,,,,Enumeration,High,SRC-D001,,,Prints to paper for heat-press transfer onto polyester/coated substrates. Desktop.,Public_Verifiable
+GDPPE-DYESUB-SAWGRASS-SG1000,ink_type,Ink_System,Dye_Sublimation,,SubliJet-UHD,,Enumeration,High,SRC-D001,,,,Public_Verifiable
+GDPPE-DYESUB-SAWGRASS-SG1000,print_technology,Print_System,"Piezo inkjet (dual stainless printheads, Ricoh engine)",,,,Text,High,SRC-D003,,,,Public_Verifiable
+GDPPE-DYESUB-SAWGRASS-SG1000,ink_channels,Ink_System,4,colours,CMYK SubliJet-UHD,,Integer,High,SRC-D001,,,,Public_Verifiable
+GDPPE-DYESUB-SAWGRASS-SG1000,native_resolution,Print_System,1200 x 1200,dpi,up to 4880 x 1200 dpi ultra-fine,dpi,Text,High,SRC-D003,4880 x 1200,SRC-D002,1200x1200 standard high-res; 4880x1200 in Ultra Fine Photo mode (6min 40s/print). Both from Sawgrass/dealer specs.,Public_Verifiable
+GDPPE-DYESUB-SAWGRASS-SG1000,max_media_size,Media_Handling,11 x 17,in,"11x17 standard; 13x19 (A3+) with bypass tray, up to 13x51",in,Text,High,SRC-D001,,,,Public_Verifiable
+GDPPE-DYESUB-SAWGRASS-SG1000,throughput,Print_System,156,prints/hr,up to 156 prints per hour,prints/hr,Integer,High,SRC-D002,,,"Desktop unit rated in prints/hr, not m2/hr - unlike the roll-fed machines in this category.",Public_Verifiable
+GDPPE-DYESUB-SAWGRASS-SG1000,print_speed_detail,Print_System,15,sec/print,High Speed 600x600 dpi: 15 sec; High Quality: 29 sec; Advanced Photo 1200x600: 48 sec,sec,Integer,High,SRC-D002,,,,Public_Verifiable
+GDPPE-DYESUB-SAWGRASS-SG1000,connectivity,Workflow,"Ethernet, USB, WiFi 2.4GHz",,,,Text,High,SRC-D001,,,,Public_Verifiable
+GDPPE-DYESUB-EPSON-F6470,sublimation_workflow,Print_System,Transfer,,,,Enumeration,High,SRC-D004,,,Optimised for Epson DS Transfer Paper -> heat-press. Transfer-only.,Public_Verifiable
+GDPPE-DYESUB-EPSON-F6470,ink_type,Ink_System,Dye_Sublimation,,UltraChrome DS with High-Density Black,,Enumeration,High,SRC-D004,,,,Public_Verifiable
+GDPPE-DYESUB-EPSON-F6470,print_technology,Print_System,PrecisionCore MicroTFP piezo (drop-on-demand),,,,Text,High,SRC-D004,,,,Public_Verifiable
+GDPPE-DYESUB-EPSON-F6470,ink_channels,Ink_System,4,colours,"C, M, Y, HDK; 800 nozzles x 4",,Integer,High,SRC-D005,6,SRC-D006,F6470 is 4-colour (CMYK+HDK); the F6470H sibling is 6-colour (adds LcLm / FpFy / OrVi). Base F6470 recorded.,Public_Verifiable
+GDPPE-DYESUB-EPSON-F6470,native_resolution,Print_System,1200 x 600,dpi,"Maximum 1,200 x 600 dpi",dpi,Text,High,SRC-D005,,,,Public_Verifiable
+GDPPE-DYESUB-EPSON-F6470,max_speed,Print_System,820,sqft/hr,up to 820 ft2/hr (4-colour),sqft/hr,Integer,High,SRC-D004,,,,Public_Verifiable
+GDPPE-DYESUB-EPSON-F6470,print_width,Mechanical,1118,mm,44 in / 43.8 in max printable,in,Integer,High,SRC-D005,,,,Public_Verifiable
+GDPPE-DYESUB-EPSON-F6470,integrated_cutter,Finishing,Yes,,Automatic rotary cutter + media take-up reel,,Boolean,High,SRC-D004,,,,Public_Verifiable
+GDPPE-DYESUB-EPSON-F6470,ink_cartridge_size,Ink_System,1600,ml,1.6 L UltraChrome DS ink packs,ml,Integer,High,SRC-D005,,,,Public_Verifiable
+GDPPE-DYESUB-EPSON-F6470,weight,Mechanical,140,kg,295 lb,lb,Integer,High,SRC-D005,,,,Public_Verifiable
+GDPPE-DYESUB-ROLAND-RT640,sublimation_workflow,Print_System,Dual,,print onto transfer paper OR direct-to-fabric,,Enumeration,High,SRC-D009,,,Explicitly dual: sources confirm both transfer-paper and direct-to-fabric. The clearest Dual example in the pilot.,Public_Verifiable
+GDPPE-DYESUB-ROLAND-RT640,ink_type,Ink_System,Dye_Sublimation,,Texart SBL3 low-VOC sublimation ink,,Enumeration,High,SRC-D007,,,,Public_Verifiable
+GDPPE-DYESUB-ROLAND-RT640,print_technology,Print_System,"Piezo inkjet (gold-plated anti-static head, 7 droplet sizes)",,,,Text,High,SRC-D008,,,,Public_Verifiable
+GDPPE-DYESUB-ROLAND-RT640,ink_channels,Ink_System,4,colours,4-colour CMYK or 8-colour (CMYKLcLmOrVi / CMYK+OrViFpFy),,Integer,High,SRC-D007,8,SRC-D007,4-colour or 8-colour configs. Base CMYK recorded; 8 preserved.,Public_Verifiable
+GDPPE-DYESUB-ROLAND-RT640,native_resolution,Print_System,1440,dpi,"Maximum 1,440 dpi",dpi,Text,High,SRC-D009,,,,Public_Verifiable
+GDPPE-DYESUB-ROLAND-RT640,max_speed,Print_System,32.6,sqm/hr,"max 32.6 sqm/hr (dual-pass); production 22 sqm/hr (540x360, 4-col triple-pass)",sqm/hr,Decimal,High,SRC-D008,22,SRC-D008,32.6 sqm/hr max (dual-pass); 22 sqm/hr production 4-colour; 8-colour falls to 10.7-16. Mode-dependent per Printweek.,Public_Verifiable
+GDPPE-DYESUB-ROLAND-RT640,print_width,Mechanical,1615,mm,1.6 m / 64 in,in,Integer,High,SRC-D008,,,,Public_Verifiable
+GDPPE-DYESUB-ROLAND-RT640,ink_cartridge_size,Ink_System,1000,ml,"1 L airtight pouches, 2 L per colour via switching",ml,Integer,High,SRC-D009,,,,Public_Verifiable
+GDPPE-DYESUB-ROLAND-RT640,rip_software,Workflow,ErgoSoft Roland DG edition,,,,Text,High,SRC-D007,,,,Public_Verifiable
+GDPPE-DYESUB-MIMAKI-TS330-1600,sublimation_workflow,Print_System,Transfer,,,,Enumeration,High,SRC-D010,,,Sublimation transfer inkjet - prints to transfer paper for calendering onto textile.,Public_Verifiable
+GDPPE-DYESUB-MIMAKI-TS330-1600,ink_type,Ink_System,Dye_Sublimation,,Sb411 / Sb410 (Fluo) water-based dye-sub,,Enumeration,High,SRC-D010,,,,Public_Verifiable
+GDPPE-DYESUB-MIMAKI-TS330-1600,print_technology,Print_System,"Staggered piezo heads (6400 nozzles), MWDT",,,,Text,High,SRC-D012,,,,Public_Verifiable
+GDPPE-DYESUB-MIMAKI-TS330-1600,ink_channels,Ink_System,4,colours,4/6/7/8-colour incl. Lb/Lm/Lk and Fluoro Fp/Fy,,Integer,High,SRC-D011,8,SRC-D011,4/6/7/8-colour configs incl. fluorescent pink/yellow. Base 4 recorded; 8 max preserved.,Public_Verifiable
+GDPPE-DYESUB-MIMAKI-TS330-1600,native_resolution,Print_System,1200,dpi,Max 1200 dpi,dpi,Text,High,SRC-D012,,,,Public_Verifiable
+GDPPE-DYESUB-MIMAKI-TS330-1600,max_speed,Print_System,135,sqm/hr,"Max 135 m2/h (1453 sqft/hr); Draft 69 m2/h (600x600, 2-pass)",sqm/hr,Decimal,High,SRC-D010,69,SRC-D010,135 m2/h max; 69 m2/h draft; six print modes. Mode-dependent. 1453 sqft/hr (reseller) converts to ~135 m2/h - consistent.,Public_Verifiable
+GDPPE-DYESUB-MIMAKI-TS330-1600,print_width,Mechanical,1600,mm,1.6 m / 64 in,in,Integer,High,SRC-D010,,,,Public_Verifiable
+GDPPE-DYESUB-MIMAKI-TS330-1600,min_droplet_size,Print_System,4,picolitre,,,Integer,High,SRC-D012,,,,Public_Verifiable
+GDPPE-DYESUB-MIMAKI-TS330-1600,ink_cartridge_size,Ink_System,2000,ml,2 L ink packs; optional 10 kg bulk tank (BMYK),ml,Integer,High,SRC-D012,,,,Public_Verifiable
+GDPPE-DYESUB-MIMAKI-TS330-1600,rip_software,Workflow,Mimaki RasterLink7 (TxLink4 optional),,,,Text,High,SRC-D011,,,,Public_Verifiable
+GDPPE-DYESUB-DURST-P5-TEX-ISUB,sublimation_workflow,Print_System,Dual,,inline fixation direct-to-fabric AND transfer paper,,Enumeration,High,SRC-D013,,,iSUB = inline (contactless) fixation for 1-step DIRECT-to-fabric with no separate calender; can also print transfer paper. Classed Dual (direct-primary).,Public_Verifiable
+GDPPE-DYESUB-DURST-P5-TEX-ISUB,inline_fixation,Finishing,Yes (iSUB contactless),,integrated inline fusing; no separate calender for direct,,Text,High,SRC-D013,,,The category's only inline-fixation machine - eliminates the separate calender/heat-press stage. ~60% energy / 40% time saving vs 2-step (SignLink).,Public_Verifiable
+GDPPE-DYESUB-DURST-P5-TEX-ISUB,ink_type,Ink_System,Dye_Sublimation,,Durst Sublifix dye-sublimation ink,,Enumeration,High,SRC-D013,,,,Public_Verifiable
+GDPPE-DYESUB-DURST-P5-TEX-ISUB,print_technology,Print_System,Piezo drop-on-demand (Ricoh Gen5 heads on P5 platform),,,,Text,High,SRC-D015,,,,Public_Verifiable
+GDPPE-DYESUB-DURST-P5-TEX-ISUB,ink_channels,Ink_System,4,colours,CMYK; up to 8 (adds Lc/Lm/Or/Lk),,Integer,High,SRC-D015,8,SRC-D015,"CMYK standard; up to 8 channels. Base 4 recorded; 8 preserved. (Spec from the P5 500 TEX iSUB sheet, same iSUB platform.)",Public_Verifiable
+GDPPE-DYESUB-DURST-P5-TEX-ISUB,native_resolution,Print_System,800 x 600,dpi,400x600 dpi grayscale; 800x600 dpi binary,dpi,Text,High,SRC-D015,,,,Public_Verifiable
+GDPPE-DYESUB-DURST-P5-TEX-ISUB,max_speed,Print_System,383,sqm/hr,up to 383 m2/hr at full 330 cm width,sqm/hr,Integer,High,SRC-D013,,,Industrial-scale: ~3-10x the roll-fed transfer machines here. Fastest in the pilot by a wide margin.,Public_Verifiable
+GDPPE-DYESUB-DURST-P5-TEX-ISUB,print_width,Mechanical,3300,mm,3.3 m max print width,mm,Integer,High,SRC-D013,,,,Public_Verifiable
+GDPPE-DYESUB-DURST-P5-TEX-ISUB,integrated_finishing,Finishing,Sew/stitch unit,,integrated finishing unit can sew and stitch media,,Text,High,SRC-D013,,,,Public_Verifiable
+GDPPE-DYESUB-DURST-P5-TEX-ISUB,rip_software,Workflow,Durst Workflow RIP,,,,Text,High,SRC-D013,,,,Public_Verifiable

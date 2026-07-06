@@ -33,7 +33,11 @@
     { id: "solvent", code: "Solvent", name: "Solvent / Eco-Solvent",
       dir: "solvent_ecosolvent_printing_pilot", specs: "Solvent_Ecosolvent_Printing_Specifications.csv",
       blurb: "Wide-format sign printers · true, eco & mild solvent",
-      accent: ["#2e2410", "#e0b83c"] }
+      accent: ["#2e2410", "#e0b83c"] },
+    { id: "dyesub", code: "DyeSub", name: "Dye-Sublimation",
+      dir: "dye_sublimation_printing_pilot", specs: "Dye_Sublimation_Printing_Specifications.csv",
+      blurb: "Textile & soft-signage · transfer, direct & dual workflow",
+      accent: ["#2b1430", "#d977c8"] }
   ];
 
   // path from frontend/index.html up to the database folder

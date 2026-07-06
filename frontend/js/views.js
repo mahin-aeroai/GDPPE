@@ -44,7 +44,8 @@
     toner: [[["max_speed_ppm", "max_speed_sph", "max_speed"], "speed"], [["toner_type"], "toner"], [["native_resolution"], "resolution"], [["monthly_duty_cycle"], "duty/mo"]],
     latex: [[["print_width"], "width"], [["max_speed"], "speed"], [["native_resolution"], "resolution"], [["ink_type", "drying_technology"], "ink"]],
     cut:   [[["cutting_area_width", "max_material_area"], "cut width"], [["max_speed", "max_speed_xy"], "speed"], [["accuracy"], "accuracy"], [["tool_positions"], "tools"]],
-    solvent: [[["print_width"], "width"], [["max_speed"], "speed"], [["solvent_type"], "solvent"], [["native_resolution"], "resolution"]]
+    solvent: [[["print_width"], "width"], [["max_speed"], "speed"], [["solvent_type"], "solvent"], [["native_resolution"], "resolution"]],
+    dyesub: [[["sublimation_workflow"], "workflow"], [["max_speed", "throughput"], "speed"], [["native_resolution"], "resolution"], [["ink_channels"], "colours"]]
   };
 
   function fmtVal(sp) {
