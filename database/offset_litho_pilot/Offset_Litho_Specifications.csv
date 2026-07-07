@@ -1,0 +1,49 @@
+ueid,field_name,engineering_domain,value,unit,original_value,original_unit,data_type,confidence,source_id,conflicting_value,conflicting_source_id,resolution_note,governance_tier
+GDPPE-OFF-HDB-SX52,print_process,Print_System,Sheetfed offset lithography,,,,Text,High,SRC-OF001,,,"Planographic: ink/water on a flat plate, image offset to a rubber blanket then to the sheet. No printhead, no dpi.",Public_Verifiable
+GDPPE-OFF-HDB-SX52,sheet_format,Mechanical,B3,,35 x 50 / 37 x 52 cm class,,Enumeration,High,SRC-OF001,,,B3 (~35x50 cm) - the compact small-format tier. The smallest format in the pilot.,Public_Verifiable
+GDPPE-OFF-HDB-SX52,max_sheet_size,Mechanical,370 x 520,mm,Max sheet 370 x 520 mm; max print 360 x 520 mm,mm,Text,High,SRC-OF003,,,,Public_Verifiable
+GDPPE-OFF-HDB-SX52,max_speed,Print_System,15000,sph,"up to 15,000 sheets per hour",sph,Integer,High,SRC-OF001,,,"Offset speed is rated in sheets per hour (sph), not m2/hr - one sheet per impression cycle.",Public_Verifiable
+GDPPE-OFF-HDB-SX52,printing_units,Print_System,2-10,units,2 to 10 printing units (one per colour),units,Text,High,SRC-OF001,,,Each unit is a colour tower with its own plate/blanket/impression cylinders. Distinct from inkjet ink channels.,Public_Verifiable
+GDPPE-OFF-HDB-SX52,substrate_thickness,Media_Handling,0.03-0.40,mm,"0.03-0.40 mm, optionally to 0.60 mm",mm,Text,High,SRC-OF003,,,,Public_Verifiable
+GDPPE-OFF-HDB-SX52,perfecting,Print_System,Optional,,,,Text,High,SRC-OF001,,,Perfecting = printing both sides in a single pass via a sheet-reversal drum.,Public_Verifiable
+GDPPE-OFF-HDB-SX52,coating_unit,Finishing,Optional (UV / special / spot),,,,Text,High,SRC-OF001,,,,Public_Verifiable
+GDPPE-OFF-HDB-SX52,plate_changer,Workflow,AutoPlate (semi-automatic),,,,Text,High,SRC-OF002,,,,Public_Verifiable
+GDPPE-OFF-HDB-SX52,dampening_system,Print_System,Alcolor (Anicolor short-inking option),,,,Text,High,SRC-OF001,,,Offset needs a dampening system (water) balanced against ink - a defining feature of litho with no analogue in any other GDPPE category.,Public_Verifiable
+GDPPE-OFF-KOM-G37,print_process,Print_System,Sheetfed offset lithography,,,,Text,High,SRC-OF004,,,,Public_Verifiable
+GDPPE-OFF-KOM-G37,sheet_format,Mechanical,A1,,37-inch / A1-size,,Enumeration,High,SRC-OF004,,,,Public_Verifiable
+GDPPE-OFF-KOM-G37,max_sheet_size,Mechanical,640 x 940,mm,640 x 940 mm max sheet,mm,Text,High,SRC-OF004,,,,Public_Verifiable
+GDPPE-OFF-KOM-G37,max_speed,Print_System,15000,sph,"up to 15,000 sheets per hour",sph,Integer,High,SRC-OF004,,,,Public_Verifiable
+GDPPE-OFF-KOM-G37,substrate_thickness,Media_Handling,0.04-0.45,mm,0.04 to 0.45 mm,mm,Text,High,SRC-OF004,,,,Public_Verifiable
+GDPPE-OFF-KOM-G37,perfecting,Print_System,Convertible (one-pass both sides),,,,Text,High,SRC-OF004,,,G37P is a compact perfector - single/double-sided in one pass.,Public_Verifiable
+GDPPE-OFF-KOM-G37,plate_changer,Workflow,Semi-APC / Full-APC (benderless),,,,Text,High,SRC-OF004,,,,Public_Verifiable
+GDPPE-OFF-KOM-G37,control_system,Workflow,KHS-AI integrated control,,,,Text,High,SRC-OF004,,,,Public_Verifiable
+GDPPE-OFF-KOM-G37,application,Application,Short-run commercial (A1-size),,"OffsetOnDemand: short turnarounds, short runs, many products",,Text,High,SRC-OF004,,,,Public_Verifiable
+GDPPE-OFF-RMGT-970,print_process,Print_System,Sheetfed offset lithography,,,,Text,High,SRC-OF006,,,,Public_Verifiable
+GDPPE-OFF-RMGT-970,sheet_format,Mechanical,A1_Plus,,A1-plus / 8-up (25x38 in class),,Enumeration,High,SRC-OF006,,,RMGT's signature '8-up' niche - bridges A1 and B1: 8-up A4 imposition at lower plate cost and footprint than a full B1.,Public_Verifiable
+GDPPE-OFF-RMGT-970,max_sheet_size,Mechanical,650 x 965,mm,650 x 965 mm max sheet; 640 x 930 max print,mm,Text,High,SRC-OF006,,,,Public_Verifiable
+GDPPE-OFF-RMGT-970,max_speed,Print_System,16200,sph,"up to 16,200 sph (straight); 15,000 sph perfecting",sph,Integer,High,SRC-OF008,15000,SRC-OF006,"16,200 sph straight (dealer/RM Machinery); 15,000 sph in perfecting mode (RMGT official). Mode-dependent.",Public_Verifiable
+GDPPE-OFF-RMGT-970,printing_units,Print_System,2-10,units,2 to 10 colours; coating unit optional,units,Text,High,SRC-OF006,,,,Public_Verifiable
+GDPPE-OFF-RMGT-970,substrate_thickness,Media_Handling,0.04-0.60,mm,970ST 0.04-0.6 mm (0.8 mm heavy-stock option); 970PF 0.04-0.5 mm,mm,Text,High,SRC-OF007,,,,Public_Verifiable
+GDPPE-OFF-RMGT-970,perfecting,Print_System,"Convertible (up to 15,000 sph)",,,,Text,High,SRC-OF006,,,,Public_Verifiable
+GDPPE-OFF-RMGT-970,curing,Print_System,LED-UV (one-pass instant-dry),,,,Text,High,SRC-OF006,,,RMGT was the first maker to commercialise LED-UV offset - instant curing eliminates the 24h oil-ink drying wait.,Public_Verifiable
+GDPPE-OFF-RMGT-970,control_system,Workflow,Insta.Color AI ink control; ASAP automation,,,,Text,High,SRC-OF006,,,,Public_Verifiable
+GDPPE-OFF-KOM-G40,print_process,Print_System,Sheetfed offset lithography,,,,Text,High,SRC-OF009,,,,Public_Verifiable
+GDPPE-OFF-KOM-G40,sheet_format,Mechanical,B1,,40-inch / B1,,Enumeration,High,SRC-OF009,,,,Public_Verifiable
+GDPPE-OFF-KOM-G40,max_sheet_size,Mechanical,720 x 1030,mm,40-inch class (approx 720 x 1030 mm),mm,Text,High,SRC-OF009,,,Max sheet approx from the 40-inch (B1) class; Komori GL/G40 family.,Public_Verifiable
+GDPPE-OFF-KOM-G40,max_speed,Print_System,16500,sph,"up to 16,500 sheets per hour (straight); 15,000 sph perfecting",sph,Integer,High,SRC-OF009,15000,SRC-OF010,"16,500 sph straight; 15,000 sph two-sided perfecting. Mode-dependent.",Public_Verifiable
+GDPPE-OFF-KOM-G40,printing_units,Print_System,2-10,units,up to 10 colours + coater,units,Text,High,SRC-OF009,,,,Public_Verifiable
+GDPPE-OFF-KOM-G40,perfecting,Print_System,Convertible (three double-size cylinders),,,,Text,High,SRC-OF010,,,Komori perfecting uses three double-size cylinders for stress-free two-sided transfer.,Public_Verifiable
+GDPPE-OFF-KOM-G40,curing,Print_System,H-UV / H-UV L (LED) option,,,,Text,High,SRC-OF009,,,,Public_Verifiable
+GDPPE-OFF-KOM-G40,plate_changer,Workflow,A-APC asynchronous (~1m25s setup),,,,Text,High,SRC-OF009,,,,Public_Verifiable
+GDPPE-OFF-KOM-G40,control_system,Workflow,KHS-AI; PDCSX spectral density control,,,,Text,High,SRC-OF009,,,,Public_Verifiable
+GDPPE-OFF-HDB-XL106,print_process,Print_System,Sheetfed offset lithography,,,,Text,High,SRC-OF011,,,,Public_Verifiable
+GDPPE-OFF-HDB-XL106,sheet_format,Mechanical,B1,,70x100 / 75x106 cm,,Enumeration,High,SRC-OF011,,,,Public_Verifiable
+GDPPE-OFF-HDB-XL106,max_sheet_size,Mechanical,750 x 1060,mm,Max sheet 750 x 1060 mm; max print 740 x 1050 mm,mm,Text,High,SRC-OF012,,,,Public_Verifiable
+GDPPE-OFF-HDB-XL106,max_speed,Print_System,21000,sph,"up to 21,000 sph (21K); 18,000 sph standard straight & perfecting",sph,Integer,High,SRC-OF013,18000,SRC-OF011,"21,000 sph with the 21K upgrade (world's fastest sheetfed offset); 18,000 sph standard. Both preserved.",Public_Verifiable
+GDPPE-OFF-HDB-XL106,printing_units,Print_System,2-19,units,2 to 19 units (up to 23 with finishing) - one per colour + coaters,units,Text,High,SRC-OF011,23,SRC-OF011,"Configurable 2-19 printing units, up to 23 with coating/finishing towers. The most units of any press here.",Public_Verifiable
+GDPPE-OFF-HDB-XL106,substrate_thickness,Media_Handling,0.03-1.0,mm,up to 1.0 mm (0.8 mm in perfecting),mm,Text,High,SRC-OF011,,,,Public_Verifiable
+GDPPE-OFF-HDB-XL106,perfecting,Print_System,"Optional (both sides one pass, to 18,000 sph)",,,,Text,High,SRC-OF011,,,,Public_Verifiable
+GDPPE-OFF-HDB-XL106,coating_unit,Finishing,"Yes (in-line, up to 2 coaters)",,,,Text,High,SRC-OF011,,,,Public_Verifiable
+GDPPE-OFF-HDB-XL106,plate_changer,Workflow,AutoPlate XL (simultaneous),,,,Text,High,SRC-OF011,,,,Public_Verifiable
+GDPPE-OFF-HDB-XL106,control_system,Workflow,Prinect Press Center XL; Push-to-Stop autonomous,,,,Text,High,SRC-OF011,,,,Public_Verifiable
+GDPPE-OFF-HDB-XL106,application,Application,Packaging / folding carton / commercial,,,,Text,High,SRC-OF011,,,,Public_Verifiable

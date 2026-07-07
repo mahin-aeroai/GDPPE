@@ -2,6 +2,15 @@
 
 All notable changes to the GDPPE entity schema, tracked chapter by chapter.
 
+## Phase 2 — Offset Litho pilot (5 machines)
+- Added `database/offset_litho_pilot/`: sheetfed offset lithography — the **highest-volume commercial print process** and the largest category previously missing. 5 real, sourced presses: Heidelberg Speedmaster SX 52 (B3), Komori Lithrone G37 (A1), RMGT 970 (A1-plus), Komori Lithrone G40 advance (B1), Heidelberg Speedmaster XL 106 (B1 flagship). All sourced from manufacturer pages/PDFs (13 sources, mostly Tier-1 official).
+- **A whole new spec vocabulary** — offset is planographic (ink/water on a plate, offset to a blanket). None of the inkjet/toner/screen fields apply. New fields: sheet format, speed in **sheets per hour**, **printing units** (colour towers), **perfecting** (both sides one pass), coating unit, plate changer, and the **dampening system** (water/ink balance — unique to litho).
+- **New controlled vocabulary `SheetFormat`** (B3 | A1 | A1_Plus | B1, extensible). Registered in `schema/data_dictionary.md`. The A1-plus '8-up' value captures RMGT's real market niche bridging A1 and B1.
+- Format ladder spans B3 → A1 → A1-plus → B1 → B1-flagship across all three dominant sheetfed makers (Heidelberg, Komori, RMGT). The XL 106 carries the most printing units of any GDPPE machine (2-19, up to 23 with finishing towers).
+- Mode-dependent speeds (straight vs perfecting) preserved as conflicts throughout (4 conflicts kept).
+- Frontend updated to show the 9th category.
+- Full referential integrity + uniqueness verified via `scripts/validate_database.py`.
+
 ## Phase 2 — Screen Printing pilot (4 machines)
 - Added `database/screen_printing_pilot/`: the **first non-inkjet, non-toner** category — 4 real, sourced garment screen presses: Vastex V-2000HD (manual), M&R Sportsman EX, ROQ NEXT, M&R Challenger III. Every spec value traces to a source fetched in the same session (13 sources, mostly manufacturer-official).
 - **Biggest schema test so far:** screen printing has no printhead, no dpi, no ink cartridges. The per-category spec table absorbed an entirely different vocabulary (stations, colours-as-screens, squeegee/floodbar, image area, prints/hr) with no structural change — validating that the schema generalises past inkjet.

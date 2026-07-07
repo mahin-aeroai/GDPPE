@@ -47,7 +47,8 @@
     solvent: [[["print_width"], "width"], [["max_speed"], "speed"], [["solvent_type"], "solvent"], [["native_resolution"], "resolution"]],
     dyesub: [[["sublimation_workflow"], "workflow"], [["max_speed", "throughput"], "speed"], [["native_resolution"], "resolution"], [["ink_channels"], "colours"]],
     aqueous: [[["ink_subtype"], "ink"], [["print_architecture"], "architecture"], [["native_resolution"], "resolution"], [["ink_channels"], "colours"]],
-    screen: [[["automation_level"], "automation"], [["max_colours"], "colours"], [["max_stations"], "stations"], [["max_speed", "max_image_area"], "speed/area"]]
+    screen: [[["automation_level"], "automation"], [["max_colours"], "colours"], [["max_stations"], "stations"], [["max_speed", "max_image_area"], "speed/area"]],
+    offset: [[["sheet_format"], "format"], [["max_speed"], "speed"], [["printing_units"], "units"], [["max_sheet_size"], "sheet"]]
   };
 
   function fmtVal(sp) {

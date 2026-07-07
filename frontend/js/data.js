@@ -45,7 +45,11 @@
     { id: "screen", code: "Screen", name: "Screen Printing",
       dir: "screen_printing_pilot", specs: "Screen_Printing_Specifications.csv",
       blurb: "Stencil through mesh · manual & automatic garment presses",
-      accent: ["#2e1616", "#e8705a"] }
+      accent: ["#2e1616", "#e8705a"] },
+    { id: "offset", code: "Offset", name: "Offset Litho",
+      dir: "offset_litho_pilot", specs: "Offset_Litho_Specifications.csv",
+      blurb: "Sheetfed litho · commercial & packaging, B3 to B1",
+      accent: ["#101d2e", "#6f9de0"] }
   ];
 
   // path from frontend/index.html up to the database folder
