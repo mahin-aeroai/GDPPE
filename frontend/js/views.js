@@ -46,7 +46,8 @@
     cut:   [[["cutting_area_width", "max_material_area"], "cut width"], [["max_speed", "max_speed_xy"], "speed"], [["accuracy"], "accuracy"], [["tool_positions"], "tools"]],
     solvent: [[["print_width"], "width"], [["max_speed"], "speed"], [["solvent_type"], "solvent"], [["native_resolution"], "resolution"]],
     dyesub: [[["sublimation_workflow"], "workflow"], [["max_speed", "throughput"], "speed"], [["native_resolution"], "resolution"], [["ink_channels"], "colours"]],
-    aqueous: [[["ink_subtype"], "ink"], [["print_architecture"], "architecture"], [["native_resolution"], "resolution"], [["ink_channels"], "colours"]]
+    aqueous: [[["ink_subtype"], "ink"], [["print_architecture"], "architecture"], [["native_resolution"], "resolution"], [["ink_channels"], "colours"]],
+    screen: [[["automation_level"], "automation"], [["max_colours"], "colours"], [["max_stations"], "stations"], [["max_speed", "max_image_area"], "speed/area"]]
   };
 
   function fmtVal(sp) {

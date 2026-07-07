@@ -1,0 +1,14 @@
+source_id,source_title,source_type,tier,organization,url,date_accessed,confidence
+SRC-SP001,V-2000 Screen Printing Presses - Vastex International,Datasheet,1,Vastex,https://www.vastex.com/Screen-Printing-Equipment/Screen-Printing-Presses/V-2000HD/V-2000.php,2026-07-06,High
+SRC-SP002,Vastex V-2000HD spec panel (Screen Print Supplies / River City),Dealer_Page,2,River City Supply,https://www.screenprintsupplies.com/products/equip/manual/vastex-v2000/,2026-07-06,Medium_High
+SRC-SP003,Vastex V-2000 4-Color feature list (Advanced Screen Print Supply),Dealer_Page,2,Advanced Screen Print Supply,https://www.advancedscreenprintsupply.com/product2004.html,2026-07-06,Medium_High
+SRC-SP004,SPORTSMAN EX Automatic Screen Printing Press - M&R (official),Datasheet,1,M&R,https://www.mrprint.com/equipment/sportsman-ex-automatic-screen-printing-press,2026-07-06,High
+SRC-SP005,M&R Sportsman EX brochure (official PDF),Datasheet,1,M&R,https://www.mrprint.com/brochures/sportsman-ex-automatic-screen-printing-press-en-20150925-9r6Vnmm0r20144yr.pdf,2026-07-06,High
+SRC-SP006,M&R Sportsman EX configurations (Texsource / Press Doctor),Dealer_Page,2,Press Doctor,https://www.pressdoctor.com/products/mr-sportsman,2026-07-06,Medium_High
+SRC-SP007,ROQ NEXT - ROQ US (official),Datasheet,1,ROQ,https://www.roq.us/roq-next,2026-07-06,High
+SRC-SP008,ROQ NEXT specifications (kolormatrix / River City),Dealer_Page,2,kolormatrix,https://kolormatrix.com/products/roq-print-next,2026-07-06,Medium_High
+SRC-SP009,ROQ NEXT XL configurations (Embellishr),Dealer_Page,2,Embellishr,https://embellishr.com/products/new-roq-next-automatic-press,2026-07-06,Medium_High
+SRC-SP010,CHALLENGER III Automatic Screen Printing Press - M&R (official),Datasheet,1,M&R,https://www.mrprint.com/brochures/challenger-iii-automatic-screen-printing-press-20160526-9r6CV99mr20144yr.pdf,2026-07-06,High
+SRC-SP011,M&R Challenger III brochure spec table (DirectIndustry / Nazdar TDS),Datasheet,1,Nazdar,https://sourceone.nazdar.com/portals/0/tds/M&R-ChallengerIII.pdf,2026-07-06,High
+SRC-SP012,M&R Challenger III feature list (Grafteks),Dealer_Page,2,Grafteks,https://grafteks.com/products/challenger%C2%AE-iii-automatic-screen-printing-press,2026-07-06,Medium_High
+SRC-SP013,Sakurai corporate site - screen presses no longer a listed product line,Corporate_Site,3,Sakurai,https://sakurai.co.jp/english/company.html,2026-07-06,Low_Medium

@@ -2,6 +2,16 @@
 
 All notable changes to the GDPPE entity schema, tracked chapter by chapter.
 
+## Phase 2 — Screen Printing pilot (4 machines)
+- Added `database/screen_printing_pilot/`: the **first non-inkjet, non-toner** category — 4 real, sourced garment screen presses: Vastex V-2000HD (manual), M&R Sportsman EX, ROQ NEXT, M&R Challenger III. Every spec value traces to a source fetched in the same session (13 sources, mostly manufacturer-official).
+- **Biggest schema test so far:** screen printing has no printhead, no dpi, no ink cartridges. The per-category spec table absorbed an entirely different vocabulary (stations, colours-as-screens, squeegee/floodbar, image area, prints/hr) with no structural change — validating that the schema generalises past inkjet.
+- **New controlled vocabulary `AutomationLevel`** (Manual | Automatic) — screen printing's defining axis, and the first category to need it since every inkjet/toner machine is inherently automatic. Registered in `schema/data_dictionary.md`.
+- Machines span the full automation ladder: hand-operated Vastex → servo automatics → M&R's flagship oversize Challenger III (20 stations, 36x43 in image area).
+- Captured screen-specific mechanisms with no inkjet analogue: M&R Ink Dip retrieval, squeegee/floodbar, per-colour screens, ROQ Hybrid (screen+digital bridge).
+- **Documented sourcing gap:** the industrial-graphic cylinder-press tier (Sakurai, Thieme — decals/electronics/glass) is deliberately absent. Those makers have largely exited or discontinued the line, leaving only used-equipment reseller listings (Tier-8/9, per-unit not per-model). Logged as a known gap rather than fabricated — consistent with the Chinese solvent tier.
+- Frontend updated to show the 8th category.
+- Full referential integrity + uniqueness verified via `scripts/validate_database.py`.
+
 ## Phase 2 — Aqueous / Inkjet Printing pilot (5 machines)
 - Added `database/aqueous_inkjet_printing_pilot/`: 5 real, sourced water-based inkjet printers — Canon PIXMA PRO-200, Canon imagePROGRAF PRO-4600, HP DesignJet T950, Epson SureColor P8570DL, HP PageWide XL 5200. Every spec value traces to a source fetched in the same session (15 sources).
 - **Two new controlled vocabularies** (aqueous is broad enough to need two axes): `InkSubtype` (Dye | Pigment) and `PrintArchitecture` (Scanning_Carriage | Pagewide_Array). Both registered in `schema/data_dictionary.md`.

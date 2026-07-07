@@ -1,0 +1,37 @@
+ueid,field_name,engineering_domain,value,unit,original_value,original_unit,data_type,confidence,source_id,conflicting_value,conflicting_source_id,resolution_note,governance_tier
+GDPPE-SCRN-VASTEX-V2000HD,automation_level,Print_System,Manual,,manual rotary press,,Enumeration,High,SRC-SP001,,,Operator manually rotates the carousel and pulls each squeegee stroke. The manual anchor; no motor or indexer. Screen printing's defining axis - no inkjet category has a Manual value.,Public_Verifiable
+GDPPE-SCRN-VASTEX-V2000HD,print_process,Print_System,Screen (stencil through mesh),,,,Text,High,SRC-SP001,,,"Ink forced through a stencilled mesh screen by a squeegee - one screen per colour. No printhead, no dpi.",Public_Verifiable
+GDPPE-SCRN-VASTEX-V2000HD,max_stations,Mechanical,10,stations,1 to 10 stations (expandable),stations,Integer,High,SRC-SP001,,,,Public_Verifiable
+GDPPE-SCRN-VASTEX-V2000HD,max_colours,Print_System,10,colours,1 to 10 colours; 1 screen per colour,colours,Integer,High,SRC-SP001,,,Colours = number of screens/print heads. Distinct from inkjet ink channels - each colour is a separate stencilled screen.,Public_Verifiable
+GDPPE-SCRN-VASTEX-V2000HD,standard_pallet_size,Mechanical,15 x 17,in,15 in x 17 in standard pallet,in,Text,High,SRC-SP003,,,,Public_Verifiable
+GDPPE-SCRN-VASTEX-V2000HD,registration_type,Print_System,"Wrench-free micro-registration, zero-backlash",,,,Text,High,SRC-SP001,,,,Public_Verifiable
+GDPPE-SCRN-VASTEX-V2000HD,drive_type,Print_System,Manual (operator-indexed),,,,Text,High,SRC-SP001,,,,Public_Verifiable
+GDPPE-SCRN-VASTEX-V2000HD,country_made,Manufacturing,United States,,,,Text,High,SRC-SP001,,,,Public_Verifiable
+GDPPE-SCRN-VASTEX-V2000HD,warranty,Support,25,years,25-year warranty (gas springs/rubber tops 3 yr),years,Integer,High,SRC-SP002,,,,Public_Verifiable
+GDPPE-SCRN-MR-SPORTSMAN-EX,automation_level,Print_System,Automatic,,"automatic screen printing press, servo indexer",,Enumeration,High,SRC-SP004,,,,Public_Verifiable
+GDPPE-SCRN-MR-SPORTSMAN-EX,print_process,Print_System,Screen (stencil through mesh),,,,Text,High,SRC-SP004,,,,Public_Verifiable
+GDPPE-SCRN-MR-SPORTSMAN-EX,max_stations,Mechanical,14,stations,8 to 14 stations,stations,Integer,High,SRC-SP006,,,,Public_Verifiable
+GDPPE-SCRN-MR-SPORTSMAN-EX,max_colours,Print_System,12,colours,6 to 12 colours,colours,Integer,High,SRC-SP004,,,,Public_Verifiable
+GDPPE-SCRN-MR-SPORTSMAN-EX,max_image_area,Mechanical,51 x 71,cm,"41x46 cm (16x18 in), 51x51 cm (20x20 in), or 51x71 cm (20x28 in) by model (4045/5050/5070)",cm,Text,High,SRC-SP005,,,,Public_Verifiable
+GDPPE-SCRN-MR-SPORTSMAN-EX,drive_type,Print_System,"Servo-driven indexer, electric printheads",,,,Text,High,SRC-SP004,,,,Public_Verifiable
+GDPPE-SCRN-MR-SPORTSMAN-EX,registration_type,Print_System,Tri-Loc compatible; front micro-registration,,,,Text,High,SRC-SP004,,,,Public_Verifiable
+GDPPE-SCRN-MR-SPORTSMAN-EX,control_system,Workflow,Colour touchscreen; Revolver multi-flash program,,,,Text,High,SRC-SP004,,,,Public_Verifiable
+GDPPE-SCRN-MR-SPORTSMAN-EX,certification,Compliance,"CE, UL",,,,Text,High,SRC-SP004,,,,Public_Verifiable
+GDPPE-SCRN-ROQ-NEXT,automation_level,Print_System,Automatic,,"automatic press, AC servo + chain drive",,Enumeration,High,SRC-SP007,,,,Public_Verifiable
+GDPPE-SCRN-ROQ-NEXT,print_process,Print_System,Screen (stencil through mesh),,,,Text,High,SRC-SP007,,,,Public_Verifiable
+GDPPE-SCRN-ROQ-NEXT,max_colours,Print_System,18,colours,6 to 18 colours,colours,Integer,High,SRC-SP008,,,,Public_Verifiable
+GDPPE-SCRN-ROQ-NEXT,max_speed,Print_System,1200,prints/hr,"cycles up to 1,200 pieces per hour",prints/hr,Integer,High,SRC-SP007,,,"Screen presses rate speed in prints (pieces)/hour, not m2/hr - one garment per index cycle.",Public_Verifiable
+GDPPE-SCRN-ROQ-NEXT,max_image_area,Mechanical,85 x 100,cm,up to 850 x 1000 mm (double index),mm,Text,High,SRC-SP008,,,,Public_Verifiable
+GDPPE-SCRN-ROQ-NEXT,drive_type,Print_System,Dual chain-drive + AC servo; independent print-head lift,,,,Text,High,SRC-SP008,,,,Public_Verifiable
+GDPPE-SCRN-ROQ-NEXT,registration_type,Print_System,Micro-registration with vernier scale,,,,Text,High,SRC-SP008,,,,Public_Verifiable
+GDPPE-SCRN-ROQ-NEXT,control_system,Workflow,10-inch touchscreen; Go-To Platen,,,,Text,High,SRC-SP007,,,,Public_Verifiable
+GDPPE-SCRN-ROQ-NEXT,hybrid_capable,Print_System,Yes (ROQ Hybrid screen + digital),,,,Text,High,SRC-SP007,,,Optional hybrid module adds inkjet digital to the screen press - a bridge to the digital categories.,Public_Verifiable
+GDPPE-SCRN-MR-CHALLENGER-III,automation_level,Print_System,Automatic,,"automatic oversize press, servo indexer",,Enumeration,High,SRC-SP010,,,,Public_Verifiable
+GDPPE-SCRN-MR-CHALLENGER-III,print_process,Print_System,Screen (stencil through mesh),,,,Text,High,SRC-SP010,,,,Public_Verifiable
+GDPPE-SCRN-MR-CHALLENGER-III,max_stations,Mechanical,20,stations,14 to 20 stations,stations,Integer,High,SRC-SP010,,,,Public_Verifiable
+GDPPE-SCRN-MR-CHALLENGER-III,max_colours,Print_System,18,colours,12 to 18 colours,colours,Integer,High,SRC-SP010,,,,Public_Verifiable
+GDPPE-SCRN-MR-CHALLENGER-III,max_image_area,Mechanical,91 x 110,cm,48x55 cm (19x22 in) to 91x110 cm (36x43 in),cm,Text,High,SRC-SP010,,,"Oversize/all-over capability - the largest image area in the pilot, for cut-piece and all-over garment printing.",Public_Verifiable
+GDPPE-SCRN-MR-CHALLENGER-III,drive_type,Print_System,Electric-drive printheads; double-indexing indexer,,,,Text,High,SRC-SP010,,,,Public_Verifiable
+GDPPE-SCRN-MR-CHALLENGER-III,registration_type,Print_System,Tri-Loc Rapid Registration compatible,,,,Text,High,SRC-SP010,,,,Public_Verifiable
+GDPPE-SCRN-MR-CHALLENGER-III,ink_retrieval,Print_System,Ink Dip electronically-adjustable retrieval,,,,Text,High,SRC-SP010,,,M&R's Ink Dip keeps ink in the print area between strokes - a screen-specific mechanism with no inkjet analogue.,Public_Verifiable
+GDPPE-SCRN-MR-CHALLENGER-III,certification,Compliance,CE,,,,Text,High,SRC-SP010,,,,Public_Verifiable

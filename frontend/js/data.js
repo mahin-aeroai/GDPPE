@@ -41,7 +41,11 @@
     { id: "aqueous", code: "Aqueous", name: "Aqueous / Inkjet",
       dir: "aqueous_inkjet_printing_pilot", specs: "Aqueous_Inkjet_Printing_Specifications.csv",
       blurb: "Water-based photo, CAD & production · dye and pigment",
-      accent: ["#0f2a2e", "#43c9c0"] }
+      accent: ["#0f2a2e", "#43c9c0"] },
+    { id: "screen", code: "Screen", name: "Screen Printing",
+      dir: "screen_printing_pilot", specs: "Screen_Printing_Specifications.csv",
+      blurb: "Stencil through mesh · manual & automatic garment presses",
+      accent: ["#2e1616", "#e8705a"] }
   ];
 
   // path from frontend/index.html up to the database folder
